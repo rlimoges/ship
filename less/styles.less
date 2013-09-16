@@ -1,0 +1,244 @@
+// Text
+@small: 10px;
+@medium: 14px;
+@large: 16px;
+
+// Radius
+@HUD_Offset: 10px;
+
+body {
+  font-family: Arial;
+  background-color: #000000;
+  margin: 0px;
+  overflow: hidden;
+  a {
+    color: red
+  }
+
+  #stats {
+    position: absolute;
+    top: @HUD_Offset;
+    left: @HUD_Offset;
+    #fps {
+      background: transparent !important;
+      #fpsText {
+        color: #aaa !important;
+      }
+      #fpsGraph {
+        display: none;
+      }
+    }
+  }
+
+  #menu {
+    //10/30/10/30/10
+    font-size: @large;
+    position: absolute;
+    width: 100%;
+    left: @HUD_Offset;
+    bottom: @HUD_Offset;
+  }
+  .panel, #stats, .btn, .gauge, .target, .targetList li {
+    opacity: 0.4;
+    border-top: 5px outset white;
+    border-left: 5px outset white;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
+    text-shadow: 1px 1px black;
+
+    color: #DDDDDD;
+    text-align: center;
+    font-weight: bold;
+
+    margin: 0.25%;
+    padding: 0.5%;
+
+    cursor: pointer;
+    &:hover {
+      opacity: .8;
+      color: #ffffff;
+      background: #333333;
+    }
+  }
+
+  .centerPanel {
+    position: relative;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    .targets {
+      width:100%;
+
+      .targetList {
+        display:none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          margin:auto;
+          &.lvl1{
+            width:90%;
+          }
+          &.lvl2 {
+            width:80%;
+          }
+          &.lvl3 {
+            width:70%;
+          }
+        }
+      }
+
+      .target {
+        padding: 0.25%;
+        margin: 0.25%;
+
+      }
+      .distance, .type {
+        color: #BBBBBB;
+        font-size: @small;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .panel {
+    position: absolute;
+    bottom: 0;
+    padding: 0.25% 0.25%;
+
+    &.scanInfo {
+      display:none;
+      width: 20%;
+      min-width: 200px;
+      right: 10%;
+      top: 20%;
+      bottom: auto;
+      .content {
+        padding:1%;
+        h2 {
+          margin: 0 0 5px 0;
+          font-size: @large
+        }
+        h3 {
+          margin: 0 0 5px 0;
+          font-size: @medium
+        }
+        text-align: left;
+        font-size: @small;
+      }
+    }
+
+    &.commandPanel {
+      width: 25%;
+      min-width: 200px;
+      left: 0;
+      display: inline-block;
+      text-align: left;
+
+      .options {
+        display: block;
+        margin-bottom: .25pc;
+      }
+
+      .commands {
+        display: block;
+      }
+    }
+
+    &.gauges {
+      font-size: @medium;
+      right: (@HUD_Offset*2);
+      width: 20%;
+      min-width: 200px;
+    }
+
+    .btn {
+      display: inline;
+      transition-property: padding;
+      transition-duration: 0.1s;
+      transition-timing-function: linear;
+
+      border-top: 1.25% outset white;
+      border-left: 1.25% outset white;
+      border-bottom: 1.1% outset black;
+      border-right: 1.1% outset black;
+
+      opacity: .8;
+      display: inline-block;
+
+      margin: 0.5%;
+      padding: 1%;
+      box-shadow: 2px 2px black;
+      &:hover {
+        opacity: 1;
+      }
+      &.shields.on {
+        background-color: blue;
+        border-color: blue;
+      }
+      &.weapons.on {
+        background-color: red;
+        border-color: red;
+      }
+      &.thrusters.on {
+        background-color: yellow;
+        border-color: yellow;
+      }
+      &.scan,
+      &.ok{
+        background-color: green;
+        border-color: green;
+        float:right;
+        font-size:@medium;
+      }
+
+      &.scan{
+        display:none;
+      }
+    }
+
+    .gauge {
+      opacity: 1;
+      color: white;
+      box-shadow: 2px 2px black;
+      border-top: 1.25% outset white;
+      border-left: 1.25% outset white;
+      border-bottom: 1.15% outset black;
+      border-right: 1.15% outset black;
+
+      margin: 0.75%;
+      padding: 0;
+      transition-property: padding;
+      transition-duration: 0.1s;
+      transition-timing-function: linear;
+
+      &:hover {
+        border-top: 0.25% outset white;
+        border-left: 0.25% outset white;
+        border-bottom: 0.15% outset white;
+        border-right: 0.15% outset white;
+
+      }
+      &.hull {
+        background-color: red;
+        border-color: red;
+      }
+      &.shields {
+        background-color: blue;
+        border-color: blue;
+      }
+      &.fuel {
+        background-color: green;
+        border-color: green;
+      }
+      &.cargo {
+        background-color: yellow;
+        border-color: yellow;
+      }
+    }
+  }
+}

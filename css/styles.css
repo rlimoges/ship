@@ -1,0 +1,220 @@
+body {
+  font-family: Arial;
+  background-color: #000000;
+  margin: 0px;
+  overflow: hidden;
+}
+body a {
+  color: #ff0000;
+}
+body #stats {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+body #stats #fps {
+  background: transparent !important;
+}
+body #stats #fps #fpsText {
+  color: #aaa !important;
+}
+body #stats #fps #fpsGraph {
+  display: none;
+}
+body #menu {
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  left: 10px;
+  bottom: 10px;
+}
+body .panel,
+body #stats,
+body .btn,
+body .gauge,
+body .target,
+body .targetList li {
+  opacity: 0.4;
+  border-top: 5px outset white;
+  border-left: 5px outset white;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 1px 1px black;
+  text-shadow: 1px 1px black;
+  color: #DDDDDD;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.25%;
+  padding: 0.5%;
+  cursor: pointer;
+}
+body .panel:hover,
+body #stats:hover,
+body .btn:hover,
+body .gauge:hover,
+body .target:hover,
+body .targetList li:hover {
+  opacity: .8;
+  color: #ffffff;
+  background: #333333;
+}
+body .centerPanel {
+  position: relative;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+}
+body .centerPanel .targets {
+  width: 100%;
+}
+body .centerPanel .targets .targetList {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+body .centerPanel .targets .targetList li {
+  list-style: none;
+  margin: auto;
+}
+body .centerPanel .targets .targetList li.lvl1 {
+  width: 90%;
+}
+body .centerPanel .targets .targetList li.lvl2 {
+  width: 80%;
+}
+body .centerPanel .targets .targetList li.lvl3 {
+  width: 70%;
+}
+body .centerPanel .targets .target {
+  padding: 0.25%;
+  margin: 0.25%;
+}
+body .centerPanel .targets .distance,
+body .centerPanel .targets .type {
+  color: #BBBBBB;
+  font-size: 10px;
+  font-weight: normal;
+}
+body .panel {
+  position: absolute;
+  bottom: 0;
+  padding: 0.25% 0.25%;
+}
+body .panel.scanInfo {
+  display: none;
+  width: 20%;
+  min-width: 200px;
+  right: 10%;
+  top: 20%;
+  bottom: auto;
+}
+body .panel.scanInfo .content {
+  padding: 1%;
+  text-align: left;
+  font-size: 10px;
+}
+body .panel.scanInfo .content h2 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+body .panel.scanInfo .content h3 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+}
+body .panel.commandPanel {
+  width: 25%;
+  min-width: 200px;
+  left: 0;
+  display: inline-block;
+  text-align: left;
+}
+body .panel.commandPanel .options {
+  display: block;
+  margin-bottom: .25pc;
+}
+body .panel.commandPanel .commands {
+  display: block;
+}
+body .panel.gauges {
+  font-size: 14px;
+  right: 20px;
+  width: 20%;
+  min-width: 200px;
+}
+body .panel .btn {
+  display: inline;
+  transition-property: padding;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  border-top: 1.25% outset white;
+  border-left: 1.25% outset white;
+  border-bottom: 1.1% outset black;
+  border-right: 1.1% outset black;
+  opacity: .8;
+  display: inline-block;
+  margin: 0.5%;
+  padding: 1%;
+  box-shadow: 2px 2px black;
+}
+body .panel .btn:hover {
+  opacity: 1;
+}
+body .panel .btn.shields.on {
+  background-color: blue;
+  border-color: blue;
+}
+body .panel .btn.weapons.on {
+  background-color: red;
+  border-color: red;
+}
+body .panel .btn.thrusters.on {
+  background-color: yellow;
+  border-color: yellow;
+}
+body .panel .btn.scan,
+body .panel .btn.ok {
+  background-color: green;
+  border-color: green;
+  float: right;
+  font-size: 14px;
+}
+body .panel .btn.scan {
+  display: none;
+}
+body .panel .gauge {
+  opacity: 1;
+  color: white;
+  box-shadow: 2px 2px black;
+  border-top: 1.25% outset white;
+  border-left: 1.25% outset white;
+  border-bottom: 1.15% outset black;
+  border-right: 1.15% outset black;
+  margin: 0.75%;
+  padding: 0;
+  transition-property: padding;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+body .panel .gauge:hover {
+  border-top: 0.25% outset white;
+  border-left: 0.25% outset white;
+  border-bottom: 0.15% outset white;
+  border-right: 0.15% outset white;
+}
+body .panel .gauge.hull {
+  background-color: red;
+  border-color: red;
+}
+body .panel .gauge.shields {
+  background-color: blue;
+  border-color: blue;
+}
+body .panel .gauge.fuel {
+  background-color: green;
+  border-color: green;
+}
+body .panel .gauge.cargo {
+  background-color: yellow;
+  border-color: yellow;
+}
