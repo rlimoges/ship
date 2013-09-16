@@ -427,7 +427,6 @@ function zone(id) {
                 gameObjects['sun'].orbital = size * 5;
                 gameObjects['sun'].addEmitter("sunFlares");
                 gameObjects['sun'].addEmitter("solarWind");
-
                 gameObjects['sun'].name = this.name;
 
                 sunLight = new THREE.PointLight(color2, 2.5, 45000);
@@ -440,6 +439,7 @@ function zone(id) {
                 var id = "planet" + this.planets.length;
                 var size = Math.random() * 300 + 50;
                 var distance = Math.random() * 34000 + 1000;
+
 
                 var pclass = "m";
                 var r = Math.random() * 2;
