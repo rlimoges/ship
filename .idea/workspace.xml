@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/engine.js" afterPath="$PROJECT_DIR$/threejs/engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gui.js" afterPath="$PROJECT_DIR$/threejs/gui.js" />
+    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="random system generator">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
     <ignored path="ship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +27,8 @@
     <file path="/zone.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379115686748" ignored="false" />
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
-    <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379189110055" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379383862840" ignored="false" />
+    <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379393975294" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379393867565" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="17" selection-start="3181" selection-end="3186" vertical-scroll-proportion="0.44040862">
+            <state line="123" column="17" selection-start="3181" selection-end="3186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +70,7 @@
       <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+            <state line="157" column="64" selection-start="4975" selection-end="5009" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,16 +97,16 @@
       <file leaf-file-name="gameObjects.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="0" selection-start="6858" selection-end="6858" vertical-scroll-proportion="-18.2">
+            <state line="227" column="0" selection-start="6858" selection-end="6858" vertical-scroll-proportion="-63.08">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="zone.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="419" column="137" selection-start="19262" selection-end="19262" vertical-scroll-proportion="-14.3">
+            <state line="611" column="109" selection-start="29036" selection-end="29036" vertical-scroll-proportion="0.7954272">
               <folding />
             </state>
           </provider>
@@ -186,10 +185,10 @@
         <option value="$PROJECT_DIR$/system.php" />
         <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
         <option value="$PROJECT_DIR$/threejs/particles.js" />
-        <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
         <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/threejs/gui.js" />
+        <option value="$PROJECT_DIR$/threejs/zone.js" />
       </list>
     </option>
   </component>
@@ -474,7 +473,11 @@
       <created>1379383870488</created>
       <updated>1379383870488</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Gui optimisation">
+      <created>1379389894145</created>
+      <updated>1379389894145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -564,7 +567,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="thrusters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui optimisation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -582,6 +585,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="tweaked backgrounds" />
     <MESSAGE value="thrusters" />
+    <MESSAGE value="Gui optimisation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -637,30 +641,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/resources.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="38" selection-start="940" selection-end="945" vertical-scroll-proportion="-15.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="6858" selection-end="6858" vertical-scroll-proportion="-18.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="419" column="137" selection-start="19262" selection-end="19262" vertical-scroll-proportion="-14.3">
           <folding />
         </state>
       </provider>
@@ -679,6 +662,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/gui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="17" selection-start="3181" selection-end="3186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="227" column="0" selection-start="6858" selection-end="6858" vertical-scroll-proportion="-63.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/engine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="19" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0">
@@ -686,9 +683,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/gui.js">
+    <entry file="file://$PROJECT_DIR$/threejs/resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="17" selection-start="3181" selection-end="3186" vertical-scroll-proportion="0.44040862">
+        <state line="157" column="64" selection-start="4975" selection-end="5009" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="611" column="109" selection-start="29036" selection-end="29036" vertical-scroll-proportion="0.7954272">
           <folding />
         </state>
       </provider>

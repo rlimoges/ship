@@ -402,6 +402,7 @@ function zone(id) {
                 addGameObject('sky_inner', new THREE.Mesh(new THREE.SphereGeometry(100, 25, 40), materials['atmosphere']), 'skyInner');
                 gameObjects['sky'].followers.push(gameObjects['sky_inner']);
 
+                ship.mesh.children[0].material.materials[1].map = material.map;
                 break;
 
             case "sun":
@@ -457,7 +458,7 @@ function zone(id) {
                 if (distance > 15000) {
                     pclass = "c";
                     r = Math.random() * 1;
-                    mats = new Array('ice1', 'ice2', 'grey', 'iron', 'ruby', 'sand');
+                    mats = new Array('ice1', 'ice2', 'grey', 'iron');
                 }
 
                 var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
@@ -480,7 +481,7 @@ function zone(id) {
                 gameObjects[id].name = this.name + " " + romans[(this.planets.length + 1)];
 
                 if (pclass == "m") {
-                    addGameObject(id + '_atmosphere', new THREE.Mesh(new THREE.SphereGeometry(size + (size * 0.05), 20, 20), materials['atmosphere']), 'atmosphere');
+                    addGameObject(id + '_atmosphere', new THREE.Mesh(new THREE.SphereGeometry(size + (size * 0.015), 20, 20), materials['atmosphere']), 'atmosphere');
                     gameObjects[id].followers.push(gameObjects[id + '_atmosphere']);
                 }
 
@@ -500,16 +501,16 @@ function zone(id) {
                 var g = Math.random() * 2;
                 var b = Math.random() * 2;
 
-                var mats = new Array('moon1', 'moon2', 'sand', 'ruby', 'stone', 'yellow', 'iron', 'grey', 'g1', 'cracks');
+                var mats = new Array('moon1', 'moon2', 'sand', 'ruby', 'stone', 'yellow', 'grey', 'g1');
                 if (planet.pclass == "h") {
                     g = Math.random() * 1;
                     b = Math.random() * 1;
-                    mats.push('lava1', 'lava2', 'lava3', 'lava4', 'red', 'red2', 'yellow');
+                    mats.push('lava1', 'lava2', 'lava3', 'lava4', 'red', 'red2', 'yellow', 'cracks');
                 }
                 if (planet.pclass == "c") {
                     pclass = "c";
                     r = Math.random() * 1;
-                    mats.push('ice1', 'ice2');
+                    mats.push('ice1', 'ice2', 'cracks');
                 }
 
                 var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
@@ -608,6 +609,7 @@ function zone(id) {
                 addGameObject('stationShields', new THREE.Mesh(new THREE.SphereGeometry(60, 30, 30), materials['shieldsMaterial']), 'shields');
                 gameObjects['stationShields'].setScale(1, 0.5, 1);
                 gameObjects[id].followers.push(gameObjects['stationShields']);
+                gameObjects[id].mesh.children[0].material.materials[1].map = gameObjects['sky'].mesh.material.map;
                 break;
 
             case "drone":
