@@ -6,10 +6,22 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var targetList;
+// Jquery selectors
+var $targetList, $menuContainer, $target, $scanInfo, $commands;
+var $btnScan, $btnOk, $btnWeapons, $btnThrusters, $btnShields
 var scanState = false;
 
 $(document).ready(function () {
+    $scanInfo = $('.panel.scanInfo');
+    $menuContainer = $("#menu");
+    $target = $menuContainer.find(".target");
+    $commands = $menuContainer.find('.panel.commandPanel');;
+    $btnScan = $commands.find('.btn.scan');
+    $btnWeapons = $commands.find('.btn.weapons');
+    $btnThrusters = $commands.find('.btn.thrusters');
+    $btnShields = $commands.find('.btn.shields');
+    $btnOk = $scanInfo.find('.btn.ok');
+
     document.oncontextmenu = function () {
         return false;
     };
@@ -25,52 +37,50 @@ $(document).ready(function () {
         e.preventDefault();
         toggleThrusters();
     });
-    $(".target").on('click', function (e) {
+    $target.on('click', function (e) {
         e.preventDefault();
         toggleTargetList()
     });
-    $(".btn.scan").on('click', function (e) {
+    $btnScan.on('click', function (e) {
         e.preventDefault();
         controls.enterZoom();
     });
-    $(".btn.ok").on('click', function (e) {
+    $btnOk.on('click', function (e) {
         e.preventDefault();
         controls.exitZoom();
-        $('.panel.scanInfo').hide(250);
-        $('.btn.ok').hide(250);
+        $scanInfo.hide(250);
+        $btnOk.hide(250);
     });
 });
 
 function toggleMenu() {
-    var menuContainer = $("#menu");
-    if (menuContainer.hasClass('open')) {
-        menuContainer.show(500, function () {
-            menuContainer.removeClass('open');
+    if ($menuContainer.hasClass('open')) {
+        $menuContainer.show(500, function () {
+            $menuContainer.removeClass('open');
         });
     } else {
-        menuContainer.hide(500, function () {
-            menuContainer.addClass('open');
+        $menuContainer.hide(500, function () {
+            $menuContainer.addClass('open');
         });
     }
 }
 
 function toggleTargetList() {
-    var targetListContainer = $(".targetList");
-    if (targetListContainer.hasClass('open')) {
-        targetListContainer.slideUp(500, function () {
-            targetListContainer.removeClass('open');
+    if ($targetList.hasClass('open')) {
+        $targetList.slideUp(500, function () {
+            $targetList.removeClass('open');
         });
 
     } else {
-        targetListContainer.slideDown(500, function () {
-            targetListContainer.addClass('open');
+        $targetList.slideDown(500, function () {
+            $targetList.addClass('open');
         });
     }
 }
 
 function guiInitTargetList() {
     var html = "";
-    targetList = $(".targetList");
+    $targetList = $(".targetList");
 
     for (var objID in gameObjects) {
         var obj = gameObjects[objID];
@@ -101,7 +111,7 @@ function guiInitTargetList() {
         }
     }
 
-    targetList.html(html);
+    $targetList.html(html);
     toggleTargetList();
 }
 
@@ -112,12 +122,11 @@ var sort_by_name = function (a, b) {
 var sort_by_distance = function (a, b) {
     aa = parseInt(a.attributes['data-distance'].value);
     bb = parseInt(b.attributes['data-distance'].value);
-
     return aa < bb;
 }
 
 function guiUpdateTargetDistances() {
-    $('.targetListObj').each(function () {
+    $targetList.find('.targetListObj').each(function () {
         var self = $(this);
 
         obj = self.attr('data-target');
@@ -153,38 +162,39 @@ function guiUpdateTargetDistances() {
 }
 
 function guiUpdateTarget(target) {
-    $(".target").html(target.name + "<div class='distance'>Distance: " + (target.getDistance() / 200).toFixed(2) + " SU</div>");
-    $(".panel.scanInfo h2 span").html(target.name);
-    $(".panel.scanInfo h3 span").html(target.type);
-    $(".panel.scanInfo p.distanceFromSun span").html((target.getDistanceToObj(gameObjects['sun']) / 200).toFixed(2));
+    var distance = (target.getDistance() / 200).toFixed(2);
+    $target.html(target.name + "<div class='distance'>Distance: " + distance + " SU</div>");
+    $scanInfo.find("h2 span").html(target.name);
+    $scanInfo.find("h3 span").html(target.type);
+    $scanInfo.find("p.distanceFromSun span").html(distance);
     if (target.orbiting) {
-        $(".panel.scanInfo p.orbiting span").html(target.orbiting.name);
+        $scanInfo.find("p.orbiting span").html(target.orbiting.name);
     }
 }
 
 function toggleShields() {
     if (ship.shieldsOn) {
-        $("#menu .btn.shields").removeClass('on');
+        $btnShields.removeClass('on');
     } else {
-        $("#menu .btn.shields").addClass('on');
+        $btnShields.addClass('on');
     }
     ship.systemsToggle('shields', !ship.shieldsOn);
 }
 
 function toggleWeapons() {
     if (ship.weaponsOn) {
-        $("#menu .btn.weapons").removeClass('on');
+        $btnWeapons.removeClass('on');
     } else {
-        $("#menu .btn.weapons").addClass('on');
+        $btnWeapons.addClass('on');
     }
     ship.systemsToggle('weapons', !ship.weaponsOn);
 }
 
 function toggleThrusters() {
     if (ship.thrustersOn) {
-        $("#menu .btn.thrusters").removeClass('on');
+        $btnThrusters.removeClass('on');
     } else {
-        $("#menu .btn.thrusters").addClass('on');
+        $btnThrusters.addClass('on');
     }
     ship.systemsToggle('thrusters', !ship.thrustersOn);
 }

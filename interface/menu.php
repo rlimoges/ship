@@ -20,9 +20,9 @@
 <div id="menu">
     <div class="panel commandPanel">
         <div class="options">
-            <span class="btn">Help</span>
-            <span class="btn">Settings</span>
-            <span class="btn">Quests</span>
+            <span class="btn toggle">Help</span>
+            <span class="btn toggle">Settings</span>
+            <span class="btn toggle">Quests</span>
         </div>
         <div class="commands">
             <span class="btn thrusters toggle">Thrusters</span>
