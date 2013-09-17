@@ -21,6 +21,7 @@ var loader;
 var clock = new THREE.Clock();
 var controls, projector;
 var renderDistance = 5000;
+var rendered = 0;
 
 
 function engineStart(){
@@ -96,19 +97,20 @@ function render() {
     // Shimmer shimmering materials
     for (var matIndex in shimmerMaterials) {
         var v = Math.sin(elapsedTime * 2.5);
-
         var mat = shimmerMaterials[matIndex];
 //        windows.ambient.setRGB(2.5,5,10);
 //        shimmer.ambient.setRGB(5,10,5);
 //        ringShimmer.ambient.setRGB(5,10,10);
         mat.ambient.setRGB(12.5 * v + 10, 10*v + 10 , 5*v+20);
     }
-
-    guiUpdateTargetDistances();
+    if(rendered % 20 == 0){
+        guiUpdateTargetDistances();
+    }
 
     pointLight.position = camera.position;
 
     controls.update();
     gameObjects['sky'].setPosition(camera.position.x, camera.position.y, camera.position.z);
     renderer.render(scene, camera);
+    rendered++;
 }

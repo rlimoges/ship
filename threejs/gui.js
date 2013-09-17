@@ -6,6 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
+var targetList;
 var scanState = false;
 
 $(document).ready(function () {
@@ -69,6 +70,7 @@ function toggleTargetList() {
 
 function guiInitTargetList() {
     var html = "";
+    targetList = $(".targetList");
 
     for (var objID in gameObjects) {
         var obj = gameObjects[objID];
@@ -95,42 +97,58 @@ function guiInitTargetList() {
             }
 
             classes += " lvl" + level;
-            html += "<li class='" + classes + "' data-target='" + objID + "' data-name='" + obj.name + "'>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></li>";
+            html += "<li class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></li>";
         }
     }
 
-
-
-    $(".targetList").html(html);
-    // sort the list
-    $this = $(".targetList");
-    var list = $this.children();
-    list.sort(sort_by_name);
-
-    $this.html(list);
-
-    $('.targetListObj').click(function (e) {
-        gameObjects[$(this).attr('data-target')].targetObj();
-    });
-
+    targetList.html(html);
     toggleTargetList();
 }
 
-var sort_by_name = function(a, b) {
+var sort_by_name = function (a, b) {
     return a.innerHTML.toLowerCase() < b.innerHTML.toLowerCase();
+}
+
+var sort_by_distance = function (a, b) {
+    aa = parseInt(a.attributes['data-distance'].value);
+    bb = parseInt(b.attributes['data-distance'].value);
+
+    return aa < bb;
 }
 
 function guiUpdateTargetDistances() {
     $('.targetListObj').each(function () {
-        obj = $(this).attr('data-target');
+        var self = $(this);
+
+        obj = self.attr('data-target');
+        var level = 0;
+        if (self.hasClass("lvl1")) {
+            level = 1;
+        }
+        if (self.hasClass("lvl2")) {
+            level = 2;
+        }
+        if (self.hasClass("lvl3")) {
+            level = 3;
+        }
+
         distance = gameObjects[obj].getDistance();
-        if (distance < 20000) {
+        distance = (parseFloat(distance) / 200).toFixed(2);
+        self.attr("data-distance", distance);
+        if (distance < 200 && level < 2 || distance < 100 && level < 3 || distance < 50) {
             $(this).fadeIn(100);
-            distance = parseFloat(distance);
-            $(this).find(".distance").html((distance / 200).toFixed(2) + " SU");
+            $(this).find(".distance").html(distance + " SU");
         } else {
             $(this).fadeOut(100);
         }
+    });
+
+    targetList = $(".targetList");
+    var list = targetList.children();
+    list.sort(sort_by_distance);
+    targetList.html(list);
+    targetList.find('.targetListObj').click(function (e) {
+        gameObjects[$(this).attr('data-target')].targetObj();
     });
 }
 
@@ -150,7 +168,6 @@ function toggleShields() {
     } else {
         $("#menu .btn.shields").addClass('on');
     }
-
     ship.systemsToggle('shields', !ship.shieldsOn);
 }
 

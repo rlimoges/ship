@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particleSystems.js" afterPath="$PROJECT_DIR$/threejs/particleSystems.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particles.js" afterPath="$PROJECT_DIR$/threejs/particles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/engine.js" afterPath="$PROJECT_DIR$/threejs/engine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gui.js" afterPath="$PROJECT_DIR$/threejs/gui.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
     <ignored path="ship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,9 +13,9 @@
     <file path="/styles.css" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375375661137" ignored="false" />
     <file path="/styles.less" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379120539770" ignored="false" />
     <file path="/orbitControls.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379127001564" ignored="false" />
-    <file path="/gui.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379122374100" ignored="false" />
+    <file path="/gui.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379389711613" ignored="false" />
     <file path="/ship.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375482615092" ignored="false" />
-    <file path="/engine.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378345620381" ignored="false" />
+    <file path="/engine.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379388066527" ignored="false" />
     <file path="/resources.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379186821863" ignored="false" />
     <file path="/gameObjects.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379182575582" ignored="false" />
     <file path="/ship.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1377991664657" ignored="false" />
@@ -30,7 +29,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379189110055" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379381033836" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379383862840" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gui.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/gui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="24" selection-start="3510" selection-end="3525" vertical-scroll-proportion="0.0">
+            <state line="123" column="17" selection-start="3181" selection-end="3186" vertical-scroll-proportion="0.44040862">
               <folding />
             </state>
           </provider>
@@ -90,7 +89,7 @@
       <file leaf-file-name="engine.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/engine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="40" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0">
+            <state line="105" column="19" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="particleSystems.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="particleSystems.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="0" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.26674235">
+            <state line="134" column="0" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -181,16 +180,16 @@
         <option value="$PROJECT_DIR$/threejs/zone.php.js.php" />
         <option value="$PROJECT_DIR$/threejs/zone.php.js" />
         <option value="$PROJECT_DIR$/threejs/zone.php" />
-        <option value="$PROJECT_DIR$/threejs/gui.js" />
         <option value="$PROJECT_DIR$/less/styles.less" />
         <option value="$PROJECT_DIR$/threejs/orbitControls.js" />
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/system.php" />
-        <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
         <option value="$PROJECT_DIR$/threejs/particles.js" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
+        <option value="$PROJECT_DIR$/threejs/engine.js" />
+        <option value="$PROJECT_DIR$/threejs/gui.js" />
       </list>
     </option>
   </component>
@@ -471,7 +470,11 @@
       <created>1379381039937</created>
       <updated>1379381039937</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="thrusters">
+      <created>1379383870488</created>
+      <updated>1379383870488</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -506,7 +509,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2144385" sideWeight="0.6703418" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14385027" sideWeight="0.42668137" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -634,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/gui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="24" selection-start="3510" selection-end="3525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/resources.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
@@ -651,13 +647,6 @@
     <entry file="file://$PROJECT_DIR$/system.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="38" selection-start="940" selection-end="945" vertical-scroll-proportion="-15.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="40" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -685,7 +674,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.26674235">
+        <state line="134" column="0" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="19" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/gui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="17" selection-start="3181" selection-end="3186" vertical-scroll-proportion="0.44040862">
           <folding />
         </state>
       </provider>
