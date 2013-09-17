@@ -373,11 +373,11 @@ function zone(id) {
     this.addRndObj = function (type) {
         switch (type) {
             case "sky":
-//                var mats = new Array('neb1', 'neb2', 'cloud2', 'cloud3', 'spiral', 'teal');
-                var mats = new Array('neb1', 'neb2', 'stars', 'teal', 'spiral', 'stary1', 'stary1', 'neb1');
-
+                var mats = new Array('neb1', 'neb2', 'stars', 'teal', 'stary1', 'stary1', 'neb1');
                 var matIndex = mats[Math.floor(Math.random() * mats.length)]
                 var material = materials["sky-" + matIndex].clone();
+                material.color = gameObjects['sun'].color;
+
                 var m = false;
                 if(material.name=="sky-neb1"){ m = Math.ceil(Math.random()  + 0.6); }
                 if(material.name=="sky-neb2"){ m = Math.ceil(Math.random() * 1 + 1); }
@@ -385,8 +385,6 @@ function zone(id) {
                 if(material.name=="sky-spiral"){ m = 2; }
                 if(material.name=="sky-stars"){ m = Math.ceil(Math.random() * 10 + 5); }
                 if(material.name=="sky-stary1"){ m = Math.ceil(Math.random() * 5 + 2); }
-
-                material.color = gameObjects['sun'].color;
 
                 if(m){
                     material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;

@@ -222,6 +222,10 @@ function gameObject(id, sceneObj, type) {
         if (this.hasEmitters) {
             for (var system in this.emitters) {
                 var emitter = this.emitters[system];
+                if (emitter.positionOffset || this.moveable) {
+                    emitter.positionBase = this.getEmitterPosition(emitter);
+                }
+
                 if (emitter.anchorPoint) {
                     if (emitter.type == "thruster" && this.thrustersOn) {
                         emitter.update(delta);
@@ -232,10 +236,6 @@ function gameObject(id, sceneObj, type) {
                     }
                 } else {
                     emitter.update(delta);
-                }
-                if (emitter.positionOffset || this.moveable) {
-                    emitter.positionBase = this.getEmitterPosition(emitter);
-                    //emitter.velocityBase = this.getEmitterVelocity(emitter);
                 }
             }
         }

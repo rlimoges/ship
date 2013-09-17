@@ -159,12 +159,12 @@ pSystems = {
 
         particleTexture: textures['particle-smoke'],
 
-        sizeTween: new Tween([0, 0.25], [0.3, 25]),
-        opacityTween  : new Tween( [0, 0.25], [0.75, 0] ),
-        colorTween: new Tween([0, 1], [ new THREE.Vector3(0.02, 1, 0.5), new THREE.Vector3(0.05, 1, 0) ]),
+        sizeTween: new Tween([0, 1], [5, 12]),
+        opacityTween  : new Tween( [0, 3], [.9, 0] ),
+        colorTween: new Tween([0, 0.4], [ new THREE.Vector3(0.02, 1, 0.5), new THREE.Vector3(0.05, 1, 0.25) ]),
         blendStyle: THREE.AdditiveBlending,
 
-        particlesPerSecond: 25,
+        particlesPerSecond: 3,
         particleDeathAge: 3,
         emitterDeathAge: 999999
     },
