@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/engine.js" afterPath="$PROJECT_DIR$/threejs/engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gameObjects.js" afterPath="$PROJECT_DIR$/threejs/gameObjects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gui.js" afterPath="$PROJECT_DIR$/threejs/gui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/menu.php" afterPath="$PROJECT_DIR$/interface/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/orbitControls.js" afterPath="$PROJECT_DIR$/threejs/orbitControls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particleSystems.js" afterPath="$PROJECT_DIR$/threejs/particleSystems.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particles.js" afterPath="$PROJECT_DIR$/threejs/particles.js" />
+    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="code reformating">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
@@ -35,7 +28,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379393975294" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379459629902" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379459967779" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +49,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="orbitControls.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="orbitControls.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/orbitControls.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -110,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="zone.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="645" column="50" selection-start="30373" selection-end="30373" vertical-scroll-proportion="0.0">
+            <state line="523" column="0" selection-start="24316" selection-end="24316" vertical-scroll-proportion="10.091941">
               <folding />
             </state>
           </provider>
@@ -188,11 +181,11 @@
         <option value="$PROJECT_DIR$/threejs/gui.js" />
         <option value="$PROJECT_DIR$/threejs/particles.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
-        <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
         <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/interface/menu.php" />
         <option value="$PROJECT_DIR$/threejs/orbitControls.js" />
+        <option value="$PROJECT_DIR$/threejs/zone.js" />
       </list>
     </option>
   </component>
@@ -301,57 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="textures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="particle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="shaders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,20 +323,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -493,7 +422,11 @@
       <created>1379459634845</created>
       <updated>1379459634845</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="code reformating">
+      <created>1379459963831</created>
+      <updated>1379459963831</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -583,7 +516,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="code reformating" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -604,6 +537,7 @@
     <MESSAGE value="Gui optimisation" />
     <MESSAGE value="windows" />
     <MESSAGE value="optimized GUI" />
+    <MESSAGE value="code reformating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -659,20 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="940" selection-end="945" vertical-scroll-proportion="-15.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="645" column="50" selection-start="30373" selection-end="30373" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="227" column="0" selection-start="6864" selection-end="6864" vertical-scroll-proportion="0.0">
@@ -711,6 +631,20 @@
     <entry file="file://$PROJECT_DIR$/threejs/orbitControls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="940" selection-end="945" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="523" column="0" selection-start="24316" selection-end="24316" vertical-scroll-proportion="10.091941">
           <folding />
         </state>
       </provider>
