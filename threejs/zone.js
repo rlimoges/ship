@@ -379,23 +379,35 @@ function zone(id) {
                 material.color = gameObjects['sun'].color;
 
                 var m = false;
-                if(material.name=="sky-neb1"){ m = Math.ceil(Math.random()  + 0.6); }
-                if(material.name=="sky-neb2"){ m = Math.ceil(Math.random() * 1 + 1); }
-                if(material.name=="sky-teal"){ m = Math.ceil(Math.random() * 1 + 1); }
-                if(material.name=="sky-spiral"){ m = 2; }
-                if(material.name=="sky-stars"){ m = Math.ceil(Math.random() * 10 + 5); }
-                if(material.name=="sky-stary1"){ m = Math.ceil(Math.random() * 5 + 2); }
+                if (material.name == "sky-neb1") {
+                    m = Math.ceil(Math.random() + 0.6);
+                }
+                if (material.name == "sky-neb2") {
+                    m = Math.ceil(Math.random() * 1 + 1);
+                }
+                if (material.name == "sky-teal") {
+                    m = Math.ceil(Math.random() * 1 + 1);
+                }
+                if (material.name == "sky-spiral") {
+                    m = 2;
+                }
+                if (material.name == "sky-stars") {
+                    m = Math.ceil(Math.random() * 10 + 5);
+                }
+                if (material.name == "sky-stary1") {
+                    m = Math.ceil(Math.random() * 5 + 2);
+                }
 
-                if(m){
+                if (m) {
                     material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;
                     material.map.repeat.x = material.map.repeat.y = m;
                 }
 
 
                 addGameObject('sky', new THREE.Mesh(new THREE.SphereGeometry(renderDistance - 500, 25, 40), material), 'sky');
-                gameObjects['sky'].mesh.material.shininess= 100;
-                gameObjects['sky'].mesh.material.side= THREE.DoubleSide;
-                gameObjects['sky'].mesh.material.fog= false;
+                gameObjects['sky'].mesh.material.shininess = 100;
+                gameObjects['sky'].mesh.material.side = THREE.DoubleSide;
+                gameObjects['sky'].mesh.material.fog = false;
                 gameObjects['sky'].anim_r_y = 0.0001;
                 gameObjects['sky'].animated = true;
 
@@ -407,18 +419,18 @@ function zone(id) {
 
             case "sun":
                 var size = Math.random() * 100 + 50;
-                var r = Math.random() +1;
-                var g = Math.random() +1;
-                var b = Math.random() +1;
+                var r = Math.random() + 1;
+                var g = Math.random() + 1;
+                var b = Math.random() + 1;
 
                 var color = new THREE.Color();
                 color.setRGB(r, g, b);
 
                 var color2 = new THREE.Color();
-                color2.setRGB(r/2, g/2, b/2);
+                color2.setRGB(r / 2, g / 2, b / 2);
 
-                pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r/15, g/15, b/5), new THREE.Vector3(r/5, g, b/15) ]);
-                pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r/15, g/15, b/5), new THREE.Vector3(r/3, g, b/15) ]);
+                pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 15, g / 15, b / 5), new THREE.Vector3(r / 5, g, b / 15) ]);
+                pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 15, g / 15, b / 5), new THREE.Vector3(r / 3, g, b / 15) ]);
 
                 var sunGeometry = new THREE.SphereGeometry(size, 20, 20);
                 addGameObject('sun', new THREE.Mesh(sunGeometry, materials['sunMaterial']), 'sun');
@@ -453,7 +465,7 @@ function zone(id) {
                     pclass = "h";
                     g = Math.random() * 1;
                     b = Math.random() * 1;
-                    mats = new Array('lava1', 'lava2', 'lava3', 'lava4', 'sand', 'red', 'red2', 'yellow','hot', 'grey');
+                    mats = new Array('lava1', 'lava2', 'lava3', 'lava4', 'sand', 'red', 'red2', 'yellow', 'hot', 'grey');
                 }
                 if (distance > 15000) {
                     pclass = "c";
@@ -465,7 +477,7 @@ function zone(id) {
                 var color = new THREE.Color;
                 color.setRGB(r, g, b);
 
-                var romans = new Array("","I","II","III","IV","V","VI","VII","VIII","IX","X");
+                var romans = new Array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X");
 
                 addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials[mat].clone()), 'planet');
                 gameObjects[id].mesh.material.color = color;
@@ -490,11 +502,11 @@ function zone(id) {
 
             case "moon":
                 var id = "moon" + this.moons.length;
-                var planetId= Math.floor(Math.random()*this.planets.length)
+                var planetId = Math.floor(Math.random() * this.planets.length)
                 var planet = this.planets[planetId];
 
                 var size = (Math.random() * planet.size) * 0.2 + 10;
-                var distance = (planet.size * 6) + (Math.random()* planet.size * 3);
+                var distance = (planet.size * 6) + (Math.random() * planet.size * 3);
 
                 var pclass = "m";
                 var r = Math.random() * 2;
@@ -518,7 +530,7 @@ function zone(id) {
                 var color = new THREE.Color;
                 color.setRGB(r, g, b);
 
-                var alphabet = new Array("", "A","B","C","D","E","F","G","H","I","J");
+                var alphabet = new Array("", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J");
                 addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials[mat].clone()), 'moon');
                 gameObjects[id].mesh.material.color = color;
                 gameObjects[id].size = size;
@@ -526,7 +538,7 @@ function zone(id) {
                 gameObjects[id].targetable = true;
                 gameObjects[id].animated = true;
                 gameObjects[id].moveable = true;
-                gameObjects[id].orbital = size*3;
+                gameObjects[id].orbital = size * 3;
                 gameObjects[id].orbit(planet);
                 gameObjects[id].orbitRadius = distance;
                 gameObjects[id].speed = distance / 20;
@@ -536,11 +548,11 @@ function zone(id) {
 
             case "asteroid":
                 var id = "asteroid" + this.asteroids.length;
-                var planetId= Math.floor(Math.random()*this.planets.length)
+                var planetId = Math.floor(Math.random() * this.planets.length)
                 var planet = this.planets[planetId];
 
                 var size = (Math.random() * 10) + 5;
-                var distance = (planet.size * 8) + (Math.random()* planet.size * 6);
+                var distance = (planet.size * 8) + (Math.random() * planet.size * 6);
 
                 var r = Math.random();
                 var g = Math.random();
@@ -551,7 +563,7 @@ function zone(id) {
                 var color = new THREE.Color;
                 color.setRGB(r, g, b);
 
-                var alphabet = new Array("", "A","B","C","D","E","F","G","H","I","J");
+                var alphabet = new Array("", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J");
 
                 addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 10, 10), materials[mat].clone()), 'asteroid');
                 gameObjects[id].mesh.material.color = color;
@@ -560,14 +572,14 @@ function zone(id) {
                 gameObjects[id].targetable = true;
                 gameObjects[id].animated = true;
                 gameObjects[id].moveable = true;
-                gameObjects[id].orbital = size*3;
+                gameObjects[id].orbital = size * 3;
                 gameObjects[id].orbit(planet);
                 gameObjects[id].orbitRadius = distance;
                 gameObjects[id].speed = distance / 20;
                 gameObjects[id].name = "Asteroid " + planet.name + " - " + alphabet[planet.orbiters];
                 this.asteroids.push(gameObjects[id]);
                 break;
-            
+
             case "comet":
                 var id = "comet" + this.comets.length;
                 var size = Math.random() * 20 + 5;
@@ -575,7 +587,7 @@ function zone(id) {
 
                 var mats = new Array('ice1', 'ice2', 'grey');
                 var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
-                var r = Math.random()*5+5;
+                var r = Math.random() * 5 + 5;
                 addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, r, r), materials[mat].clone()), 'comet');
                 gameObjects[id].size = size;
                 gameObjects[id].anim_r_y = Math.random() / 200;
@@ -586,7 +598,7 @@ function zone(id) {
                 gameObjects[id].orbit(gameObjects['sun']);
                 gameObjects[id].orbitRadius = distance;
                 gameObjects[id].speed = distance / 40;
-                gameObjects[id].name = "Comet "+ (this.comets.length + 1);
+                gameObjects[id].name = "Comet " + (this.comets.length + 1);
                 gameObjects[id].addEmitter("cometTrail");
 
                 this.comets.push(gameObjects[id]);
@@ -614,7 +626,7 @@ function zone(id) {
 
             case "drone":
                 var id = "drone" + this.spacecraft.length;
-                var asteroidId= Math.floor(Math.random()*this.asteroids.length)
+                var asteroidId = Math.floor(Math.random() * this.asteroids.length)
                 var asteroid = this.asteroids[asteroidId];
 
                 addGameObject(id, meshes['ship2'].clone(), 'spacecraft');
@@ -625,7 +637,7 @@ function zone(id) {
                 gameObjects[id].orbital = 120;
                 gameObjects[id].orbitRadius = 100;
                 gameObjects[id].speed = 15;
-                gameObjects[id].name = "Mining Drone " + (this.spacecraft.length+1).toString();
+                gameObjects[id].name = "Mining Drone " + (this.spacecraft.length + 1).toString();
                 gameObjects[id].addEmitter("drone");
                 gameObjects[id].target = asteroid;
                 gameObjects[id].orbit(asteroid);

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/engine.js" afterPath="$PROJECT_DIR$/threejs/engine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gameObjects.js" afterPath="$PROJECT_DIR$/threejs/gameObjects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gui.js" afterPath="$PROJECT_DIR$/threejs/gui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/menu.php" afterPath="$PROJECT_DIR$/interface/menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/orbitControls.js" afterPath="$PROJECT_DIR$/threejs/orbitControls.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particleSystems.js" afterPath="$PROJECT_DIR$/threejs/particleSystems.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particles.js" afterPath="$PROJECT_DIR$/threejs/particles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
     <ignored path="ship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +35,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379393975294" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379457968194" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379459629902" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,19 +56,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="orbitControls.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="orbitControls.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/orbitControls.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="50" selection-start="5203" selection-end="5203" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.55607474">
+            <state line="24" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="-16.32">
               <folding />
             </state>
           </provider>
@@ -70,7 +77,7 @@
       <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="35" selection-start="704" selection-end="704" vertical-scroll-proportion="-11.769231">
+            <state line="27" column="35" selection-start="707" selection-end="707" vertical-scroll-proportion="-12.615385">
               <folding />
             </state>
           </provider>
@@ -88,7 +95,7 @@
       <file leaf-file-name="engine.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/engine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="19" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0">
+            <state line="105" column="20" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,7 +104,7 @@
       <file leaf-file-name="gameObjects.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="0" selection-start="6858" selection-end="6858" vertical-scroll-proportion="0.0">
+            <state line="227" column="0" selection-start="6864" selection-end="6864" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +113,7 @@
       <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="633" column="50" selection-start="30061" selection-end="30061" vertical-scroll-proportion="0.0">
+            <state line="645" column="50" selection-start="30373" selection-end="30373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +131,7 @@
       <file leaf-file-name="particleSystems.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="0" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0">
+            <state line="134" column="0" selection-start="3977" selection-end="3977" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,7 +140,7 @@
       <file leaf-file-name="particles.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/particles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="329" column="45" selection-start="10619" selection-end="10622" vertical-scroll-proportion="0.0">
+            <state line="311" column="69" selection-start="11294" selection-end="11294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,16 +183,16 @@
         <option value="$PROJECT_DIR$/threejs/zone.php.js" />
         <option value="$PROJECT_DIR$/threejs/zone.php" />
         <option value="$PROJECT_DIR$/less/styles.less" />
-        <option value="$PROJECT_DIR$/threejs/orbitControls.js" />
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/system.php" />
-        <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
+        <option value="$PROJECT_DIR$/threejs/gui.js" />
         <option value="$PROJECT_DIR$/threejs/particles.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
-        <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
+        <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
+        <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/interface/menu.php" />
-        <option value="$PROJECT_DIR$/threejs/gui.js" />
+        <option value="$PROJECT_DIR$/threejs/orbitControls.js" />
       </list>
     </option>
   </component>
@@ -482,7 +489,11 @@
       <created>1379457971391</created>
       <updated>1379457971391</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="optimized GUI">
+      <created>1379459634845</created>
+      <updated>1379459634845</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -634,51 +645,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/orbitControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="50" selection-start="5203" selection-end="5203" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="329" column="45" selection-start="10619" selection-end="10622" vertical-scroll-proportion="0.0">
+        <state line="311" column="69" selection-start="11294" selection-end="11294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="6858" selection-end="6858" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="19" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/resources.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="64" selection-start="4975" selection-end="5009" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="633" column="50" selection-start="30061" selection-end="30061" vertical-scroll-proportion="0.0">
+        <state line="134" column="0" selection-start="3977" selection-end="3977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -690,16 +666,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="645" column="50" selection-start="30373" selection-end="30373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="227" column="0" selection-start="6864" selection-end="6864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="20" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="64" selection-start="4975" selection-end="5009" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interface/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="704" selection-end="704" vertical-scroll-proportion="-11.769231">
+        <state line="27" column="35" selection-start="707" selection-end="707" vertical-scroll-proportion="-12.615385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.55607474">
+        <state line="24" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="-16.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/orbitControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

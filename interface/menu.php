@@ -10,8 +10,11 @@
 <div class="panel scanInfo">
     <div class="content">
         <h2>Name: <span></span></h2>
+
         <h3>Type: <span></span></h3>
+
         <p class='orbiting'>Orbiting: <span></span></p>
+
         <p class='distanceFromSun'>Distance from sun: <span></span> SU</p>
         <span class="btn ok">OK</span>
     </div>

@@ -15,7 +15,7 @@ $(document).ready(function () {
     $scanInfo = $('.panel.scanInfo');
     $menuContainer = $("#menu");
     $target = $menuContainer.find(".target");
-    $commands = $menuContainer.find('.panel.commandPanel');;
+    $commands = $menuContainer.find('.panel.commandPanel');
     $btnScan = $commands.find('.btn.scan');
     $btnWeapons = $commands.find('.btn.weapons');
     $btnThrusters = $commands.find('.btn.thrusters');

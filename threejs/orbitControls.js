@@ -244,19 +244,14 @@ THREE.OrbitControls = function (object, domElement) {
 
 
     function getAutoRotationAngle() {
-
         return 2 * Math.PI / 60 / 60 * scope.autoRotateSpeed;
-
     }
 
     function getZoomScale() {
-
         return Math.pow(0.95, scope.userZoomSpeed);
-
     }
 
     function onMouseDown(event) {
-
         if (scope.enabled === false) return;
         if (scope.userRotate === false) return;
 
@@ -286,41 +281,29 @@ THREE.OrbitControls = function (object, domElement) {
     }
 
     function onMouseMove(event) {
-
         if (scope.enabled === false) return;
         event.preventDefault();
 
         if (state === STATE.ROTATE) {
             rotateEnd.set(event.clientX, event.clientY);
             rotateDelta.subVectors(rotateEnd, rotateStart);
-
             scope.rotateLeft(2 * Math.PI * rotateDelta.x / PIXELS_PER_ROUND * scope.userRotateSpeed);
             scope.rotateUp(2 * Math.PI * rotateDelta.y / PIXELS_PER_ROUND * scope.userRotateSpeed);
-
             rotateStart.copy(rotateEnd);
-
         } else if (state === STATE.ZOOM) {
-
             zoomEnd.set(event.clientX, event.clientY);
             zoomDelta.subVectors(zoomEnd, zoomStart);
-
             if (zoomDelta.y > 0) {
-
                 scope.zoomIn();
-
             } else {
-
                 scope.zoomOut();
-
             }
 
             zoomStart.copy(zoomEnd);
 
         } else if (state === STATE.PAN) {
-
             var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
             var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
-
             scope.pan(new THREE.Vector3(-movementX, movementY, 0));
         }
     }
