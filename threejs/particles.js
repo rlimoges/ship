@@ -181,7 +181,7 @@ function ParticleEngine()
 			
 	// store colors in HSL format in a THREE.Vector3 object
 	// http://en.wikipedia.org/wiki/HSL_and_HSV
-	this.colorBase   = new THREE.Vector3(0.0, 1.0, 0.5); 
+	this.colorBase   = new THREE.Vector3(0.0, 1.0, 0.5);
 	this.colorSpread = new THREE.Vector3(0.0, 0.0, 0.0);
 	this.colorTween  = new Tween();
 	

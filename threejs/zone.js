@@ -416,8 +416,8 @@ function zone(id) {
                 var color2 = new THREE.Color();
                 color2.setRGB(r/2, g/2, b/2);
 
-                pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r/15, g/15, b/15), new THREE.Vector3(r/5, g/5, b/5) ]);
-                pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r/15, g/15, b/15), new THREE.Vector3(r/3, g/3, b/3) ]);
+                pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r/15, g/15, b/5), new THREE.Vector3(r/5, g, b/15) ]);
+                pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r/15, g/15, b/5), new THREE.Vector3(r/3, g, b/15) ]);
 
                 var sunGeometry = new THREE.SphereGeometry(size, 20, 20);
                 addGameObject('sun', new THREE.Mesh(sunGeometry, materials['sunMaterial']), 'sun');

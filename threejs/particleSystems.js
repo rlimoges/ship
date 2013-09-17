@@ -68,7 +68,6 @@ pSystems = {
         positionSpread: new THREE.Vector3(-500, -500, -500),
 
         velocityStyle: Type.CUBE,
-        //velocityBase: new THREE.Vector3(200, 200, 200),
         velocitySpread: new THREE.Vector3(1000, 1000, 1000),
 
         opacityTween: new Tween([0, 0.5, 2.5, 3], [0, 1, 1, 0]),
@@ -89,7 +88,6 @@ pSystems = {
         positionSpread: new THREE.Vector3(-20, -20, -20),
 
         velocityStyle: Type.CUBE,
-        //velocityBase: new THREE.Vector3(200, 200, 200),
         velocitySpread: new THREE.Vector3(40, 40, 40),
 
         opacityTween: new Tween([0, 0.25, 0.75, 2], [0, 1, 1, 0]),
@@ -135,7 +133,6 @@ pSystems = {
         velocityScalar: 0.25,
         velocitySpread: new THREE.Vector3(20,20,20),
 
-
         particleTexture: textures['particle-smoke'],
 
         sizeTween: new Tween([0,1], [20, 120]),
@@ -164,7 +161,7 @@ pSystems = {
         colorTween: new Tween([0, 0.4], [ new THREE.Vector3(0.02, 1, 0.5), new THREE.Vector3(0.05, 1, 0.25) ]),
         blendStyle: THREE.AdditiveBlending,
 
-        particlesPerSecond: 3,
+        particlesPerSecond: 5,
         particleDeathAge: 3,
         emitterDeathAge: 999999
     },
@@ -204,7 +201,6 @@ pSystems = {
 
         particleTexture: textures['particle-spark'],
 
-
         opacityTween: new Tween([0,0.25], [1, 0]),
         colorTween: new Tween([0.25, 1.0], [ new THREE.Vector3(0.02, 0.02, 0.95), new THREE.Vector3(0.05, 0.02, 0) ]),
 
@@ -214,5 +210,4 @@ pSystems = {
         particleDeathAge: 0.25,
         emitterDeathAge: 9999
     }
-
 }
