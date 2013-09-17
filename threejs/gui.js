@@ -25,28 +25,22 @@ $(document).ready(function () {
     document.oncontextmenu = function () {
         return false;
     };
-    $("#menu .btn.shields").on('click', function (e) {
-        e.preventDefault();
+    $btnShields.on('click', function (e) {
         toggleShields();
     });
-    $("#menu .btn.weapons").on('click', function (e) {
-        e.preventDefault();
+    $btnWeapons.on('click', function (e) {
         toggleWeapons();
     });
-    $("#menu .btn.thrusters").on('click', function (e) {
-        e.preventDefault();
+    $btnThrusters.on('click', function (e) {
         toggleThrusters();
     });
     $target.on('click', function (e) {
-        e.preventDefault();
         toggleTargetList()
     });
     $btnScan.on('click', function (e) {
-        e.preventDefault();
         controls.enterZoom();
     });
     $btnOk.on('click', function (e) {
-        e.preventDefault();
         controls.exitZoom();
         $scanInfo.hide(250);
         $btnOk.hide(250);
