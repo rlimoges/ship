@@ -322,6 +322,7 @@ function randomZone(id) {
     system = new zone(id);
 
     system.addRndObj('sun');
+
     system.addRndObj('sky');
 
     system.addRndObj('planet');
@@ -330,6 +331,7 @@ function randomZone(id) {
     system.addRndObj('planet');
     system.addRndObj('planet');
     system.addRndObj('planet');
+
     system.addRndObj('moon');
     system.addRndObj('moon');
     system.addRndObj('moon');
@@ -348,6 +350,7 @@ function randomZone(id) {
     system.addRndObj('asteroid');
     system.addRndObj('asteroid');
     system.addRndObj('asteroid');
+
     system.addRndObj('comet');
     system.addRndObj('comet');
     system.addRndObj('comet');
@@ -371,16 +374,17 @@ function zone(id) {
         switch (type) {
             case "sky":
 //                var mats = new Array('neb1', 'neb2', 'cloud2', 'cloud3', 'spiral', 'teal');
-                var mats = new Array('neb1', 'neb2', 'teal');
+                var mats = new Array('neb1', 'neb2', 'stars', 'teal', 'spiral', 'stary1', 'stary1', 'neb1');
 
                 var matIndex = mats[Math.floor(Math.random() * mats.length)]
                 var material = materials["sky-" + matIndex].clone();
-
-//                var material = materials["sky-teal"].clone();
-
                 var m = false;
-                if(material.name=="sky-neb1"){ m = Math.ceil(Math.random() * 2 + 1); }
-                if(material.name=="sky-neb2"){ m = Math.ceil(Math.random() * 2 + 1); }
+                if(material.name=="sky-neb1"){ m = Math.ceil(Math.random()  + 0.6); }
+                if(material.name=="sky-neb2"){ m = Math.ceil(Math.random() * 1 + 1); }
+                if(material.name=="sky-teal"){ m = Math.ceil(Math.random() * 1 + 1); }
+                if(material.name=="sky-spiral"){ m = 2; }
+                if(material.name=="sky-stars"){ m = Math.ceil(Math.random() * 10 + 5); }
+                if(material.name=="sky-stary1"){ m = Math.ceil(Math.random() * 5 + 2); }
 
                 material.color = gameObjects['sun'].color;
 
@@ -439,7 +443,6 @@ function zone(id) {
                 var id = "planet" + this.planets.length;
                 var size = Math.random() * 300 + 50;
                 var distance = Math.random() * 34000 + 1000;
-
 
                 var pclass = "m";
                 var r = Math.random() * 2;
