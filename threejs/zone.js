@@ -617,6 +617,7 @@ function zone(id) {
                 var asteroidId= Math.floor(Math.random()*this.asteroids.length)
                 var asteroid = this.asteroids[asteroidId];
 
+
                 addGameObject(id, meshes['ship2'].clone(), 'spacecraft');
                 gameObjects[id].anim_r_y = 0.001;
                 gameObjects[id].targetable = true;
