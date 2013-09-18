@@ -24,7 +24,7 @@ var renderDistance = 5000;
 var rendered = 0;
 
 
-function engineStart(){
+function engineStart() {
     // Load resources & start engine
     buildMaterials();
     loadModels();
@@ -34,7 +34,7 @@ function init() {
     container = document.createElement('div');
     document.body.appendChild(container);
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2( 0x000000, 0.00025 );
+    scene.fog = new THREE.FogExp2(0x000000, 0.00025);
 
     // Lights
     pointLight = new THREE.PointLight(0xFFFFFF, 2, 350);
@@ -65,7 +65,7 @@ function init() {
 
     // Events
     window.addEventListener('resize', onWindowResize, false);
-    window.addEventListener( 'mousedown', onDocumentMouseDown, false );
+    window.addEventListener('mousedown', onDocumentMouseDown, false);
     controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     render();
@@ -82,15 +82,15 @@ function render() {
     // Update vertex shaded materials
     customUniformsShields.time.value += delta / 100;
     customUniformsSun.time.value += delta / 100;
-    customUniformsAtmosphere.time.value += delta / 200;
+    customUniformsAtmosphere.time.value += delta / 100;
 
     // Update gameObject positions, animations, particles
     for (var obj in gameObjects) {
-        if(gameObjects[obj].moveable || gameObjects[obj].orbiting !== undefined)
+        if (gameObjects[obj].moveable || gameObjects[obj].orbiting !== undefined)
             gameObjects[obj].updatePosition();
-        if(gameObjects[obj].animated)
+        if (gameObjects[obj].animated)
             gameObjects[obj].updateAnimations();
-        if(gameObjects[obj].hasEmitters)
+        if (gameObjects[obj].hasEmitters)
             gameObjects[obj].updateEmitters();
     }
 
@@ -101,9 +101,9 @@ function render() {
 //        windows.ambient.setRGB(2.5,5,10);
 //        shimmer.ambient.setRGB(5,10,5);
 //        ringShimmer.ambient.setRGB(5,10,10);
-        mat.ambient.setRGB(12.5 * v + 10, 10*v + 10 , 5*v+20);
+        mat.ambient.setRGB(12.5 * v + 10, 10 * v + 10, 5 * v + 20);
     }
-    if(rendered % 20 == 0){
+    if (rendered % 20 == 0) {
         guiUpdateTargetDistances();
     }
 

@@ -21,7 +21,7 @@ function gameObject(id, sceneObj, type) {
     this.id = id;
     this.mesh = sceneObj;
     this.size = 1;
-    this.type=type;
+    this.type = type;
     //this.mesh.updateMatrixWorld(true);
     this.mesh._gameObject = id;
     this.name = id;
@@ -92,7 +92,7 @@ function gameObject(id, sceneObj, type) {
     this.targetObj = function () {
         if (this.targetable) {
             ship.target = this;
-            if(this == ship){
+            if (this == ship) {
                 guiUpdateTarget(this);
             }
 
@@ -128,11 +128,11 @@ function gameObject(id, sceneObj, type) {
             if (this.target.mesh) {
                 if (this.target.getDistance() > this.target.orbital && this.thrustersOn) {
                     this.lastPosition = this.mesh.position;
-                    var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 250);
+                    var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 800);
                     gameObjects['ship'].setPosition(np.x, np.y, np.z);
                 }
                 this.lookAt(this.target.mesh.position);
-                if(this == ship){
+                if (this == ship) {
                     guiUpdateTarget(this.target);
                 }
 

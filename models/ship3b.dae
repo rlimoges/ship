@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.67.0 r57141</authoring_tool>
     </contributor>
-    <created>2013-09-09T00:11:20</created>
-    <modified>2013-09-09T00:11:20</modified>
+    <created>2013-09-17T20:28:53</created>
+    <modified>2013-09-17T20:28:53</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -142,7 +142,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Ship3" name="Ship3" type="NODE">
-        <matrix sid="transform">0.9725277 -0.2326744 -0.007239737 -0.04389296 0.008993515 0.006477511 0.9999385 -1.381105 -0.2326132 -0.9725331 0.00839212 0.005394459 0 0 0 1</matrix>
+        <matrix sid="transform">0.9725277 -0.2326744 -0.007239737 -0.04389296 0.008993515 0.006477511 0.9999385 0.1349427 -0.2326132 -0.9725331 0.00839212 0.005394459 0 0 0 1</matrix>
         <instance_geometry url="#Ship3-mesh">
           <bind_material>
             <technique_common>
