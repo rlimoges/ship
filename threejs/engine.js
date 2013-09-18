@@ -82,7 +82,7 @@ function render() {
     // Update vertex shaded materials
     customUniformsShields.time.value += delta / 100;
     customUniformsSun.time.value += delta / 100;
-    customUniformsAtmosphere.time.value += delta / 200;
+    customUniformsAtmosphere.time.value += delta / 100;
 
     // Update gameObject positions, animations, particles
     for (var obj in gameObjects) {

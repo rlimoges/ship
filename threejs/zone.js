@@ -410,14 +410,11 @@ function zone(id) {
                 gameObjects['sky'].anim_r_y = 0.0001;
                 gameObjects['sky'].animated = true;
 
-                addGameObject('sky_inner', new THREE.Mesh(new THREE.SphereGeometry(100, 25, 40), materials['atmosphere']), 'skyInner');
-                gameObjects['sky'].followers.push(gameObjects['sky_inner']);
-
                 ship.mesh.children[0].material.materials[1].map = material.map;
                 break;
 
             case "sun":
-                var size = Math.random() * 100 + 50;
+                var size = Math.random() * 50 + 50;
                 var r = Math.random() + 1;
                 var g = Math.random() + 1;
                 var b = Math.random() + 1;
