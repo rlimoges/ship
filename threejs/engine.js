@@ -20,7 +20,7 @@ var ship;
 var loader;
 var clock = new THREE.Clock();
 var controls, projector;
-var renderDistance = 5000;
+var renderDistance = 8000;
 var rendered = 0;
 
 

@@ -105,7 +105,7 @@ pSystems = {
     sunFlares: {
         positionStyle: Type.CUBE,
         positionBase: new THREE.Vector3(0, 0, 0),
-        positionSpread: new THREE.Vector3(-30, -30, -30),
+        positionSpread: new THREE.Vector3(30, 30, 30),
 
         velocityStyle: Type.CUBE,
         velocityBase: new THREE.Vector3(0, 0, 0),

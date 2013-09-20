@@ -356,6 +356,8 @@ function randomZone(id) {
     system.addRndObj('comet');
 
     system.addRndObj('station');
+    system.addRndObj('station2');
+
     system.addRndObj('drone');
     system.addRndObj('drone');
 }
@@ -419,12 +421,12 @@ function zone(id) {
                 var g = Math.random() + 1;
                 var b = Math.random() + 1;
                 var color = new THREE.Color();
-                color.setRGB(r, g, b);
+                color.setHSL(r, g, b);
                 var color2 = new THREE.Color();
-                color2.setRGB(r / 2, g / 2, b / 2);
+                color2.setHSL(r / 2, g / 2, b / 2);
 
-                pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 15, g / 15, b / 5), new THREE.Vector3(r / 5, g, b / 15) ]);
-                pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 15, g / 15, b / 5), new THREE.Vector3(r / 3, g, b / 15) ]);
+                pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 5, g / 5, b / 5), new THREE.Vector3(r / 2, g / 3, b / 3) ]);
+                pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 5, g / 5, b / 5), new THREE.Vector3(r / 2, g / 3, b / 3) ]);
 
                 var sunGeometry = new THREE.SphereGeometry(size, 20, 20);
                 addGameObject('sun', new THREE.Mesh(sunGeometry, materials['sunMaterial']), 'sun');
@@ -603,6 +605,26 @@ function zone(id) {
                 gameObjects['stationShields'].setScale(1, 0.5, 1);
                 gameObjects[id].followers.push(gameObjects['stationShields']);
                 gameObjects[id].mesh.children[0].material.materials[1].map = gameObjects['sky'].mesh.material.map;
+                break;
+
+            case "station2":
+                var id = "station2";
+                addGameObject(id, meshes['station2'].clone(), 'spacecraft');
+                gameObjects[id].anim_r_y = 0.001;
+                gameObjects[id].targetable = true;
+                gameObjects[id].animated = true;
+                gameObjects[id].moveable = true;
+                gameObjects[id].orbital = 120;
+                gameObjects[id].orbitRadius = gameObjects['planet2'].size * 3;
+                gameObjects[id].speed = 15;
+                gameObjects[id].name = "Space station Beta";
+                gameObjects[id].orbit(gameObjects['planet2']);
+                addGameObject('stationLightSource2', new THREE.PointLight(0xDDDDFF, 20, 80), 'light');
+                gameObjects[id].followers.push(gameObjects['stationLightSource2']);
+                addGameObject('stationShields2', new THREE.Mesh(new THREE.SphereGeometry(60, 30, 30), materials['shieldsMaterial']), 'shields');
+                gameObjects['stationShields2'].setScale(1, 0.5, 1);
+                gameObjects[id].followers.push(gameObjects['stationShields2']);
+                gameObjects[id].mesh.children[0].material.materials[2].map = gameObjects['sky'].mesh.material.map;
                 break;
 
             case "drone":

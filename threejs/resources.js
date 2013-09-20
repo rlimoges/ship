@@ -83,13 +83,14 @@ function loadModels(){
     load_ship();
     load_ship2();
     load_station();
+    load_station2();
 }
 
 
 function loadedModel(model){
     loadedModels.push(model);
 
-    if(loadedModels.length >= 3) {
+    if(loadedModels.length >= 4) {
         setTimeout("init();" , 1000);
     }
 }
@@ -136,8 +137,6 @@ function load_ship2() {
 
         metal3.map= textures['planet-iron'];
         metal3.specularMap = textures['planet-iron'];
-        metal3.bumpMap = textures['planet-iron'];
-        metal3.bumpScale = 0.01;
         metal3.shininess = 10;
 
         shimmer3.map = textures['planet-ice1'];
@@ -182,5 +181,26 @@ function load_station() {
         shimmerMaterials.push(windows, shimmer, ringShimmer);
 
         loadedModel('station');
+    });
+}
+
+
+
+function load_station2() {
+    loader.load('models/station4.dae', function (collada) {
+        var station2 = collada.scene;
+        station2.scale.x = station2.scale.y = station2.scale.z = 10;
+
+        var shimmer4 = station2.children[0].material.materials[1];
+        var shimmer5 = station2.children[0].material.materials[2];
+        var metal4 = station2.children[0].material.materials[0];
+
+        metal4.map= textures['structure-plaque'].clone();
+        shimmer4.map = textures['structure-plaque'].clone();
+
+        meshes['station2'] = station2;
+        shimmerMaterials.push(shimmer4, shimmer5);
+
+        loadedModel('station2');
     });
 }
