@@ -416,7 +416,7 @@ function zone(id) {
                 break;
 
             case "sun":
-                var size = Math.random() * 50 + 50;
+                var size = Math.random() * 50 + 25;
                 var r = Math.random() + 1;
                 var g = Math.random() + 1;
                 var b = Math.random() + 1;
