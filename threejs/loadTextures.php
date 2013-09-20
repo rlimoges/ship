@@ -26,10 +26,14 @@ function loadTextures(){
             }
         }
 
-        importDir('c:\wampSLT\data\htdocs\ship\textures\particle', 'particle');
-        importDir('c:\wampSLT\data\htdocs\ship\textures\planet', 'planet');
-        importDir('c:\wampSLT\data\htdocs\ship\textures\sky', 'sky');
-        importDir('c:\wampSLT\data\htdocs\ship\textures\structure', 'structure');
+        //$path = 'c:\wampSLT\data\htdocs\ship\\';
+        $path = 'd:\xampp\htdocs\ship';
+
+
+        importDir($path . '\textures\particle', 'particle');
+        importDir($path . '\textures\planet', 'planet');
+        importDir($path . '\textures\sky', 'sky');
+        importDir($path . '\textures\structure', 'structure');
     ?>
 }
 

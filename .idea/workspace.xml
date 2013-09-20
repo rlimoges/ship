@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/station4.dae" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/loadTextures.php" afterPath="$PROJECT_DIR$/threejs/loadTextures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ship.iws" />
@@ -23,12 +23,12 @@
     <file path="/a.dummy" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379115667132" ignored="false" />
     <file path="/particleSystems.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379461070875" ignored="false" />
     <file path="/particles.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379463606938" ignored="false" />
-    <file path="/loadTextures.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1377995262569" ignored="false" />
+    <file path="/loadTextures.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379651363936" ignored="false" />
     <file path="/zone.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379115686748" ignored="false" />
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379650721358" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379651058973" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379651268697" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,19 +67,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/menu.php">
+      <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/threejs/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="35" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/threejs/resources.js">
+      <file leaf-file-name="loadTextures.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="46" selection-start="6453" selection-end="6453" vertical-scroll-proportion="-28.86">
+            <state line="35" column="27" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.69590646">
               <folding />
             </state>
           </provider>
@@ -103,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zone.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="427" column="141" selection-start="19273" selection-end="19273" vertical-scroll-proportion="0.75255394">
+            <state line="427" column="141" selection-start="19273" selection-end="19273" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/threejs/loadTextures.php" />
         <option value="$PROJECT_DIR$/threejs/events.js" />
         <option value="$PROJECT_DIR$/threejs/zone.php.js.php" />
         <option value="$PROJECT_DIR$/threejs/zone.php.js" />
@@ -186,6 +185,7 @@
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
+        <option value="$PROJECT_DIR$/threejs/loadTextures.php" />
       </list>
     </option>
   </component>
@@ -471,7 +471,11 @@
       <created>1379651063374</created>
       <updated>1379651063374</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- sun color / scene color tweaks&#10;- Station 2&#10;">
+      <created>1379651271370</created>
+      <updated>1379651271370</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -496,14 +500,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.157754" sideWeight="0.6703418" order="3" side_tool="false" content_ui="tabs" x="1333" y="212" width="467" height="907" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21611527" sideWeight="0.6703418" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21611527" sideWeight="0.6703418" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14385027" sideWeight="0.42668137" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -607,11 +611,6 @@
         <state line="33" column="12" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/zone.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="50" selection-start="84" selection-end="96" vertical-scroll-proportion="0.0">
@@ -668,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/resources.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="46" selection-start="6453" selection-end="6453" vertical-scroll-proportion="-28.86">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="50" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
@@ -691,7 +683,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/zone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="427" column="141" selection-start="19273" selection-end="19273" vertical-scroll-proportion="0.75255394">
+        <state line="427" column="141" selection-start="19273" selection-end="19273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="27" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.69590646">
           <folding />
         </state>
       </provider>
