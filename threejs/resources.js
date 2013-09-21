@@ -80,9 +80,9 @@ function loadModels(){
     loader = new THREE.ColladaLoader();
     loader.options.convertUpAxis = true;
 
-    load_ship();
+    load_ship1();
     load_ship2();
-    load_station();
+    load_station1();
     load_station2();
 }
 
@@ -95,8 +95,8 @@ function loadedModel(model){
     }
 }
 
-function load_ship() {
-    loader.load('models/ship2h.dae', function (collada) {
+function load_ship1() {
+    loader.load('models/ship1.dae', function (collada) {
         var ship = collada.scene;
         ship.scale.x = ship.scale.y = ship.scale.z = 1;
 
@@ -128,7 +128,7 @@ function load_ship() {
 }
 
 function load_ship2() {
-    loader.load('models/ship3b.dae', function (collada) {
+    loader.load('models/ship2.dae', function (collada) {
         var ship2 = collada.scene;
         ship2.scale.x = ship2.scale.y = ship2.scale.z = 10;
 
@@ -148,8 +148,8 @@ function load_ship2() {
     });
 }
 
-function load_station() {
-    loader.load('models/station2.dae', function (collada) {
+function load_station1() {
+    loader.load('models/station1.dae', function (collada) {
         var station = collada.scene;
         station.scale.x = station.scale.y = station.scale.z = 10;
 
@@ -187,7 +187,7 @@ function load_station() {
 
 
 function load_station2() {
-    loader.load('models/station4.dae', function (collada) {
+    loader.load('models/station2.dae', function (collada) {
         var station2 = collada.scene;
         station2.scale.x = station2.scale.y = station2.scale.z = 10;
 
