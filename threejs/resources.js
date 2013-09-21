@@ -1,13 +1,13 @@
 var loadedModels = new Array();
 
-function addMaterial(id, mat){
+function addMaterial(id, mat) {
     materials[id] = mat;
     materials[id].name = id;
 }
 
-function buildMaterials(){
+function buildMaterials() {
     // Build default texture materials
-    for (var id in textures){
+    for (var id in textures) {
         mat = new THREE.MeshLambertMaterial({
             map: textures[id]
         });
@@ -76,34 +76,51 @@ function buildMaterials(){
 }
 
 // load Models
-function loadModels(){
+function loadModels() {
     loader = new THREE.ColladaLoader();
     loader.options.convertUpAxis = true;
 
     load_ship1();
-    load_ship2();
-    load_station1();
-    load_station2();
 }
 
 
-function loadedModel(model){
+function loadedModel(model) {
     loadedModels.push(model);
+    var t = 250;
+    console.log(model + " loaded.")
 
-    if(loadedModels.length >= 4) {
-        setTimeout("init();" , 1000);
+    switch (loadedModels.length) {
+        case 1:
+            setTimeout("load_ship2();", t);
+            break;
+
+        case 2:
+            setTimeout("load_station1();", t);
+            break;
+
+        case 3:
+            setTimeout("load_station2();", t);
+            break;
+
+        case 4:
+            setTimeout("load_station3();", t);
+            break;
+
+        case 5:
+            setTimeout("init();", t*2);
+            break;
     }
 }
 
 function load_ship1() {
     loader.load('models/ship1.dae', function (collada) {
-        var ship = collada.scene;
-        ship.scale.x = ship.scale.y = ship.scale.z = 1;
+        var ship1 = collada.scene;
+        ship1.scale.x = ship1.scale.y = ship1.scale.z = 1;
 
-        var matMain = ship.children[0].material.materials[4];
-        var matWindow = ship.children[0].material.materials[1];
-        var matLasers = ship.children[0].material.materials[3];
-        var matHighlight = ship.children[0].material.materials[0];
+        var matMain = ship1.children[0].material.materials[4];
+        var matWindow = ship1.children[0].material.materials[1];
+        var matLasers = ship1.children[0].material.materials[3];
+        var matHighlight = ship1.children[0].material.materials[0];
 
         matMain.map = textures['structure-plaque'];
         matMain.specularMap = textures['structure-plaque_SPEC'];
@@ -122,7 +139,7 @@ function load_ship1() {
 
         matLasers.map = textures['sky-neb1'];
 
-        meshes['ship'] = ship;
+        meshes['ship'] = ship1;
         loadedModel('ship');
     });
 }
@@ -132,17 +149,17 @@ function load_ship2() {
         var ship2 = collada.scene;
         ship2.scale.x = ship2.scale.y = ship2.scale.z = 10;
 
-        var shimmer3 = ship2.children[0].material.materials[0];
-        var metal3 = ship2.children[0].material.materials[1];
+        var shimmer = ship2.children[0].material.materials[0];
+        var metal = ship2.children[0].material.materials[1];
 
-        metal3.map= textures['planet-iron'];
-        metal3.specularMap = textures['planet-iron'];
-        metal3.shininess = 10;
+        metal.map = textures['planet-iron'];
+        metal.specularMap = textures['planet-iron'];
+        metal.shininess = 10;
 
-        shimmer3.map = textures['planet-ice1'];
+        shimmer.map = textures['planet-ice1'];
 
         meshes['ship2'] = ship2;
-        shimmerMaterials.push(shimmer3);
+        shimmerMaterials.push(shimmer);
 
         loadedModel('ship2');
     });
@@ -150,16 +167,16 @@ function load_ship2() {
 
 function load_station1() {
     loader.load('models/station1.dae', function (collada) {
-        var station = collada.scene;
-        station.scale.x = station.scale.y = station.scale.z = 10;
+        var station1 = collada.scene;
+        station1.scale.x = station1.scale.y = station1.scale.z = 10;
 
-        var metal = station.children[0].material.materials[0];
-        var windows = station.children[0].material.materials[1];
-        var shimmer = station.children[0].material.materials[2];
-        var outerRingmetal = station.children[0].children[0].material.materials[0];
-        var ringShimmer = station.children[0].children[0].material.materials[1];
+        var metal = station1.children[0].material.materials[0];
+        var windows = station1.children[0].material.materials[1];
+        var shimmer = station1.children[0].material.materials[2];
+        var outerRingmetal = station1.children[0].children[0].material.materials[0];
+        var ringShimmer = station1.children[0].children[0].material.materials[1];
 
-        metal.map= textures['structure-plaque'];
+        metal.map = textures['structure-plaque'];
         metal.specularMap = textures['structure-plaque_SPEC'];
         metal.bumpMap = textures['structure-plaque_OCC'];
         metal.bumpScale = 0.01;
@@ -173,34 +190,59 @@ function load_station1() {
         outerRingmetal.shininess = 10;
 
         shimmer.map = textures['planet-ice1'];
-        windows.map = textures['sky-neb3'];
         ringShimmer.map = textures['planet-ice1'];
-        windows.reflection = 1;
 
-        meshes['station'] = station;
+        meshes['station'] = station1;
         shimmerMaterials.push(windows, shimmer, ringShimmer);
 
         loadedModel('station');
     });
 }
 
-
-
 function load_station2() {
     loader.load('models/station2.dae', function (collada) {
         var station2 = collada.scene;
         station2.scale.x = station2.scale.y = station2.scale.z = 10;
 
-        var shimmer4 = station2.children[0].material.materials[1];
-        var shimmer5 = station2.children[0].material.materials[2];
-        var metal4 = station2.children[0].material.materials[0];
+        var main = station2.children[0].material.materials[0];
+        var shimmer = station2.children[0].material.materials[1];
+        var windows = station2.children[0].material.materials[2];
 
-        metal4.map= textures['structure-plaque'].clone();
-        shimmer4.map = textures['structure-plaque'].clone();
+        main.map = textures['structure-plaque'];
+        main.specularMap = textures['structure-plaque_SPEC'];
+        main.bumpMap = textures['structure-plaque_OCC'];
+        main.bumpScale = 0.01;
+        main.shininess = 10;
+
+        shimmer.map = textures['planet-water'];
 
         meshes['station2'] = station2;
-        shimmerMaterials.push(shimmer4, shimmer5);
+        shimmerMaterials.push(shimmer, windows);
 
         loadedModel('station2');
+    });
+}
+
+function load_station3() {
+    loader.load('models/station3.dae', function (collada) {
+        var station3 = collada.scene;
+        station3.scale.x = station3.scale.y = station3.scale.z = 10;
+
+        var main = station3.children[0].material.materials[0];
+        var shimmer = station3.children[0].material.materials[1];
+        var windows = station3.children[0].material.materials[2];
+
+        main.map = textures['structure-plaque'];
+        main.specularMap = textures['structure-plaque_SPEC'];
+        main.bumpMap = textures['structure-plaque_OCC'];
+        main.bumpScale = 0.01;
+        main.shininess = 10;
+
+        shimmer.map = textures['planet-water'];
+
+        meshes['station3'] = station3;
+        shimmerMaterials.push(shimmer, windows);
+
+        loadedModel('station3');
     });
 }

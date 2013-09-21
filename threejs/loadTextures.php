@@ -26,8 +26,8 @@ function loadTextures(){
             }
         }
 
-        $path = 'c:\wampSLT\data\htdocs\ship';
-        //$path = 'd:\xampp\htdocs\ship';
+        //$path = 'c:\wampSLT\data\htdocs\ship';
+        $path = 'd:\xampp\htdocs\ship';
 
 
         importDir($path . '\textures\particle', 'particle');
