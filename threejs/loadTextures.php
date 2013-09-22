@@ -8,35 +8,46 @@ function addTexture(id, fn, rx, ry){
 }
 
 function loadTextures(){
-    <?php
+<?php
 
-        function importDir($path, $n){
-            if ($handle = opendir($path)) {
-                while (false !== ($fn = readdir($handle))) {
-                    if ($fn != "." && $fn != "..") {
-                        $name = $fn;
-                        $name=str_replace(".jpg", "", $name);
-                        $name=str_replace(".png", "", $name);
-                        $name = $n . "-" . $name;
-                        $fn = $n . '/' .  $fn;
-                        echo "addTexture('$name', '$fn' ,1,1); \n";
-                    }
-                }
-                closedir($handle);
+function importDir($path, $n)
+{
+    if ($handle = opendir($path)) {
+        while (false !== ($fn = readdir($handle))) {
+            if ($fn != "." && $fn != "..") {
+                $name = $fn;
+                $name = str_replace(".jpg", "", $name);
+                $name = str_replace(".png", "", $name);
+                $name = $n . "-" . $name;
+                $fn = $n . '/' . $fn;
+                echo "addTexture('$name', '$fn' ,1,1); \n";
             }
         }
-
-        //$path = 'c:\wampSLT\data\htdocs\ship';
-        $path = 'c:\xampp\htdocs\ship';
-
-        importDir($path . '\textures\particle', 'particle');
-        importDir($path . '\textures\planet', 'planet');
-        importDir($path . '\textures\sky', 'sky');
-        importDir($path . '\textures\structure', 'structure');
-
-    
-
-    ?>
+        closedir($handle);
+    }
 }
 
+//$path = 'c:\wampSLT\data\htdocs\ship';
+$path = 'c:\xampp\htdocs\ship';
+
+importDir($path . '\textures\particle', 'particle');
+importDir($path . '\textures\planet', 'planet');
+importDir($path . '\textures\sky', 'sky');
+importDir($path . '\textures\structure', 'structure');
+
 loadTextures();
+}
+
+print "function buildPlanetMaterials(){";
+    for ($i = 0; $i < 10; $i++) {
+        $name = 'planet' . $i;
+        print("addTexture('" . $name . "', '../galaxyBuilder/createTexture.php?width=512&height=512&r=" . rand(0,65500) . "', 1, 1); \n");
+        print("addMaterial('" . $name . "', new THREE.MeshLambertMaterial({ map: textures['s" . $name . "'] })); ");
+        $name = 'moon' . $i;
+        print("addTexture('" . $name . "', '../galaxyBuilder/createTexture.php?width=512&height=512&r=" . rand(0,65500) . "', 1, 1); \n");
+        print("addMaterial('" . $name . "', new THREE.MeshLambertMaterial({ map: textures['" . $name . "'] })); ");
+    }
+
+print ";";
+?>
+}

@@ -128,7 +128,7 @@ function gameObject(id, sceneObj, type) {
             if (this.target.mesh) {
                 if (this.target.getDistance() > this.target.orbital && this.thrustersOn) {
                     this.lastPosition = this.mesh.position;
-                    var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 200);
+//                    var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 200);
                     gameObjects['ship'].setPosition(np.x, np.y, np.z);
                 }
                 this.lookAt(this.target.mesh.position);

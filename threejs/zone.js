@@ -355,12 +355,12 @@ function randomZone(id) {
     system.addRndObj('comet');
     system.addRndObj('comet');
 
-    system.addRndObj('station');
-    system.addRndObj('station2');
-    system.addRndObj('station3');
-
-    system.addRndObj('drone');
-    system.addRndObj('drone');
+//    system.addRndObj('station');
+//    system.addRndObj('station2');
+//    system.addRndObj('station3');
+//
+//    system.addRndObj('drone');
+//    system.addRndObj('drone');
 
 
     gameObjects['planet1'].mesh.material.map = textures['planet-gradient'];
@@ -451,34 +451,10 @@ function zone(id) {
                 break;
 
             case "planet":
-                var id = "planet" + this.planets.length;
+                var id = "planet" + this.planets.length + 1;
                 var size = Math.random() * 300 + 50;
                 var distance = Math.random() * 34000 + 1000;
-                var pclass = "m";
-                var r = Math.random() * 2;
-                var g = Math.random() * 2;
-                var b = Math.random() * 2;
-
-//                var mats = new Array('m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'red', 'red2', 'stone', 'yellow', 'iron', 'green', 'grey', 'g1', 'water');
-//                if (distance < 5000) {
-//                    pclass = "h";
-//                    g = Math.random() * 1;
-//                    b = Math.random() * 1;
-//                    mats = new Array('lava1', 'lava2', 'lava3', 'lava4', 'sand', 'red', 'red2', 'yellow', 'hot', 'grey');
-//                }
-//                if (distance > 15000) {
-//                    pclass = "c";
-//                    r = Math.random() * 1;
-//                    mats = new Array('ice1', 'ice2', 'grey', 'iron');
-//                }
-//
-//                var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
-
                 var name = 'planet' + this.planets.length;
-                addTexture(name, '../galaxyBuilder/createTexture.php?width=512&height=512&r=' + Math.random() * 65530, 1, 1);
-                addMaterial(name, new THREE.MeshLambertMaterial({ map: textures[name] }) );
-                var color = new THREE.Color;
-                color.setRGB(r, g, b);
                 var romans = new Array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X");
 
                 addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials[name]), 'planet');
@@ -494,41 +470,21 @@ function zone(id) {
                 gameObjects[id].speed = distance / 40;
                 gameObjects[id].name = this.name + " " + romans[(this.planets.length + 1)];
 
-                if (pclass == "m") {
-                    addGameObject(id + '_atmosphere', new THREE.Mesh(new THREE.SphereGeometry(size + (size * 0.015), 20, 20), materials['atmosphere']), 'atmosphere');
-                    gameObjects[id].followers.push(gameObjects[id + '_atmosphere']);
+                if (distance > 15000 && distance < 25000) {
+
                 }
 
                 this.planets.push(gameObjects[id]);
                 break;
 
             case "moon":
-                var id = "moon" + this.moons.length;
+                var id = "moon" + this.moons.length + 1;
                 var planetId = Math.floor(Math.random() * this.planets.length)
                 var planet = this.planets[planetId];
                 var size = (Math.random() * planet.size) * 0.2 + 10;
                 var distance = (planet.size * 6) + (Math.random() * planet.size * 3);
-                var pclass = "m";
-                var r = Math.random() * 2;
-                var g = Math.random() * 2;
-                var b = Math.random() * 2;
-
-                var mats = new Array('moon1', 'moon2', 'sand', 'ruby', 'stone', 'yellow', 'grey', 'g1');
-                if (planet.pclass == "h") {
-                    g = Math.random() * 1;
-                    b = Math.random() * 1;
-                    mats.push('lava1', 'lava2', 'lava3', 'lava4', 'red', 'red2', 'yellow', 'cracks');
-                }
-                if (planet.pclass == "c") {
-                    pclass = "c";
-                    r = Math.random() * 1;
-                    mats.push('ice1', 'ice2', 'cracks');
-                }
-                var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
-                var color = new THREE.Color;
-                color.setRGB(r, g, b);
                 var alphabet = new Array("", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J");
-                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials[mat].clone()), 'moon');
+                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials[name]), 'moon');
                 gameObjects[id].mesh.material.color = color;
                 gameObjects[id].size = size;
                 gameObjects[id].anim_r_y = Math.random() / 200;
