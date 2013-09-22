@@ -56,8 +56,6 @@
         }
     }
 
-
-s
     header("Content-type: image/jpeg");
     header('Content-Disposition: inline; filename="gradient.jpg"');
 
