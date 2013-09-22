@@ -361,6 +361,9 @@ function randomZone(id) {
 
     system.addRndObj('drone');
     system.addRndObj('drone');
+
+
+    gameObjects['planet1'].mesh.material.map = textures['planet-gradient'];
 }
 
 function zone(id) {
