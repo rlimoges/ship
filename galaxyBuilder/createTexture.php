@@ -1,20 +1,14 @@
 <?php
     $width = $_GET['width'];
     $height = $_GET['height'];
-//    $starts = explode(",", $_GET['startcolor']);
-//    $ends = explode(",", $_GET['endcolor']);
     $mode = $_GET['mode'];
 
-//    $rstart = $starts[0];
-//    $gstart = $starts[1];
-//    $bstart = $starts[2];
+    $rstart = rand(1,100);
+    $gstart = rand(1,100);
+    $bstart = rand(1,100);
 
-    $rstart = rand(1,50);
-    $gstart = rand(1,50);
-    $bstart = rand(1,150);
-
-    $rend = rand(1,50);
-    $gend = rand(1,50);
+    $rend = rand(1,220);
+    $gend = rand(1,220);
     $bend = rand(1,220);
 
     $r = $rstart;
@@ -33,10 +27,10 @@
             $b = $bstart;
         }
         for ($x = 0; $x <= $width; $x++) {
-            $rnd = rand(0,15);
+            $rnd = 20;
 
-            imagesetpixel($bigger, $x, $y, imagecolorallocate($bigger, $r+$rnd, $g+$rnd, $b+$rnd));
-            imagesetpixel($bigger, $x, $height - $y, imagecolorallocate($bigger, $r+$rnd, $g+$rnd, $b+$rnd));
+            imagesetpixel($bigger, $x, $y, imagecolorallocate($bigger, $r+rand(0,$rnd), $g+rand(0,$rnd), $b+rand(0,$rnd)));
+            imagesetpixel($bigger, $x, $height - $y, imagecolorallocate($bigger, $r+rand(0,$rnd), $g+rand(0,$rnd), $b+rand(0,$rnd)));
             if ($mode == "horiz") {
                 if ($r != $rend) {
                     $r = $r + (($rend - $rstart) / $width);
@@ -61,6 +55,9 @@
             }
         }
     }
+
+
+s
     header("Content-type: image/jpeg");
     header('Content-Disposition: inline; filename="gradient.jpg"');
 
