@@ -27,13 +27,15 @@ function loadTextures(){
         }
 
         //$path = 'c:\wampSLT\data\htdocs\ship';
-        $path = 'd:\xampp\htdocs\ship';
-
+        $path = 'c:\xampp\htdocs\ship';
 
         importDir($path . '\textures\particle', 'particle');
         importDir($path . '\textures\planet', 'planet');
         importDir($path . '\textures\sky', 'sky');
         importDir($path . '\textures\structure', 'structure');
+
+    
+
     ?>
 }
 

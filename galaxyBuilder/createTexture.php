@@ -1,64 +1,66 @@
 <?php
-    $width = $_GET['width'];
-    $height = $_GET['height'];
-    $mode = $_GET['mode'];
+$width = $_GET['width'];
+$height = $_GET['height'];
+//    $mode = $_GET['mode'];
 
-    $rstart = rand(1,100);
-    $gstart = rand(1,100);
-    $bstart = rand(1,100);
+$mode = 'vert';
 
-    $rend = rand(1,220);
-    $gend = rand(1,220);
-    $bend = rand(1,220);
+$rstart = rand(1, 100);
+$gstart = rand(1, 100);
+$bstart = rand(1, 100);
 
-    $r = $rstart;
-    $g = $gstart;
-    $b = $bstart;
+$rend = rand(1, 220);
+$gend = rand(1, 220);
+$bend = rand(1, 220);
 
-    $bigger = imagecreatetruecolor($width, $height);
+$r = $rstart;
+$g = $gstart;
+$b = $bstart;
 
-    $w2 = $width / 2;
-    $h2 = $height / 2;
+$bigger = imagecreatetruecolor($width, $height);
 
-    for ($y = 0; $y <= $h2; $y++) {
-        if ($mode == 'horiz') { //if doing a horizontal gradient, reset to the starting color every row
-            $r = $rstart;
-            $g = $gstart;
-            $b = $bstart;
-        }
-        for ($x = 0; $x <= $width; $x++) {
-            $rnd = 20;
+$w2 = $width / 2;
+$h2 = $height / 2;
 
-            imagesetpixel($bigger, $x, $y, imagecolorallocate($bigger, $r+rand(0,$rnd), $g+rand(0,$rnd), $b+rand(0,$rnd)));
-            imagesetpixel($bigger, $x, $height - $y, imagecolorallocate($bigger, $r+rand(0,$rnd), $g+rand(0,$rnd), $b+rand(0,$rnd)));
-            if ($mode == "horiz") {
-                if ($r != $rend) {
-                    $r = $r + (($rend - $rstart) / $width);
-                }
-                if ($g != $gend) {
-                    $g = $g + (($gend - $gstart) / $width);
-                }
-                if ($b != $bend) {
-                    $b = $b + (($bend - $bstart) / $width);
-                }
-            }
-        }
-        if ($mode == "vert") {
+for ($y = 0; $y <= $h2; $y++) {
+    if ($mode == 'horiz') { //if doing a horizontal gradient, reset to the starting color every row
+        $r = $rstart;
+        $g = $gstart;
+        $b = $bstart;
+    }
+    for ($x = 0; $x <= $width; $x++) {
+        $noise = 10;
+
+        imagesetpixel($bigger, $x, $y, imagecolorallocate($bigger, $r + rand(0, $noise), $g + rand(0, $noise), $b + rand(0, $noise)));
+        imagesetpixel($bigger, $x, $height - $y, imagecolorallocate($bigger, $r + rand(0, $noise), $g + rand(0, $noise), $b + rand(0, $noise)));
+        if ($mode == "horiz") {
             if ($r != $rend) {
-                $r = $r + (($rend - $rstart) / $h2);
+                $r = $r + (($rend - $rstart) / $width);
             }
             if ($g != $gend) {
-                $g = $g + (($gend - $gstart) / $h2);
+                $g = $g + (($gend - $gstart) / $width);
             }
             if ($b != $bend) {
-                $b = $b + (($bend - $bstart) / $h2);
+                $b = $b + (($bend - $bstart) / $width);
             }
         }
     }
+    if ($mode == "vert") {
+        if ($r != $rend) {
+            $r = $r + (($rend - $rstart) / $h2);
+        }
+        if ($g != $gend) {
+            $g = $g + (($gend - $gstart) / $h2);
+        }
+        if ($b != $bend) {
+            $b = $b + (($bend - $bstart) / $h2);
+        }
+    }
+}
 
-    header("Content-type: image/jpeg");
-    header('Content-Disposition: inline; filename="gradient.jpg"');
+header("Content-type: image/jpeg");
+header('Content-Disposition: inline; filename="gradient.jpg"');
 
-    imagejpeg($bigger, NULL, 80);
-    imagedestroy($bigger);
+imagejpeg($bigger, NULL, 90);
+imagedestroy($bigger);
 ?>

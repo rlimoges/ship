@@ -459,25 +459,29 @@ function zone(id) {
                 var g = Math.random() * 2;
                 var b = Math.random() * 2;
 
-                var mats = new Array('m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'red', 'red2', 'stone', 'yellow', 'iron', 'green', 'grey', 'g1', 'water');
-                if (distance < 5000) {
-                    pclass = "h";
-                    g = Math.random() * 1;
-                    b = Math.random() * 1;
-                    mats = new Array('lava1', 'lava2', 'lava3', 'lava4', 'sand', 'red', 'red2', 'yellow', 'hot', 'grey');
-                }
-                if (distance > 15000) {
-                    pclass = "c";
-                    r = Math.random() * 1;
-                    mats = new Array('ice1', 'ice2', 'grey', 'iron');
-                }
+//                var mats = new Array('m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'red', 'red2', 'stone', 'yellow', 'iron', 'green', 'grey', 'g1', 'water');
+//                if (distance < 5000) {
+//                    pclass = "h";
+//                    g = Math.random() * 1;
+//                    b = Math.random() * 1;
+//                    mats = new Array('lava1', 'lava2', 'lava3', 'lava4', 'sand', 'red', 'red2', 'yellow', 'hot', 'grey');
+//                }
+//                if (distance > 15000) {
+//                    pclass = "c";
+//                    r = Math.random() * 1;
+//                    mats = new Array('ice1', 'ice2', 'grey', 'iron');
+//                }
+//
+//                var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
 
-                var mat = "planet-" + mats[Math.floor(Math.random() * mats.length)];
+                var name = 'planet' + this.planets.length;
+                addTexture(name, '../galaxyBuilder/createTexture.php?width=512&height=512&r=' + Math.random() * 65530, 1, 1);
+                addMaterial(name, new THREE.MeshLambertMaterial({ map: textures[name] }) );
                 var color = new THREE.Color;
                 color.setRGB(r, g, b);
                 var romans = new Array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X");
 
-                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials[mat].clone()), 'planet');
+                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials[name]), 'planet');
                 gameObjects[id].mesh.material.color = color;
                 gameObjects[id].size = size;
                 gameObjects[id].anim_r_y = Math.random() / 200;
