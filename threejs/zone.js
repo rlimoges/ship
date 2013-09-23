@@ -468,6 +468,8 @@ function zone(id) {
 
                 if (distance > 15000 && distance < 25000) {
                     // m class
+                    addGameObject(id + '_atmosphere', new THREE.Mesh(new THREE.SphereGeometry(size + (size * 0.015), 20, 20), materials['atmosphere']), 'atmosphere');
+                    gameObjects[id].followers.push(gameObjects[id + '_atmosphere']);
                 }
 
                 this.planets.push(gameObjects[id]);

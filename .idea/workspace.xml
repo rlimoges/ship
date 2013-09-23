@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="- moons fixed">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet9.jpg" />
+    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="- moons fixed, textures added to git">
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planet\gradient.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon0.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon1.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon2.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon3.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon4.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon5.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon6.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon7.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon8.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon9.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet0.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet1.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet2.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet3.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet4.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet5.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet6.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet7.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet8.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet9.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/build.php" afterPath="$PROJECT_DIR$/galaxyBuilder/build.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createTexture.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
@@ -48,10 +51,10 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379906564100" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379907078165" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379907115894" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
-    <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379905789930" ignored="false" />
-    <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379903762453" ignored="false" />
+    <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379908317396" ignored="false" />
+    <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379907966382" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createTexture.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="createTexture.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="234" selection-end="234" vertical-scroll-proportion="-6.1923075">
+            <state line="29" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.5876043">
               <folding />
             </state>
           </provider>
@@ -101,9 +104,10 @@
       <file leaf-file-name="build.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="553" selection-end="553" vertical-scroll-proportion="-13.730769">
+            <state line="30" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="-19.615385">
               <folding>
                 <element signature="e#6#162#0" expanded="true" />
+                <marker date="1379908134155" expanded="true" signature="824:839" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -127,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zone.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="478" column="41" selection-start="21847" selection-end="21847" vertical-scroll-proportion="0.41271678">
+            <state line="471" column="84" selection-start="21805" selection-end="21805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -195,12 +199,12 @@
         <option value="$PROJECT_DIR$/threejs/particles.js" />
         <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
-        <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/threejs/loadTextures.php" />
         <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
-        <option value="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
+        <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
+        <option value="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
       </list>
     </option>
   </component>
@@ -355,23 +359,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="291" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="291" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="289" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="289" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="290" />
     <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="D:/Program Files (x86)/Git/bin/git.exe" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="292" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="966" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="966" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="290" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="959" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="959" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="290" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="290" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="288" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -485,7 +489,11 @@
       <created>1379906406195</created>
       <updated>1379906406195</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="- moons fixed, textures added to git">
+      <created>1379907111473</created>
+      <updated>1379907111473</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -517,12 +525,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.157754" sideWeight="0.6703418" order="3" side_tool="false" content_ui="tabs" x="1333" y="212" width="467" height="907" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22406417" sideWeight="0.6703418" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22406417" sideWeight="0.671156" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14385027" sideWeight="0.42668137" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884398" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -575,7 +583,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- random planet/moon textures (mostly working)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- moons fixed, textures added to git" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -603,6 +611,7 @@
     <MESSAGE value="- models" />
     <MESSAGE value="Merge branch 'master' of https://github.com/rlimoges/ship&#10;&#10;Conflicts:&#10;&#9;blender/station1.blend&#10;" />
     <MESSAGE value="- random planet/moon textures (mostly working)" />
+    <MESSAGE value="- moons fixed, textures added to git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -671,15 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="553" selection-end="553" vertical-scroll-proportion="-13.730769">
-          <folding>
-            <element signature="e#6#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/resources.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
@@ -694,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="234" selection-end="234" vertical-scroll-proportion="-6.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="304" column="59" selection-start="9462" selection-end="9462" vertical-scroll-proportion="0.0">
@@ -710,7 +703,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/zone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="478" column="41" selection-start="21847" selection-end="21847" vertical-scroll-proportion="0.41271678">
+        <state line="471" column="84" selection-start="21805" selection-end="21805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="-19.615385">
+          <folding>
+            <element signature="e#6#162#0" expanded="true" />
+            <marker date="1379908134155" expanded="true" signature="824:839" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.5876043">
           <folding />
         </state>
       </provider>

@@ -16,19 +16,22 @@ $name = $systems[rand(0, count($systems) - 1)];
 
 for ($i = 0; $i < 10; $i++) {
     $name = 'planet' . $i;
-    createTexture('planets', $name);
+    createTexture('planet', $name);
 
     $name = 'moon' . $i;
-    createTexture('moons', $name);
+    createTexture('moon', $name);
 }
 
-function createTexture($p, $fn){
+function createTexture($type, $fn){
     $path = 'http://localhost/ship/';
-    $input = $path . 'galaxyBuilder/createTexture.php?fn=' . $fn . '&r=' . rand(0,65500);
-    $output = '..\textures\\'. $p . '\\' . $fn . '.jpg';
+    $input = $path . 'galaxyBuilder/createTexture.php?type=' . $type. '&fn=' . $fn . '&r=' . rand(0,65500);
+    $output = '..\textures\\'. $type . 's\\' . $fn . '.jpg';
 
-    print $output;
-
+    print "<pre>\n";
+    print "Building " . $fn . " \n\t";
+        print $input . "\n\t";
+        print $output. "\n";
+    print "</pre>\n";
     file_put_contents($output, file_get_contents($input));
 }
 

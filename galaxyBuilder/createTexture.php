@@ -1,18 +1,34 @@
 <?php
 $fn = $_GET['fn'];
+$type = $_GET['type'];
 $width = 512;
 $height = 512;
-//    $mode = $_GET['mode'];
 
-$mode = 'vert';
+if($type == "planet") {
+    $mode = 'vert';
+    $noise = rand(0, 30);
 
-$rstart = rand(1, 100);
-$gstart = rand(1, 100);
-$bstart = rand(1, 100);
+    $rstart = rand(1, 100);
+    $gstart = rand(1, 100);
+    $bstart = rand(1, 100);
 
-$rend = rand(51, 200);
-$gend = rand(51, 200);
-$bend = rand(51, 200);
+    $rend = rand(51, 200);
+    $gend = rand(51, 200);
+    $bend = rand(51, 200);
+
+} else{
+    $mode = 'vert';
+    $noise = rand(20, 50);
+
+    $rstart = rand(1, 60);
+    $gstart = rand(1, 60);
+    $bstart = rand(1, 60);
+
+    $rend = rand(51, 120);
+    $gend = rand(51, 120);
+    $bend = rand(51, 120);
+}
+
 
 $r = $rstart;
 $g = $gstart;
@@ -30,8 +46,6 @@ for ($y = 0; $y <= $h2; $y++) {
         $b = $bstart;
     }
     for ($x = 0; $x <= $width; $x++) {
-        $noise = rand(0,50);
-
         imagesetpixel($bigger, $x, $y, imagecolorallocate($bigger, $r + rand(0, $noise), $g + rand(0, $noise), $b + rand(0, $noise)));
         imagesetpixel($bigger, $x, $height - $y, imagecolorallocate($bigger, $r + rand(0, $noise), $g + rand(0, $noise), $b + rand(0, $noise)));
         if ($mode == "horiz") {
