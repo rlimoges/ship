@@ -1,14 +1,6 @@
-var textures = new Array();
-
-function addTexture(id, fn, rx, ry){
-    var texture = new THREE.ImageUtils.loadTexture('textures/' + fn);
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-    texture.name = id;
-    textures[id]=texture;
-}
-
-function loadTextures(){
 <?php
+//$path = 'c:\wampSLT\data\htdocs\ship';
+$path = 'd:\xampp\htdocs\ship';
 
 function importDir($path, $n)
 {
@@ -20,34 +12,20 @@ function importDir($path, $n)
                 $name = str_replace(".png", "", $name);
                 $name = $n . "-" . $name;
                 $fn = $n . '/' . $fn;
-                echo "addTexture('$name', '$fn' ,1,1); \n";
+                echo "addTexture('$name', '$fn' ,1,1); \n\t";
             }
         }
         closedir($handle);
     }
 }
 
-//$path = 'c:\wampSLT\data\htdocs\ship';
-$path = 'c:\xampp\htdocs\ship';
+print "var textures = new Array();";
+print "function addTexture(id, fn, rx, ry){var texture = new THREE.ImageUtils.loadTexture('textures/' + fn); texture.wrapS = texture.wrapT = THREE.RepeatWrapping; texture.name = id; textures[id]=texture; } ";
 
 importDir($path . '\textures\particle', 'particle');
-importDir($path . '\textures\planet', 'planet');
 importDir($path . '\textures\sky', 'sky');
 importDir($path . '\textures\structure', 'structure');
-
-loadTextures();
-}
-
-print "function buildPlanetMaterials(){";
-    for ($i = 0; $i < 10; $i++) {
-        $name = 'planet' . $i;
-        print("addTexture('" . $name . "', '../galaxyBuilder/createTexture.php?width=512&height=512&r=" . rand(0,65500) . "', 1, 1); \n");
-        print("addMaterial('" . $name . "', new THREE.MeshLambertMaterial({ map: textures['s" . $name . "'] })); ");
-        $name = 'moon' . $i;
-        print("addTexture('" . $name . "', '../galaxyBuilder/createTexture.php?width=512&height=512&r=" . rand(0,65500) . "', 1, 1); \n");
-        print("addMaterial('" . $name . "', new THREE.MeshLambertMaterial({ map: textures['" . $name . "'] })); ");
-    }
-
-print ";";
+importDir($path . '\textures\moons', 'moons');
+importDir($path . '\textures\planets', 'planets');
+importDir($path . '\textures\planet', 'planet');
 ?>
-}

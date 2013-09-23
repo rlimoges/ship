@@ -107,7 +107,7 @@ function loadedModel(model) {
             break;
 
         case 5:
-            setTimeout("init();", t*2);
+            setTimeout("init();", t * 2);
             break;
     }
 }

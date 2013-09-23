@@ -361,9 +361,6 @@ function randomZone(id) {
 //
 //    system.addRndObj('drone');
 //    system.addRndObj('drone');
-
-
-    gameObjects['planet1'].mesh.material.map = textures['planet-gradient'];
 }
 
 function zone(id) {
@@ -451,14 +448,13 @@ function zone(id) {
                 break;
 
             case "planet":
-                var id = "planet" + this.planets.length + 1;
+                var id = "planet" + this.planets.length;
                 var size = Math.random() * 300 + 50;
                 var distance = Math.random() * 34000 + 1000;
                 var name = 'planet' + this.planets.length;
                 var romans = new Array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X");
 
-                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials[name]), 'planet');
-                gameObjects[id].mesh.material.color = color;
+                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials["planets-" + name]), 'planet');
                 gameObjects[id].size = size;
                 gameObjects[id].anim_r_y = Math.random() / 200;
                 gameObjects[id].targetable = true;
@@ -468,24 +464,23 @@ function zone(id) {
                 gameObjects[id].orbit(gameObjects['sun']);
                 gameObjects[id].orbitRadius = distance;
                 gameObjects[id].speed = distance / 40;
-                gameObjects[id].name = this.name + " " + romans[(this.planets.length + 1)];
+                gameObjects[id].name = this.name + " " + romans[(this.planets.length)];
 
                 if (distance > 15000 && distance < 25000) {
-
+                    // m class
                 }
 
                 this.planets.push(gameObjects[id]);
                 break;
 
             case "moon":
-                var id = "moon" + this.moons.length + 1;
+                var id = "moon" + this.moons.length;
                 var planetId = Math.floor(Math.random() * this.planets.length)
                 var planet = this.planets[planetId];
                 var size = (Math.random() * planet.size) * 0.2 + 10;
                 var distance = (planet.size * 6) + (Math.random() * planet.size * 3);
                 var alphabet = new Array("", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J");
-                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials[name]), 'moon');
-                gameObjects[id].mesh.material.color = color;
+                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials["moons-" + name]), 'moon');
                 gameObjects[id].size = size;
                 gameObjects[id].anim_r_y = Math.random() / 200;
                 gameObjects[id].targetable = true;
