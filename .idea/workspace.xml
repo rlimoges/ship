@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/galaxyBuilder/build.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createTexture.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gameObjects.js" afterPath="$PROJECT_DIR$/threejs/gameObjects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/loadTextures.php" afterPath="$PROJECT_DIR$/threejs/loadTextures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/resources.js" afterPath="$PROJECT_DIR$/threejs/resources.js" />
+    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="- moons fixed">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/moons/moon9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/planets/planet9.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
@@ -32,8 +47,8 @@
     <file path="/zone.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379115686748" ignored="false" />
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
-    <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379904515064" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379900452401" ignored="false" />
+    <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379906564100" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379907078165" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379905789930" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379903762453" ignored="false" />
@@ -103,19 +118,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameObjects.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gameObjects.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="304" column="59" selection-start="9462" selection-end="9462" vertical-scroll-proportion="0.49019608">
+            <state line="304" column="59" selection-start="9462" selection-end="9462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="zone.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="493" column="43" selection-start="22825" selection-end="22836" vertical-scroll-proportion="0.0">
+            <state line="478" column="41" selection-start="21847" selection-end="21847" vertical-scroll-proportion="0.41271678">
               <folding />
             </state>
           </provider>
@@ -184,8 +199,8 @@
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/threejs/loadTextures.php" />
         <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
-        <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
+        <option value="$PROJECT_DIR$/threejs/zone.js" />
       </list>
     </option>
   </component>
@@ -281,6 +296,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ship" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ship" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="planets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ship" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ship" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,7 +481,11 @@
       <created>1379786813799</created>
       <updated>1379786813799</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- random planet/moon textures (mostly working)">
+      <created>1379906406195</created>
+      <updated>1379906406195</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -457,6 +512,7 @@
     <frame x="-8" y="0" width="1932" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -471,7 +527,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32563257" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -520,7 +575,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/rlimoges/ship&#10;&#10;Conflicts:&#10;&#9;blender/station1.blend&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- random planet/moon textures (mostly working)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -547,6 +602,7 @@
     <MESSAGE value="- texture $path" />
     <MESSAGE value="- models" />
     <MESSAGE value="Merge branch 'master' of https://github.com/rlimoges/ship&#10;&#10;Conflicts:&#10;&#9;blender/station1.blend&#10;" />
+    <MESSAGE value="- random planet/moon textures (mostly working)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -638,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="493" column="43" selection-start="22825" selection-end="22836" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="14" selection-start="234" selection-end="234" vertical-scroll-proportion="-6.1923075">
@@ -654,7 +703,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="59" selection-start="9462" selection-end="9462" vertical-scroll-proportion="0.49019608">
+        <state line="304" column="59" selection-start="9462" selection-end="9462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="478" column="41" selection-start="21847" selection-end="21847" vertical-scroll-proportion="0.41271678">
           <folding />
         </state>
       </provider>

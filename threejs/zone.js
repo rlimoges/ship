@@ -480,7 +480,8 @@ function zone(id) {
                 var size = (Math.random() * planet.size) * 0.2 + 10;
                 var distance = (planet.size * 6) + (Math.random() * planet.size * 3);
                 var alphabet = new Array("", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J");
-                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials["moons-" + name]), 'moon');
+                addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 15, 15), materials["moons-moon" + this.moons.length]), 'moon');
+
                 gameObjects[id].size = size;
                 gameObjects[id].anim_r_y = Math.random() / 200;
                 gameObjects[id].targetable = true;
