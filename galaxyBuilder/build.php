@@ -50,7 +50,7 @@ if ($step <= 10) {
 }
 
 if ($step >= 11 && $step <= 20) {
-    $name = 'moon' . ($step - 10);
+    $name = 'moon' . ($step - 11);
     createTexture('moon', $name);
 }
 
@@ -63,7 +63,8 @@ function createTexture($type, $fn)
     }
 
     $path = 'http://localhost/ship/';
-    $input = $path . 'galaxyBuilder/createTexture.php?type=' . $type . '&fn=' . $fn . '&r=' . rand(0, 65500);
+//    $input = $path . 'galaxyBuilder/createTexture.php?type=' . $type . '&fn=' . $fn . '&r=' . rand(0, 65500);
+    $input = $path . 'galaxyBuilder/createPlasma.php?type=' . $type . '&fn=' . $fn . '&r=' . rand(0, 65500);
     $output = '..\textures\\' . $folder . '\\' . $fn . '.jpg';
 
     print "<pre>\n";
