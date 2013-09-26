@@ -1,8 +1,8 @@
 <?php
 $fn = $_GET['fn'];
 $type = $_GET['type'];
-$width = 512;
-$height = 512;
+$width = 1024;
+$height = 1024;
 
 if ($type == "mclass") {
     $noise = rand(1, 50);
@@ -66,7 +66,7 @@ if ($type == "gasGiant") {
 
 if ($type == "moon") {
 
-    $noise = rand(15, 30);
+    $noise = rand(25, 100);
 
     $rstart = rand(1, 60);
     $gstart = rand(1, 30);
@@ -134,11 +134,15 @@ for ($y = 0; $y <= $height; $y++) {
                 $x2 = $width - $x;
             }
 
+            if($y==0){
+                $f = $y / rand(1, 250);
+            }
+
             $r = $x2 * (($rend - $rstart) / $width);
             $g = $x2 * (($gend - $gstart) / $width);
             $b = $x2 * (($bend - $bstart) / $width);
 
-            $f = $x2 / rand(1, 50);
+
             $r2 = $r * cos($f * 1.15);
             $g2 = $g * cos($f * 1.1);
             $b2 = $b * cos($f * 1.2);
@@ -232,7 +236,6 @@ if ($type == "moon") {
     $g = rand(50, 100);
     $b = rand(50, 100);
 
-    imagefilter($img, IMG_FILTER_EMBOSS, 1);
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, 20);
 }

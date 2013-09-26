@@ -422,9 +422,9 @@ function zone(id) {
                 var g = Math.random() + 1;
                 var b = Math.random() + 1;
                 var color = new THREE.Color();
-                color.setHSL(r, g, b);
+                color.setHSL(r/2, g/3, b);
                 var color2 = new THREE.Color();
-                color2.setHSL(r / 2, g / 2, b / 2);
+                color2.setHSL(r, g/2, 1);
 
                 pSystems.sunFlares.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 5, g / 5, b / 5), new THREE.Vector3(r / 2, g / 3, b / 3) ]);
                 pSystems.starfield.colorTween = new Tween([0.25, 1], [ new THREE.Vector3(r / 5, g / 5, b / 5), new THREE.Vector3(r / 2, g / 3, b / 3) ]);
@@ -466,7 +466,7 @@ function zone(id) {
                 gameObjects[id].speed = distance / 40;
                 gameObjects[id].name = this.name + " " + romans[(this.planets.length)];
 
-                if (distance > 15000 && distance < 25000) {
+                if (distance > 12000 && distance < 28000) {
                     // m class
                     addGameObject(id + '_atmosphere', new THREE.Mesh(new THREE.SphereGeometry(size + (size * 0.015), 20, 20), materials['atmosphere']), 'atmosphere');
                     gameObjects[id].followers.push(gameObjects[id + '_atmosphere']);
