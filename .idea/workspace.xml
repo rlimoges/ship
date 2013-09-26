@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="- moons fixed, textures added to git">
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planet\gradient.jpg" afterPath="" />
+    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon0.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon0.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon1.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon2.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon2.jpg" />
@@ -23,10 +22,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet7.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet7.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet8.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet8.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet9.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/build.php" afterPath="$PROJECT_DIR$/galaxyBuilder/build.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createTexture.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
     <ignored path="ship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,10 +48,11 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379906564100" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379907115894" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380142349414" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
-    <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379908317396" ignored="false" />
+    <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380159270291" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379907966382" ignored="false" />
+    <file path="/a.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380142835364" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
       <file leaf-file-name="createTexture.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.5876043">
+            <state line="137" column="53" selection-start="3293" selection-end="3293" vertical-scroll-proportion="0.7574316">
               <folding />
             </state>
           </provider>
@@ -95,7 +93,7 @@
       <file leaf-file-name="loadTextures.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="45" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-18.961538">
+            <state line="29" column="45" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,9 +102,8 @@
       <file leaf-file-name="build.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="-19.615385">
+            <state line="30" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#6#162#0" expanded="true" />
                 <marker date="1379908134155" expanded="true" signature="824:839" placeholder="..." />
               </folding>
             </state>
@@ -256,7 +253,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,6 +351,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,7 +363,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="290" />
-    <property name="options.lastSelected" value="preferences.externalTools" />
+    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="D:/Program Files (x86)/Git/bin/git.exe" />
@@ -493,7 +490,11 @@
       <created>1379907111473</created>
       <updated>1379907111473</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- galaxy builder">
+      <created>1379908754353</created>
+      <updated>1379908754353</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -520,12 +521,11 @@
     <frame x="-8" y="0" width="1932" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.157754" sideWeight="0.6703418" order="3" side_tool="false" content_ui="tabs" x="1333" y="212" width="467" height="907" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22406417" sideWeight="0.671156" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22941177" sideWeight="0.671156" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14385027" sideWeight="0.42668137" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -535,6 +535,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32563257" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -583,7 +584,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- moons fixed, textures added to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="- galaxy builder" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -612,6 +613,7 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/rlimoges/ship&#10;&#10;Conflicts:&#10;&#9;blender/station1.blend&#10;" />
     <MESSAGE value="- random planet/moon textures (mostly working)" />
     <MESSAGE value="- moons fixed, textures added to git" />
+    <MESSAGE value="- galaxy builder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,11 +621,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/threejs/zone.php">
+    <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="50" selection-start="84" selection-end="96" vertical-scroll-proportion="0.0">
+        <state line="107" column="50" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/zone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="50" selection-start="84" selection-end="96" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/styles.less">
@@ -633,30 +640,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="35" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/orbitControls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="1" selection-start="3104" selection-end="3104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="89" column="1" selection-start="3104" selection-end="3104" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
@@ -689,7 +688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="45" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-18.961538">
+        <state line="29" column="45" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -710,9 +709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="-19.615385">
+        <state line="30" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#6#162#0" expanded="true" />
             <marker date="1379908134155" expanded="true" signature="824:839" placeholder="..." />
           </folding>
         </state>
@@ -720,7 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.5876043">
+        <state line="137" column="53" selection-start="3293" selection-end="3293" vertical-scroll-proportion="0.7574316">
           <folding />
         </state>
       </provider>
