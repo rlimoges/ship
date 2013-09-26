@@ -22,7 +22,7 @@ if (isset($_GET['step'])) {
     <script type="text/javascript">
         $( document ).ready(function() {
             step = <?php print $step+1; ?>;
-            if(step < 10){
+            if(step < 20){
                 this.location.href = "build.php?step="+step;
             }
         });
@@ -47,9 +47,10 @@ if ($step <= 10) {
     $r = rand(0, count($types) - 1);
     $type = $types[$r];
     createTexture($type, $name);
+}
 
-
-    $name = 'moon' . $step;
+if ($step >= 11 && $step <= 20) {
+    $name = 'moon' . ($step - 10);
     createTexture('moon', $name);
 }
 
@@ -69,7 +70,7 @@ function createTexture($type, $fn)
     print "Building " . $fn . " \n\t";
     print $input . "\n\t";
     print $output . "\n";
-    print "<img src='/ship/textures/" . $folder . "/" . $fn . ".jpg' alt='' width='512' height='512' />";
+    print "<img src='/ship/textures/" . $folder . "/" . $fn . ".jpg' alt='' width='1024' height='1024' />";
     print "</pre>\n";
     file_put_contents($output, file_get_contents($input));
 }

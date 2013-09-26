@@ -192,20 +192,20 @@ header('Content-Disposition: inline; filename=' . $fn . '".jpg"');
 
 
 if ($type == "gasGiant") {
-    $r = rand(50, 150);
-    $g = rand(50, 150);
-    $b = rand(50, 150);
+    $r = rand(20, 100);
+    $g = rand(20, 100);
+    $b = rand(20, 100);
 
-    imagefilter($img, IMG_FILTER_SMOOTH, rand(10,50));
+    imagefilter($img, IMG_FILTER_SMOOTH, rand(10,20));
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(15,20));
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
 }
 if ($type == "mclass") {
-    $r = rand(50, 100);
-    $g = rand(50, 100);
-    $b = rand(50, 100);
+    $r = rand(20, 100);
+    $g = rand(20, 100);
+    $b = rand(20, 100);
 
-    imagefilter($img, IMG_FILTER_CONTRAST, rand(20,50));
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(10,20));
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(50,120));
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
 }
@@ -215,7 +215,7 @@ if ($type == "icy") {
     $g = rand(50, 100);
     $b = rand(50, 200);
 
-    imagefilter($img, IMG_FILTER_CONTRAST, rand(20,50));
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(10,20));
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(50,120));
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
 }
@@ -232,9 +232,9 @@ if ($type == "hot") {
 
 
 if ($type == "moon") {
-    $r = rand(50, 100);
-    $g = rand(50, 100);
-    $b = rand(50, 100);
+    $r = rand(10, 60);
+    $g = rand(10, 60);
+    $b = rand(10, 60);
 
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, 20);
