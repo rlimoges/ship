@@ -4,7 +4,52 @@ $type = $_GET['type'];
 $width = 512;
 $height = 512;
 
-if ($type == "planet") {
+if ($type == "mclass") {
+    $noise = rand(1, 50);
+
+    $rstart = rand(1, 250);
+    $gstart = rand(1, 250);
+    $bstart = rand(1, 250);
+
+    $rend = rand(50, 150);
+    $gend = rand(50, 150);
+    $bend = rand(50, 150);
+
+    $averageCount = 3;
+
+}
+
+if ($type == "hot") {
+    $noise = rand(1, 50);
+
+    $rstart = rand(50, 250);
+    $gstart = rand(1, 150);
+    $bstart = rand(1, 150);
+
+    $rend = rand(50, 250);
+    $gend = rand(50, 150);
+    $bend = rand(50, 150);
+
+    $averageCount = 3;
+
+}
+
+if ($type == "icy") {
+    $noise = rand(5, 100);
+
+    $rstart = rand(1, 150);
+    $gstart = rand(1, 150);
+    $bstart = rand(50, 250);
+
+    $rend = rand(50, 150);
+    $gend = rand(50, 150);
+    $bend = rand(50, 150);
+
+    $averageCount = 5;
+
+}
+
+if ($type == "gasGiant") {
     $noise = rand(1, 50);
 
     $rstart = rand(1, 250);
@@ -14,7 +59,13 @@ if ($type == "planet") {
     $rend = rand(150, 250);
     $gend = rand(150, 250);
     $bend = rand(150, 250);
-} else {
+
+    $averageCount = 5;
+
+}
+
+if ($type == "moon") {
+
     $noise = rand(15, 30);
 
     $rstart = rand(1, 60);
@@ -24,6 +75,8 @@ if ($type == "planet") {
     $rend = rand(51, 160);
     $gend = rand(51, 120);
     $bend = rand(51, 160);
+
+    $averageCount = 1;
 }
 
 
@@ -38,7 +91,18 @@ $f=1;
 
 for ($y = 0; $y <= $height; $y++) {
     for ($x = 0; $x <= $width; $x++) {
-        if ($type == "planet") {
+        if ($type == "mclass" || $type == "icy" || $type == "hot") {
+            $r = $y * (($rend - $rstart) / ($y+1) * sin($y+1) *5);
+            $g = $y * (($gend - $gstart) / ($y+1) * sin($y+1) *5);
+            $b = $y * (($bend - $bstart) / ($y+1) * sin($y+1) *5);
+
+            $f = rand(100, 150) / rand(1,200);
+
+            $r2 = $r * cos($f*(($x*$y)/3));
+            $g2 = $g * cos($f*(($x*$y)/3));
+            $b2 = $b * cos($f*(($x*$y)/3));
+        }
+        if ($type == "gasGiant") {
             if ($y > $height / 2) {
                 $y2 = $y;
             } else {
@@ -62,6 +126,7 @@ for ($y = 0; $y <= $height; $y++) {
 
             $averageCount = rand(3, 10);
         }
+
         if ($type == "moon") {
             if ($x > $width / 2) {
                 $x2 = $x;
@@ -77,8 +142,6 @@ for ($y = 0; $y <= $height; $y++) {
             $r2 = $r * cos($f * 1.15);
             $g2 = $g * cos($f * 1.1);
             $b2 = $b * cos($f * 1.2);
-
-            $averageCount = 1;
         }
 
         // Average out with last pixel
@@ -123,17 +186,52 @@ for ($y = 0; $y <= $height; $y++) {
 header("Content-type: image/jpeg");
 header('Content-Disposition: inline; filename=' . $fn . '".jpg"');
 
-$r = rand(100, 200);
-$g = rand(100, 200);
-$b = rand(100, 200);
-$a = rand(200, 255);
 
-if ($type == "planet") {
+if ($type == "gasGiant") {
+    $r = rand(50, 150);
+    $g = rand(50, 150);
+    $b = rand(50, 150);
 
-    imagefilter($img, IMG_FILTER_SMOOTH, rand(10,100));
-    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(150,220));
+    imagefilter($img, IMG_FILTER_SMOOTH, rand(10,50));
+    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(15,20));
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
-} else {
+}
+if ($type == "mclass") {
+    $r = rand(50, 100);
+    $g = rand(50, 100);
+    $b = rand(50, 100);
+
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(20,50));
+    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(50,120));
+    imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
+}
+
+if ($type == "icy") {
+    $r = rand(50, 100);
+    $g = rand(50, 100);
+    $b = rand(50, 200);
+
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(20,50));
+    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(50,120));
+    imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
+}
+
+if ($type == "hot") {
+    $r = rand(50, 200);
+    $g = rand(50, 100);
+    $b = rand(50, 100);
+
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(10, 20));
+    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(1, 20));
+    imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
+}
+
+
+if ($type == "moon") {
+    $r = rand(50, 100);
+    $g = rand(50, 100);
+    $b = rand(50, 100);
+
     imagefilter($img, IMG_FILTER_EMBOSS, 1);
     imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, 20);
