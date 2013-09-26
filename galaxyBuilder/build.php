@@ -71,7 +71,7 @@ function createTexture($type, $fn)
     print "Building " . $fn . " \n\t";
     print $input . "\n\t";
     print $output . "\n";
-    print "<img src='/ship/textures/" . $folder . "/" . $fn . ".jpg' alt='' width='1024' height='1024' />";
+    print "<img src='/ship/textures/" . $folder . "/" . $fn . ".jpg' alt='' width='512' height='512' />";
     print "</pre>\n";
     file_put_contents($output, file_get_contents($input));
 }

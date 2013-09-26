@@ -3,8 +3,8 @@ $fn = $_GET['fn'];
 $type = $_GET['type'];
 
 $roughness = rand(1, 50);
-$max = rand(230, 255);
-$min = rand(1, 10);
+$max = rand(150, 255);
+$min = rand(0, 25);
 
 function hex2rgb($hex)
 {
@@ -112,6 +112,41 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $roughness, $min, $max)
     $c4r = ceil(($c4 + $c4r*3)/5);
     $c4g = ceil(($c4 + $c4g*3)/5);
     $c4b = ceil(($c4 + $c4b*3)/5);
+
+    // Max pass
+    if($c1r > $max) { $c1r = $max; }
+    if($c1g > $max) { $c1g = $max; }
+    if($c1b > $max) { $c1b = $max; }
+
+    if($c2r > $max) { $c2r = $max; }
+    if($c2g > $max) { $c2g = $max; }
+    if($c2b > $max) { $c2b = $max; }
+
+    if($c3r > $max) { $c3r = $max; }
+    if($c3g > $max) { $c3g = $max; }
+    if($c3b > $max) { $c3b = $max; }
+
+    if($c4r > $max) { $c4r = $max; }
+    if($c4g > $max) { $c4g = $max; }
+    if($c4b > $max) { $c4b = $max; }
+
+    // Min pass
+    if($c1r < $min) { $c1r = $min; }
+    if($c1g < $min) { $c1g = $min; }
+    if($c1b < $min) { $c1b = $min; }
+
+    if($c2r < $min) { $c2r = $min; }
+    if($c2g < $min) { $c2g = $min; }
+    if($c2b < $min) { $c2b = $min; }
+
+    if($c3r < $min) { $c3r = $min; }
+    if($c3g < $min) { $c3g = $min; }
+    if($c3b < $min) { $c3b = $min; }
+
+    if($c4r < $min) { $c4r = $min; }
+    if($c4g < $min) { $c4g = $min; }
+    if($c4b < $min) { $c4b = $min; }
+
 
     $c1 = imagecolorallocate($img, $c1r, $c1g, $c1b);
     $c2 = imagecolorallocate($img, $c2r, $c2g, $c2b);

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon9.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon0.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon0.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon1.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/moons/moon2.jpg" afterPath="$PROJECT_DIR$/textures/moons/moon2.jpg" />
@@ -49,12 +48,12 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380219600593" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380226411877" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380165700556" ignored="false" />
     <file path="/a.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380142835364" ignored="false" />
-    <file path="/createPlasma.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380225214619" ignored="false" />
+    <file path="/createPlasma.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380226481057" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createPlasma.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="createPlasma.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="11" selection-start="4504" selection-end="4504" vertical-scroll-proportion="0.6555423">
+            <state line="5" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -119,12 +118,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="build.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="32" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-30.076923">
+            <state line="73" column="99" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.8104887">
               <folding>
-                <marker date="1380222056624" expanded="true" signature="1667:1682" placeholder="..." />
+                <marker date="1380226835687" expanded="true" signature="1667:1682" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -211,8 +210,8 @@
         <option value="$PROJECT_DIR$/galaxyBuilder/test.html" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
-        <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
         <option value="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
+        <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
       </list>
     </option>
   </component>
@@ -487,7 +486,11 @@
       <created>1380219602541</created>
       <updated>1380219602541</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- galaxy builder plasmas">
+      <created>1380226414341</created>
+      <updated>1380226414341</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -704,19 +707,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
+    <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="32" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-30.076923">
-          <folding>
-            <marker date="1380222056624" expanded="true" signature="1667:1682" placeholder="..." />
-          </folding>
+        <state line="5" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="-3.2692308">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
+    <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="11" selection-start="4504" selection-end="4504" vertical-scroll-proportion="0.6555423">
-          <folding />
+        <state line="73" column="99" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.8104887">
+          <folding>
+            <marker date="1380226835687" expanded="true" signature="1667:1682" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
