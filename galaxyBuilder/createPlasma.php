@@ -5,14 +5,14 @@ global $width, $height, $roughness;
 $fn = $_GET['fn'];
 $type = $_GET['type'];
 
-$itterations = 120;
-$roughness = rand(30, 1000) / 100;
-$noise = 40;
+$itterations = 80;
+$roughness = rand(5, 30);
+$noise = 0;
 $max = rand(200, 255);
 $min = rand(0, 25);
 
-$blur = 20;
-$contrast = 20;
+$blur = 150;
+$contrast = 50;
 
 
 $width = 512;
@@ -163,18 +163,31 @@ for ($i = 1; $i < $itterations; $i++) {
 }
 
 // Noise & gradient pass
-for ($y = 0; $y < $w; $y++) {
-    for ($x = 0; $x < $w; $x++) {
+for ($y = 0; $y <256; $y++) {
+    for ($x = 0; $x < $width; $x++) {
+        $c = hex2rgb(imagecolorat($img, $x, $y));
 
-        $c = imagecolorat($img, $x, $y);
-        $color = hex2rgb($c);
-        $color = $color[0] + rand(-$noise, $noise);
+        $r =  ($c[0]);
+        $g =  ($c[1]);
+        $b =  ($c[2]);
 
-        imagesetpixel($img, $x, $y, imagecolorallocate($img, $color, $color, $color));
+        // Max pass
+        if ($r > $max) {
+            $r = $max;
+        }
+        if ($g > $max) {
+            $g = $max;
+        }
+        if ($b > $max) {
+            $b = $max;
+        }
+
+
+        imagesetpixel($img, $x, $y, imagecolorallocate($img, $r, $g, $b));
     }
 }
 
-
+//
 header("Content-type: image/jpeg");
 header('Content-Disposition: inline; filename=' . $fn . '".jpg"');
 
@@ -183,7 +196,7 @@ $g = rand(50, 150);
 $b = rand(50, 150);
 
 if ($contrast > 0) {
-    imagefilter($img, IMG_FILTER_CONTRAST, rand(-$contrast, $contrast));
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(-$contrast, 0));
 }
 if ($blur > 0) {
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
