@@ -40,7 +40,7 @@ $systems = array(
 $name = $systems[rand(0, count($systems) - 1)];
 //print $name;
 
-if ($step <= 10) {
+if ($step <= 9) {
     $name = 'planet' . $step;
 
     $types = array('hot', 'mclass', 'gasGiant', 'icy');
@@ -49,8 +49,8 @@ if ($step <= 10) {
     createTexture($type, $name);
 }
 
-if ($step >= 11 && $step <= 20) {
-    $name = 'moon' . ($step - 11);
+if ($step >= 10 && $step <= 20) {
+    $name = 'moon' . ($step - 10);
     createTexture('moon', $name);
 }
 
