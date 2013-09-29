@@ -5,14 +5,15 @@ global $width, $height, $roughness;
 $fn = $_GET['fn'];
 $type = $_GET['type'];
 
-$itterations = 80;
+$itterations = 15;
 $roughness = rand(5, 30);
-$noise = 0;
+$noise = 20;
 $max = rand(200, 255);
 $min = rand(0, 25);
 
-$blur = 150;
+$blur = 200;
 $contrast = 50;
+$alpha = rand(80,100);
 
 
 $width = 512;
@@ -142,7 +143,7 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
 for ($i = 1; $i < $itterations; $i++) {
     $w = $width - 1;
     $h = $height - 1;
-    $s = ($h / $i);
+    $s = ($h / ($i*$i));
 
     for ($y1 = 0; $y1 < $h; $y1 += $s) {
         for ($x1 = 0; $x1 < $w; $x1 = $x1 += $s) {
@@ -162,8 +163,16 @@ for ($i = 1; $i < $itterations; $i++) {
     }
 }
 
+
+if ($contrast > 0) {
+    imagefilter($img, IMG_FILTER_CONTRAST, rand(-$contrast, 0));
+}
+if ($blur > 0) {
+    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
+}
+
 // Noise & gradient pass
-for ($y = 0; $y <256; $y++) {
+for ($y = 0; $y <$height; $y++) {
     for ($x = 0; $x < $width; $x++) {
         $c = hex2rgb(imagecolorat($img, $x, $y));
 
@@ -183,7 +192,7 @@ for ($y = 0; $y <256; $y++) {
         }
 
 
-        imagesetpixel($img, $x, $y, imagecolorallocate($img, $r, $g, $b));
+        imagesetpixel($img, $x, $y, imagecolorallocatealpha($img, $r, $g, $b, $alpha));
     }
 }
 
@@ -195,14 +204,11 @@ $r = rand(50, 150);
 $g = rand(50, 150);
 $b = rand(50, 150);
 
-if ($contrast > 0) {
-    imagefilter($img, IMG_FILTER_CONTRAST, rand(-$contrast, 0));
-}
+
+imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
 if ($blur > 0) {
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
 }
-
-imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
 
 imagejpeg($img, NULL, 90);
 imagedestroy($img);
