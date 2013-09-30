@@ -13,7 +13,7 @@ $min = rand(0, 25);
 
 $blur = 200;
 $contrast = 50;
-$alpha = rand(80,100);
+$alpha = rand(30,90);
 
 
 $width = 1024;
