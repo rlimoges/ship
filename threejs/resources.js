@@ -9,7 +9,8 @@ function buildMaterials() {
     // Build default texture materials
     for (var id in textures) {
         mat = new THREE.MeshLambertMaterial({
-            map: textures[id]
+            map: textures[id],
+            specularMap: textures[id]
         });
         addMaterial(textures[id].name, mat);
     }

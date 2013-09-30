@@ -5,7 +5,7 @@ global $width, $height, $roughness;
 $fn = $_GET['fn'];
 $type = $_GET['type'];
 
-$itterations = 15;
+$itterations = 20;
 $roughness = rand(5, 30);
 $noise = 20;
 $max = rand(200, 255);
@@ -16,8 +16,8 @@ $contrast = 50;
 $alpha = rand(80,100);
 
 
-$width = 512;
-$height = 512;
+$width = 1024;
+$height = 1024;
 $img = imagecreatetruecolor($width, $height);
 
 function hex2rgb($hex)
@@ -206,9 +206,6 @@ $b = rand(50, 150);
 
 
 imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
-if ($blur > 0) {
-    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
-}
 
 imagejpeg($img, NULL, 90);
 imagedestroy($img);
