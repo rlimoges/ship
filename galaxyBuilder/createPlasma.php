@@ -5,12 +5,12 @@ global $width, $height, $roughness;
 $fn = $_GET['fn'];
 $type = $_GET['type']; //hot, mclass, gasGiant, icy, moon
 $width = 1024;
-$height = 1024;
+$height = 512;
 
 $r = rand(50, 150);
 $g = rand(50, 150);
 $b = rand(50, 150);
-$itterations = 20;
+$itterations = 22;
 $roughness = rand(8, 30);
 $noise = rand(10, 30);
 $max = rand(200, 255);
@@ -24,8 +24,8 @@ switch ($type) {
         $width = 512;
         $height = 512;
 
-        $itterations = 15;
-        $roughness = rand(15, 35);
+        $itterations = 17;
+        $roughness = rand(10, 30);
         $noise = rand(15, 30);
         $max = 255;
         $min = 0;
@@ -39,6 +39,7 @@ switch ($type) {
         break;
 
     case "gasGiant":
+        $width = 512;
         $contrast = 0;
         $blur = 250;
         $max = 255;
@@ -62,7 +63,7 @@ switch ($type) {
         break;
 
     case "icy":
-        $r = rand(100, 100);
+        $r = rand(50, 100);
         $g = rand(100, 150);
         $b = rand(150, 250);
         $roughness = rand(15, 40);
@@ -71,7 +72,7 @@ switch ($type) {
     case "hot":
         $r = rand(150, 250);
         $g = rand(100, 120);
-        $b = rand(100, 100);
+        $b = rand(50, 100);
         $max = rand(220,255);
         $roughness = rand(15, 20);
         break;
@@ -259,7 +260,7 @@ if ($blur > 0) {
 header("Content-type: image/jpeg");
 header('Content-Disposition: inline; filename=' . $fn . '".jpg"');
 
-imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
+imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b, $alpha);
 
 imagejpeg($img, NULL, 90);
 imagedestroy($img);

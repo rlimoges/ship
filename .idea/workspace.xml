@@ -2,25 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\moons\moon8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\ship\textures\planets\planet9.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,12 +28,12 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380511487133" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380512113414" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380510257374" ignored="false" />
     <file path="/a.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380142835364" ignored="false" />
-    <file path="/createPlasma.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380512064631" ignored="false" />
+    <file path="/createPlasma.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380515156766" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +65,7 @@
       <file leaf-file-name="createPlasma.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="22" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.64839095">
+            <state line="41" column="14" selection-start="800" selection-end="800" vertical-scroll-proportion="0.5876043">
               <folding />
             </state>
           </provider>
@@ -531,7 +512,11 @@
       <created>1380511491957</created>
       <updated>1380511491957</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="- galaxy builder plasmas tweaking">
+      <created>1380512116212</created>
+      <updated>1380512116212</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -758,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="22" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.64839095">
+        <state line="41" column="14" selection-start="800" selection-end="800" vertical-scroll-proportion="0.5876043">
           <folding />
         </state>
       </provider>
