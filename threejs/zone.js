@@ -448,7 +448,7 @@ function zone(id) {
                 break;
 
             case "planet":
-                var id = "planet" + this.planets.length;
+                var id = "planet" + this.planets.length + 1;
                 var size = Math.random() * 300 + 50;
                 var distance = Math.random() * 34000 + 1000;
                 var name = 'planet' + this.planets.length;

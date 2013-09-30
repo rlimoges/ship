@@ -69,6 +69,8 @@ function createTexture($type, $fn)
 
     print "<pre>\n";
     print "Building " . $fn . " \n\t";
+    print "Type: " . $type . " \n\t";
+
     print $input . "\n\t";
     print $output . "\n";
     print "<img src='/ship/textures/" . $folder . "/" . $fn . ".jpg' alt='' />";

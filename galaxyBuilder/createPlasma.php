@@ -3,21 +3,79 @@
 global $width, $height, $roughness;
 
 $fn = $_GET['fn'];
-$type = $_GET['type'];
-
-$itterations = 20;
-$roughness = rand(8, 30);
-$noise = rand(10,30);
-$max = rand(200, 255);
-$min = rand(0, 25);
-
-$blur = 200;
-$contrast = 50;
-$alpha = rand(30,90);
-
-
+$type = $_GET['type']; //hot, mclass, gasGiant, icy, moon
 $width = 1024;
 $height = 1024;
+
+$r = rand(50, 150);
+$g = rand(50, 150);
+$b = rand(50, 150);
+$itterations = 20;
+$roughness = rand(8, 30);
+$noise = rand(10, 30);
+$max = rand(200, 255);
+$min = rand(0, 25);
+$blur = 200;
+$contrast = 20;
+$alpha = rand(30, 90);
+
+switch ($type) {
+    case "moon":
+        $width = 512;
+        $height = 512;
+
+        $itterations = 15;
+        $roughness = rand(15, 35);
+        $noise = rand(15, 30);
+        $max = 255;
+        $min = 0;
+        $blur = 150;
+        $contrast = 75;
+        $alpha = rand(50, 110);
+
+        $r = rand(50, 120);
+        $g = rand(50, 120);
+        $b = rand(50, 120);
+        break;
+
+    case "gasGiant":
+        $contrast = 0;
+        $blur = 250;
+        $max = 255;
+        $min = 0;
+        $roughness = rand(5, 20);
+        $alpha = rand(60, 110);
+        $noise = 5;
+        $r = rand(80, 160);
+        $g = rand(80, 160);
+        $b = rand(80, 160);
+        break;
+
+    case "mclass":
+        $max = rand(200,255);
+        $min = rand(0,30);
+        $roughness = rand(15, 20);
+        $r = rand(80, 120);
+        $g = rand(100, 150);
+        $b = rand(100, 150);
+        break;
+
+    case "icy":
+        $r = rand(100, 100);
+        $g = rand(100, 150);
+        $b = rand(150, 250);
+        $roughness = rand(15, 40);
+        break;
+
+    case "hot":
+        $r = rand(150, 250);
+        $g = rand(100, 120);
+        $b = rand(100, 100);
+        $roughness = rand(15, 20);
+        break;
+
+}
+
 $img = imagecreatetruecolor($width, $height);
 
 function hex2rgb($hex)
@@ -49,7 +107,6 @@ srand(make_seed());
 
 // Step 1
 // Draw 4 random corner rectangles
-
 $x1 = 0;
 $x2 = $width - 1;
 $y1 = 0;
@@ -57,13 +114,13 @@ $y2 = $height - 1;
 $mx = $width / 2;
 $my = $height / 2;
 
-$h = rand(0, 250);
+$h = rand(10, 250);
 imagefilledrectangle($img, $x1, $y1, $mx, $my, $h);
-$h = rand(0, 250);
+$h = rand(10, 250);
 imagefilledrectangle($img, $mx, $y1, $x2, $my, $h);
-$h = rand(0, 250);
+$h = rand(10, 250);
 imagefilledrectangle($img, $x1, $my, $mx, $y2, $h);
-$h = rand(0, 250);
+$h = rand(10, 250);
 imagefilledrectangle($img, $mx, $my, $x2, $y2, $h);
 
 
@@ -71,7 +128,7 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
 {
 
     $width = $GLOBALS['width'];
-    $roughness= $GLOBALS['roughness'];
+    $roughness = $GLOBALS['roughness'];
 
     $mx = ($x2 + $x1) / 2;
     $my = ($y2 + $y1) / 2;
@@ -93,10 +150,10 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
     $ec4 = hex2rgb($ec4);
 
     // Determine mid colors + add roughness
-    $c1 = ceil(($ec1[0] + $ec2[0]) / 2) + rand(-$roughness,$roughness);
-    $c2 = ceil(($ec3[0] + $ec2[0]) / 2) + rand(-$roughness,$roughness);
-    $c3 = ceil(($ec1[0] + $ec4[0]) / 2) + rand(-$roughness,$roughness);
-    $c4 = ceil(($ec3[0] + $ec4[0]) / 2) + rand(-$roughness,$roughness);
+    $c1 = ceil(($ec1[0] + $ec2[0]) / 2) + rand(-$roughness, $roughness);
+    $c2 = ceil(($ec3[0] + $ec2[0]) / 2) + rand(-$roughness, $roughness);
+    $c3 = ceil(($ec1[0] + $ec4[0]) / 2) + rand(-$roughness, $roughness);
+    $c4 = ceil(($ec3[0] + $ec4[0]) / 2) + rand(-$roughness, $roughness);
 
     // Max pass
     if ($c1 > $max) {
@@ -143,7 +200,7 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
 for ($i = 1; $i < $itterations; $i++) {
     $w = $width - 1;
     $h = $height - 1;
-    $s = ($h / ($i*$i));
+    $s = ($h / ($i * $i));
 
     for ($y1 = 0; $y1 < $h; $y1 += $s) {
         for ($x1 = 0; $x1 < $w; $x1 = $x1 += $s) {
@@ -169,13 +226,13 @@ if ($contrast > 0) {
 }
 
 // Noise & gradient pass
-for ($y = 0; $y <$height; $y++) {
+for ($y = 0; $y < $height; $y++) {
     for ($x = 0; $x < $width; $x++) {
         $c = hex2rgb(imagecolorat($img, $x, $y));
 
-        $r =  ($c[0]);
-        $g =  ($c[1]);
-        $b =  ($c[2]);
+        $r = ($c[0]);
+        $g = ($c[1]);
+        $b = ($c[2]);
 
         // Max pass
         if ($r > $max) {
@@ -199,11 +256,6 @@ if ($blur > 0) {
 //
 header("Content-type: image/jpeg");
 header('Content-Disposition: inline; filename=' . $fn . '".jpg"');
-
-$r = rand(50, 150);
-$g = rand(50, 150);
-$b = rand(50, 150);
-
 
 imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b);
 
