@@ -52,10 +52,11 @@ switch ($type) {
         break;
 
     case "mclass":
-        $max = rand(200,255);
-        $min = rand(0,30);
-        $roughness = rand(15, 20);
-        $r = rand(80, 120);
+        $max = rand(240,255);
+        $min = rand(0,15);
+        $roughness = rand(15, 25);
+        $noise = rand(15, 25);
+        $r = rand(70, 90);
         $g = rand(100, 150);
         $b = rand(100, 150);
         break;
@@ -71,6 +72,7 @@ switch ($type) {
         $r = rand(150, 250);
         $g = rand(100, 120);
         $b = rand(100, 100);
+        $max = rand(220,255);
         $roughness = rand(15, 20);
         break;
 
