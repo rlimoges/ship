@@ -21,7 +21,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet7.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet7.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet8.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet8.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textures/planets/planet9.jpg" afterPath="$PROJECT_DIR$/textures/planets/planet9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/build.php" afterPath="$PROJECT_DIR$/galaxyBuilder/build.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,12 +47,12 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380502148297" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380504333874" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380165700556" ignored="false" />
     <file path="/a.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380142835364" ignored="false" />
-    <file path="/createPlasma.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380304145266" ignored="false" />
+    <file path="/createPlasma.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380505086341" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <file leaf-file-name="createPlasma.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="18" selection-start="236" selection-end="236" vertical-scroll-proportion="0.30393326">
+            <state line="8" column="22" selection-start="128" selection-end="128" vertical-scroll-proportion="0.16209774">
               <folding>
                 <element signature="n#hex2rgb#0;n#!!top" expanded="false" />
               </folding>
@@ -522,7 +521,11 @@
       <created>1380502154747</created>
       <updated>1380502154747</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="- galaxy builder plasmas tweaking">
+      <created>1380504338464</created>
+      <updated>1380504338464</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -749,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="236" selection-end="236" vertical-scroll-proportion="0.30393326">
+        <state line="8" column="22" selection-start="128" selection-end="128" vertical-scroll-proportion="0.16209774">
           <folding>
             <element signature="n#hex2rgb#0;n#!!top" expanded="false" />
           </folding>

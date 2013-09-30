@@ -6,8 +6,8 @@ $fn = $_GET['fn'];
 $type = $_GET['type'];
 
 $itterations = 20;
-$roughness = rand(5, 30);
-$noise = 20;
+$roughness = rand(8, 30);
+$noise = rand(10,30);
 $max = rand(200, 255);
 $min = rand(0, 25);
 
@@ -167,9 +167,6 @@ for ($i = 1; $i < $itterations; $i++) {
 if ($contrast > 0) {
     imagefilter($img, IMG_FILTER_CONTRAST, rand(-$contrast, 0));
 }
-if ($blur > 0) {
-    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
-}
 
 // Noise & gradient pass
 for ($y = 0; $y <$height; $y++) {
@@ -194,6 +191,9 @@ for ($y = 0; $y <$height; $y++) {
 
         imagesetpixel($img, $x, $y, imagecolorallocatealpha($img, $r, $g, $b, $alpha));
     }
+}
+if ($blur > 0) {
+    imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
 }
 
 //
