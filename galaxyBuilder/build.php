@@ -93,13 +93,13 @@ if (isset($_GET['step'])) {
         $path = 'http://localhost/ship/';
 //    $input = $path . 'galaxyBuilder/createTexture.php?type=' . $type . '&fn=' . $fn . '&r=' . rand(0, 65500);
         $input = $path . 'galaxyBuilder/createPlasma.php?type=' . $type . '&fn=' . $fn . '&r=' . rand(0, 65500);
-        $output = '..\textures\\' . $folder . '\\' . $fn . '.jpg';
+        $output = '..\textures\\' . $folder . '\\' . $fn . '.png';
 
         print "<strong>Building : </strong>" . $fn . "<br/>";
         print "<strong>Type: </strong>" . $type . "<br/>";
         print "<strong>Input: </strong>" . $input . "<br/>";
         print "<strong>Output: </strong>" . $output . "<br/>";
-        print "<img src='/ship/textures/" . $folder . "/" . $fn . ".jpg' alt='' /><br/>";
+        print "<img src='/ship/textures/" . $folder . "/" . $fn . ".png' alt='' /><br/>";
         file_put_contents($output, file_get_contents($input));
     }
 

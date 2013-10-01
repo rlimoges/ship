@@ -16,7 +16,7 @@ $max = rand(200, 255);
 $min = rand(0, 25);
 $blur = 200;
 $contrast = 20;
-$alpha = rand(30, 90);
+$alpha = rand(70, 110);
 
 switch ($type) {
     case "moon":
@@ -30,7 +30,7 @@ switch ($type) {
         $min = 0;
         $blur = 150;
         $contrast = 75;
-        $alpha = rand(50, 110);
+        $alpha = rand(70, 115);
 
         $r = rand(50, 120);
         $g = rand(50, 120);
@@ -42,8 +42,8 @@ switch ($type) {
         $blur = 250;
         $max = 255;
         $min = 0;
-        $roughness = rand(5, 20);
-        $alpha = rand(60, 110);
+        $roughness = rand(6,8);
+        $alpha = rand(70, 110);
         $noise = 5;
         $r = rand(80, 160);
         $g = rand(80, 160);
@@ -53,7 +53,7 @@ switch ($type) {
     case "mclass":
         $max = rand(240,255);
         $min = rand(0,15);
-        $roughness = rand(15, 25);
+        $roughness = rand(8, 10);
         $noise = rand(15, 25);
         $r = rand(70, 90);
         $g = rand(100, 150);
@@ -150,6 +150,7 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
     $ec3 = hex2rgb($ec3);
     $ec4 = hex2rgb($ec4);
 
+    $roughness = 4;
     // Determine mid colors + add roughness
     $c1 = ceil(($ec1[0] + $ec2[0]) / 2) + rand(-$roughness, $roughness);
     $c2 = ceil(($ec3[0] + $ec2[0]) / 2) + rand(-$roughness, $roughness);
@@ -255,8 +256,8 @@ if ($blur > 0) {
 }
 
 //
-header("Content-type: image/jpeg");
-header('Content-Disposition: inline; filename=' . $fn . '".jpg"');
+header("Content-type: image/png");
+header('Content-Disposition: inline; filename=' . $fn . '".png"');
 
 imagefilter($img, IMG_FILTER_COLORIZE, $r, $g, $b, $alpha);
 
