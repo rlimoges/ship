@@ -102,23 +102,24 @@ function guiInitTargetList() {
                 }
 
                 classes += " lvl" + level;
-                if ( level == 1 && l == 0){
+                if (level == 1 && l == 0) {
                     html += "<li class='" + classes + "' data-target='" + objID + "' data-distance=''><div class='namePlate'>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div><div class='orbiters'></div></li>";
                 }
-                if (level == 2 && l == 1){
-                    if(obj.orbiting){
+                if (level == 2 && l == 1) {
+                    if (obj.orbiting) {
                         var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
-                        $targetList.find("li[data-target*='"+obj.orbiting.id+"'] div.orbiters").append(html2);
+                        $targetList.find("li[data-target*='" + obj.orbiting.id + "'] div.orbiters").append(html2);
                     }
                 }
             }
         }
-        if(l==0){
+        if (l == 0) {
             $targetList.html(html);
         }
     }
-
+//    $targetList.find(".orbiters").hide(0);
     toggleTargetList();
+
 }
 
 var sort_by_name = function (a, b) {
@@ -166,7 +167,6 @@ function guiUpdateTargetDistances() {
         e.stopPropagation();
         gameObjects[$(this).attr('data-target')].targetObj();
     });
-
 }
 
 function guiUpdateTarget(target) {

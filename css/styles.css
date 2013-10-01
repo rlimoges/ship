@@ -77,6 +77,14 @@ body .centerPanel .targets .targetList {
 }
 body .centerPanel .targets .targetList li {
   list-style: none;
+  padding: 0 1px;
+}
+body .centerPanel .targets .targetList li .namePlate {
+  margin: 2px 0;
+}
+body .centerPanel .targets .targetList li .orbiters div {
+  border-top: 3px outset white;
+  border-left: 3px outset white;
 }
 body .centerPanel .targets .target {
   padding: 0.25%;

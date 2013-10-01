@@ -13,9 +13,9 @@
     <file path="/ship.html" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375667130828" ignored="false" />
     <file path="/dummy.xml" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380582068096" ignored="false" />
     <file path="/styles.css" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375375661137" ignored="false" />
-    <file path="/styles.less" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380591134955" ignored="false" />
+    <file path="/styles.less" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380592781323" ignored="false" />
     <file path="/orbitControls.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379127001564" ignored="false" />
-    <file path="/gui.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380591736242" ignored="false" />
+    <file path="/gui.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380592188280" ignored="false" />
     <file path="/ship.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375482615092" ignored="false" />
     <file path="/engine.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379388066527" ignored="false" />
     <file path="/resources.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380501155639" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380587760518" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380591802748" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380583293123" ignored="false" />
@@ -77,25 +77,25 @@
       <file leaf-file-name="createTexture.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="0" selection-start="3989" selection-end="4067" vertical-scroll-proportion="0.0">
+            <state line="185" column="0" selection-start="3989" selection-end="4067" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="35" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.80023503">
+            <state line="120" column="0" selection-start="3642" selection-end="3687" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="70" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+            <state line="84" column="26" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.41319445">
               <folding />
             </state>
           </provider>
@@ -133,7 +133,7 @@
       <file leaf-file-name="zone.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/zone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="453" column="59" selection-start="20651" selection-end="20651" vertical-scroll-proportion="0.0">
+            <state line="453" column="57" selection-start="20653" selection-end="20653" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,9 +192,9 @@
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
         <option value="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
+        <option value="$PROJECT_DIR$/threejs/gui.js" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/less/styles.less" />
-        <option value="$PROJECT_DIR$/threejs/gui.js" />
       </list>
     </option>
   </component>
@@ -546,7 +546,11 @@
       <created>1380587764201</created>
       <updated>1380587764201</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="- gui targetlist 2nd level">
+      <created>1380591806526</created>
+      <updated>1380591806526</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -636,7 +640,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- galaxy builder plasmas tweaking (again)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- gui targetlist 2nd level" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -670,6 +674,7 @@
     <MESSAGE value="- galaxy builder plasmas" />
     <MESSAGE value="- galaxy builder plasmas tweaking" />
     <MESSAGE value="- galaxy builder plasmas tweaking (again)" />
+    <MESSAGE value="- gui targetlist 2nd level" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="3989" selection-end="4067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="41" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
@@ -760,23 +758,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/styles.less">
+    <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="70" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="59" selection-start="20651" selection-end="20651" vertical-scroll-proportion="0.0">
+        <state line="185" column="0" selection-start="3989" selection-end="4067" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="35" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.80023503">
+        <state line="120" column="0" selection-start="3642" selection-end="3687" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/zone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="57" selection-start="20653" selection-end="20653" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="26" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.41319445">
           <folding />
         </state>
       </provider>
