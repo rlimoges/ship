@@ -96,6 +96,10 @@ function guiInitTargetList() {
                         level = 1;
                         break;
 
+                    case "spacecraft":
+                        level = 3;
+                        break;
+
                     default :
                         level = 2;
                         break;
@@ -109,6 +113,12 @@ function guiInitTargetList() {
                     if (obj.orbiting) {
                         var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
                         $targetList.find("li[data-target*='" + obj.orbiting.id + "'] div.orbiters").append(html2);
+                    }
+                }
+                if (level == 3 && l == 1) {
+                    if (obj.orbiting.orbiting) {
+                        var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
+                        $targetList.find("li[data-target*='" + obj.orbiting.orbiting.id + "'] div.orbiters").append(html2);
                     }
                 }
             }

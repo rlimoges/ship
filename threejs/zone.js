@@ -355,12 +355,12 @@ function randomZone(id) {
     system.addRndObj('comet');
     system.addRndObj('comet');
 
-//    system.addRndObj('station');
-//    system.addRndObj('station2');
+    system.addRndObj('station');
+    system.addRndObj('station2');
 //    system.addRndObj('station3');
 //
-//    system.addRndObj('drone');
-//    system.addRndObj('drone');
+    system.addRndObj('drone');
+    system.addRndObj('drone');
 }
 
 function zone(id) {
@@ -448,10 +448,10 @@ function zone(id) {
                 break;
 
             case "planet":
-                var id = "planet" + this.planets.length + 1;
+                var id = "planet" + (this.planets.length + 1);
                 var size = Math.random() * 300 + 50;
                 var distance = Math.random() * 34000 + 1000;
-                var name = 'planet' + this.planets.length;
+                var name = 'planet' + (this.planets.length+1);
                 var romans = new Array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X");
 
                 addGameObject(id, new THREE.Mesh(new THREE.SphereGeometry(size, 20, 20), materials["planets-" + name]), 'planet');

@@ -69,20 +69,26 @@ body .centerPanel {
 }
 body .centerPanel .targets {
   width: 100%;
+  background: none;
 }
 body .centerPanel .targets .targetList {
   display: none;
+  opacity: 0.8;
   margin: 0;
   padding: 0;
 }
 body .centerPanel .targets .targetList li {
+  opacity: 0.8;
   list-style: none;
-  padding: 0 1px;
+  padding: 0 25px;
+  background-color: #222222;
 }
 body .centerPanel .targets .targetList li .namePlate {
   margin: 2px 0;
 }
 body .centerPanel .targets .targetList li .orbiters div {
+  opacity: 1;
+  padding: 0;
   border-top: 3px outset white;
   border-left: 3px outset white;
 }
