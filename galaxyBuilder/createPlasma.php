@@ -5,7 +5,7 @@ global $width, $height, $roughness;
 $fn = $_GET['fn'];
 $type = $_GET['type']; //hot, mclass, gasGiant, icy, moon
 $width = 1024;
-$height = 512;
+$height = 1024;
 
 $r = rand(50, 150);
 $g = rand(50, 150);
@@ -39,7 +39,6 @@ switch ($type) {
         break;
 
     case "gasGiant":
-        $width = 512;
         $contrast = 0;
         $blur = 250;
         $max = 255;
