@@ -1,5 +1,4 @@
 <?php
-
 global $width, $height, $roughness;
 
 $fn = $_GET['fn'];

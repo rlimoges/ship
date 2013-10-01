@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/build.php" afterPath="$PROJECT_DIR$/galaxyBuilder/build.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,7 +28,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380581882799" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380587679012" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380583293123" ignored="false" />
@@ -66,7 +65,7 @@
       <file leaf-file-name="createPlasma.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="787" selection-end="787" vertical-scroll-proportion="-0.020238096">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.020286396">
               <folding />
             </state>
           </provider>
@@ -522,7 +521,11 @@
       <created>1380515695385</created>
       <updated>1380515695385</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="- galaxy builder plasmas tweaking (again)">
+      <created>1380587682144</created>
+      <updated>1380587682144</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -549,6 +552,7 @@
     <frame x="-8" y="1" width="1932" height="1049" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -563,7 +567,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325477" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -612,7 +615,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- galaxy builder plasmas tweaking" />
+    <option name="LAST_COMMIT_MESSAGE" value="- galaxy builder plasmas tweaking (again)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -645,6 +648,7 @@
     <MESSAGE value="- galaxy builder textures" />
     <MESSAGE value="- galaxy builder plasmas" />
     <MESSAGE value="- galaxy builder plasmas tweaking" />
+    <MESSAGE value="- galaxy builder plasmas tweaking (again)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -749,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="787" selection-end="787" vertical-scroll-proportion="-0.020238096">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.020286396">
           <folding />
         </state>
       </provider>
