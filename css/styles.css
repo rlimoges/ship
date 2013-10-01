@@ -33,7 +33,8 @@ body #stats,
 body .btn,
 body .gauge,
 body .target,
-body .targetList li {
+body .targetList li,
+body .orbiters div {
   opacity: 0.4;
   border-top: 5px outset white;
   border-left: 5px outset white;
@@ -54,7 +55,8 @@ body #stats:hover,
 body .btn:hover,
 body .gauge:hover,
 body .target:hover,
-body .targetList li:hover {
+body .targetList li:hover,
+body .orbiters div:hover {
   opacity: .8;
   color: #ffffff;
   background: #333333;
@@ -75,16 +77,6 @@ body .centerPanel .targets .targetList {
 }
 body .centerPanel .targets .targetList li {
   list-style: none;
-  margin: auto;
-}
-body .centerPanel .targets .targetList li.lvl1 {
-  width: 90%;
-}
-body .centerPanel .targets .targetList li.lvl2 {
-  width: 80%;
-}
-body .centerPanel .targets .targetList li.lvl3 {
-  width: 70%;
 }
 body .centerPanel .targets .target {
   padding: 0.25%;

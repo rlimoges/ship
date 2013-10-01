@@ -38,7 +38,7 @@ body {
     left: @HUD_Offset;
     bottom: @HUD_Offset;
   }
-  .panel, #stats, .btn, .gauge, .target, .targetList li {
+  .panel, #stats, .btn, .gauge, .target, .targetList li, .orbiters div {
     opacity: 0.4;
     border-top: 5px outset white;
     border-left: 5px outset white;
@@ -79,15 +79,9 @@ body {
 
         li {
           list-style: none;
-          margin:auto;
-          &.lvl1{
-            width:90%;
-          }
-          &.lvl2 {
-            width:80%;
-          }
-          &.lvl3 {
-            width:70%;
+
+          .orbiters div {
+
           }
         }
       }

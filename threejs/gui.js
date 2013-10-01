@@ -76,36 +76,48 @@ function guiInitTargetList() {
     var html = "";
     $targetList = $(".targetList");
 
-    for (var objID in gameObjects) {
-        var obj = gameObjects[objID];
-        classes = "targetListObj";
-        if (obj.targetable) {
-            var level = 0;
+    for (l = 0; l < 2; l++) {
+        for (var objID in gameObjects) {
+            var obj = gameObjects[objID];
+            classes = "targetListObj";
+            if (obj.targetable) {
+                var level = 0;
 
-            switch (obj.type) {
-                case "sun":
-                    level = 1;
-                    break;
+                switch (obj.type) {
+                    case "sun":
+                        level = 1;
+                        break;
 
-                case "planet":
-                    level = 2;
-                    break;
+                    case "planet":
+                        level = 1;
+                        break;
 
-                case "comet":
-                    level = 2;
-                    break;
+                    case "comet":
+                        level = 1;
+                        break;
 
-                default :
-                    level = 3;
-                    break;
+                    default :
+                        level = 2;
+                        break;
+                }
+
+                classes += " lvl" + level;
+                if ( level == 1 && l == 0){
+                    html += "<li class='" + classes + "' data-target='" + objID + "' data-distance=''><div class='namePlate'>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div><div class='orbiters'></div></li>";
+                }
+                if (level == 2 && l == 1){
+                    if(obj.orbiting){
+                        var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
+                        $targetList.find("li[data-target*='"+obj.orbiting.id+"'] div.orbiters").append(html2);
+                    }
+                }
             }
-
-            classes += " lvl" + level;
-            html += "<li class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></li>";
+        }
+        if(l==0){
+            $targetList.html(html);
         }
     }
 
-    $targetList.html(html);
     toggleTargetList();
 }
 
@@ -151,8 +163,10 @@ function guiUpdateTargetDistances() {
     list.sort(sort_by_distance);
     targetList.html(list);
     targetList.find('.targetListObj').click(function (e) {
+        e.stopPropagation();
         gameObjects[$(this).attr('data-target')].targetObj();
     });
+
 }
 
 function guiUpdateTarget(target) {
