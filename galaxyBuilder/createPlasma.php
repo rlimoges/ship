@@ -1,5 +1,6 @@
 <?php
 global $width, $height, $roughness;
+$debug = true;
 
 $fn = $_GET['fn'];
 $type = $_GET['type']; //hot, mclass, gasGiant, icy, moon
@@ -17,6 +18,8 @@ $min = rand(0, 25);
 $blur = 200;
 $contrast = 20;
 $alpha = rand(70, 80);
+$font = '../fonts/Origicide.ttf';
+$text = "type: " . $type . "\n";
 
 switch ($type) {
     case "moon":
@@ -45,15 +48,15 @@ switch ($type) {
         $roughness = rand(6,10);
         $alpha = rand(70, 110);
         $noise = 5;
-        $red = rand(80, 160);
-        $green = rand(80, 160);
-        $blue = rand(80, 160);
+        $red = rand(30, 250);
+        $green = rand(30, 250);
+        $blue = rand(30, 250);
         break;
 
     case "mclass":
         $max = rand(240,255);
         $min = rand(25,75);
-        $roughness = rand(3, 8);
+        $roughness = rand(5, 10) / 4;
         $noise = rand(15, 25);
         $red = rand(70, 90);
         $green = rand(100, 150);
@@ -78,6 +81,7 @@ switch ($type) {
 }
 
 $img = imagecreatetruecolor($width, $height);
+$white = imagecolorallocate($img, 255, 255, 255);
 
 function hex2rgb($hex)
 {
@@ -106,15 +110,17 @@ $y2 = $height - 1;
 $mx = $width / 2;
 $my = $height / 2;
 
-$h = rand(0,1000);
+$h = rand(0,255);
+$text .= "c1: " . $h . "\n";
 imagefilledrectangle($img, $x1, $y1, $mx, $my, $h);
-$h = rand(0,1000);
-imagefilledrectangle($img, $mx, $y1, $x2, $my, $h);
-$h = rand(0,1000);
+$h = rand(0,255);
+$text .= "c2: " . $h . "\n";
+$h = rand(0,255);
+$text .= "c3: " . $h . "\n";
 imagefilledrectangle($img, $x1, $my, $mx, $y2, $h);
-$h = rand(0,1000);
+$h = rand(0,255);
+$text .= "c4: " . $h . "\n";
 imagefilledrectangle($img, $mx, $my, $x2, $y2, $h);
-
 
 function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
 {
@@ -144,7 +150,7 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
     $c1 = ceil(($ec1[0] + $ec2[0]) / 2) + rand(-$roughness, $roughness);
     $c2 = ceil(($ec3[0] + $ec2[0]) / 2) + rand(-$roughness, $roughness);
     $c3 = ceil(($ec1[0] + $ec4[0]) / 2) + rand(-$roughness, $roughness);
-    $c4 = ceil(($ec1[0] + $ec2[0] + $ec3[0] + $ec4[0]) / 4) + rand(-$roughness, $roughness);
+    $c4 = ceil(($ec3[0] + $ec4[0]) / 2) + rand(-$roughness, $roughness);
 
     // Max pass
     if ($c1 > $max) {
@@ -245,7 +251,14 @@ if ($blur > 0) {
     imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR, rand(-$blur, $blur));
 }
 
-//
+$text .= 'Roughness: ' . $roughness . "\n";
+$text .= 'Noise: ' . $noise . "\n";
+
+
+if($debug){
+    imagettftext($img, 10, 0, 11, 21, $white, $font, $text);
+}
+
 header("Content-type: image/png");
 header('Content-Disposition: inline; filename=' . $fn . '".png"');
 
