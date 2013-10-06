@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" afterPath="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Origicide.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ship.iws" />
@@ -28,7 +28,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381069422871" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381069451234" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380583293123" ignored="false" />
@@ -65,7 +65,7 @@
       <file leaf-file-name="createPlasma.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="15" selection-start="392" selection-end="392" vertical-scroll-proportion="0.020238096">
+            <state line="32" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.28400955">
               <folding />
             </state>
           </provider>
@@ -579,7 +579,11 @@
       <created>1380990225141</created>
       <updated>1380990225141</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="- plasma tweaks">
+      <created>1381069456026</created>
+      <updated>1381069456026</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -808,7 +812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createPlasma.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="15" selection-start="392" selection-end="392" vertical-scroll-proportion="0.020238096">
+        <state line="32" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.28400955">
           <folding />
         </state>
       </provider>
