@@ -1,23 +1,23 @@
 <?php
 global $width, $height, $roughness;
-$debug = true;
+$debug = false;
 
 $fn = $_GET['fn'];
 $type = $_GET['type']; //hot, mclass, gasGiant, icy, moon
-$width = 512;
-$height = 512;
+$width = 1024;
+$height = 1024;
 
 $red = rand(50, 150);
 $green = rand(50, 150);
 $blue = rand(50, 150);
-$itterations = 15;
+$itterations = 18;
 $roughness = rand(4, 20);
 $noise = rand(10, 30);
 $max = rand(200, 255);
 $min = rand(0, 25);
 $blur = 200;
-$contrast = 20;
-$alpha = rand(70, 80);
+$contrast = 60;
+$alpha = rand(50, 80);
 $font = '../fonts/Origicide.ttf';
 $text = "type: " . $type . "\n";
 
@@ -125,6 +125,7 @@ imagefilledrectangle($img, $mx, $my, $x2, $y2, $h);
 function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
 {
     $width = $GLOBALS['width'];
+    $height = $GLOBALS['height'];
     $roughness = $GLOBALS['roughness'];
 
     $mx = ($x2 + $x1) / 2;
@@ -135,11 +136,19 @@ function drawSquare($img, $x1, $y1, $x2, $y2, $min, $max)
     } else {
         $xx2 = $x2;
     }
+
+    if ($y2 > $height - 2) {
+        $yy2 = 0;
+    } else {
+        $yy2 = $y2;
+    }
+
+
     // get the 4 edge colors
     $ec1 = imagecolorat($img, $x1, $y1);
     $ec2 = imagecolorat($img, $xx2, $y1);
-    $ec3 = imagecolorat($img, $x1, $y2);
-    $ec4 = imagecolorat($img, $xx2, $y2);
+    $ec3 = imagecolorat($img, $x1, $yy2);
+    $ec4 = imagecolorat($img, $xx2, $yy2);
 
     $ec1 = hex2rgb($ec1);
     $ec2 = hex2rgb($ec2);
@@ -204,7 +213,6 @@ for ($i = 1; $i < $itterations; $i++) {
             $x2 = $x1 + $s;
             $y2 = $y1 + $s;
 
-            // Max filters
             if ($x2 > $w) {
                 $x2 = $w;
             }
