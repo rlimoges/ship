@@ -34,7 +34,8 @@ body .btn,
 body .gauge,
 body .target,
 body .targetList li,
-body .orbiters div {
+body .orbiters div,
+body .targetMap img {
   opacity: 0.4;
   border-top: 5px outset white;
   border-left: 5px outset white;
@@ -56,7 +57,8 @@ body .btn:hover,
 body .gauge:hover,
 body .target:hover,
 body .targetList li:hover,
-body .orbiters div:hover {
+body .orbiters div:hover,
+body .targetMap img:hover {
   opacity: .8;
   color: #ffffff;
   background: #333333;
@@ -116,6 +118,7 @@ body .panel.scanInfo {
   bottom: auto;
 }
 body .panel.scanInfo .content {
+  position: relative;
   padding: 1%;
   text-align: left;
   font-size: 10px;
@@ -127,6 +130,18 @@ body .panel.scanInfo .content h2 {
 body .panel.scanInfo .content h3 {
   margin: 0 0 5px 0;
   font-size: 14px;
+}
+body .panel.scanInfo .targetMap img {
+  position: absolute;
+  right: 2%;
+  top: 2.5%;
+  opacity: 1;
+  border-radius: 100%;
+  border-top: 3px outset white;
+  border-left: 3px outset white;
+  padding: 0;
+  width: 15%;
+  height: auto;
 }
 body .panel.commandPanel {
   width: 25%;

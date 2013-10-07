@@ -16,6 +16,8 @@
         <p class='orbiting'>Orbiting: <span></span></p>
 
         <p class='distanceFromSun'>Distance from sun: <span></span> SU</p>
+
+        <span class="targetMap"></span>
         <span class="btn ok">OK</span>
     </div>
 </div>

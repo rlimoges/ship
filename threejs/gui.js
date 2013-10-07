@@ -7,12 +7,13 @@
  */
 
 // Jquery selectors
-var $targetList, $menuContainer, $target, $scanInfo, $commands;
+var $targetList, $menuContainer, $target, $scanInfo, $targetMap, $commands;
 var $btnScan, $btnOk, $btnWeapons, $btnThrusters, $btnShields
 var scanState = false;
 
 $(document).ready(function () {
     $scanInfo = $('.panel.scanInfo');
+    $targetMap = $scanInfo.find('.content span.targetMap');
     $menuContainer = $("#menu");
     $target = $menuContainer.find(".target");
     $commands = $menuContainer.find('.panel.commandPanel');
@@ -185,6 +186,12 @@ function guiUpdateTarget(target) {
     $scanInfo.find("h2 span").html(target.name);
     $scanInfo.find("h3 span").html(target.type);
     $scanInfo.find("p.distanceFromSun span").html(distance);
+    if(target.mesh.material){
+
+            $targetMap.html(target.mesh.material.map.image);
+
+    }
+
     if (target.orbiting) {
         $scanInfo.find("p.orbiting span").html(target.orbiting.name);
     }
