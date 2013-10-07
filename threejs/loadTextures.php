@@ -2,7 +2,7 @@
 //$path = 'c:\wampSLT\data\htdocs\ship';
 $path = 'd:\xampp\htdocs\ship';
 
-function importDir($path, $n)
+function importDir($path, $n, $x, $y)
 {
     if ($handle = opendir($path)) {
         while (false !== ($fn = readdir($handle))) {
@@ -12,7 +12,7 @@ function importDir($path, $n)
                 $name = str_replace(".png", "", $name);
                 $name = $n . "-" . $name;
                 $fn = $n . '/' . $fn;
-                echo "addTexture('$name', '$fn' ,1,1); \n\t";
+                echo "addTexture('$name', '$fn' , $x, $y); \n\t";
             }
         }
         closedir($handle);
@@ -20,12 +20,14 @@ function importDir($path, $n)
 }
 
 print "var textures = new Array();";
-print "function addTexture(id, fn, rx, ry){var texture = new THREE.ImageUtils.loadTexture('textures/' + fn); texture.wrapS = texture.wrapT = THREE.RepeatWrapping; texture.name = id; textures[id]=texture; } ";
+print "function addTexture(id, fn, rx, ry){var texture = new THREE.ImageUtils.loadTexture('textures/' + fn); texture.wrapS = texture.wrapT = THREE.RepeatWrapping; texture.repeat.set(rx, ry); texture.name = id; textures[id]=texture; } ";
 
-importDir($path . '\textures\particle', 'particle');
-importDir($path . '\textures\sky', 'sky');
-importDir($path . '\textures\structure', 'structure');
-importDir($path . '\textures\moons', 'moons');
-importDir($path . '\textures\planets', 'planets');
-importDir($path . '\textures\planet', 'planet');
+importDir($path . '\textures\particle', 'particle', 1, 1);
+importDir($path . '\textures\sky', 'sky', 1, 1);
+importDir($path . '\textures\structure', 'structure', 1, 1);
+importDir($path . '\textures\planet', 'planet', 1, 1);
+
+importDir($path . '\textures\moons', 'moons', 2, 1);
+importDir($path . '\textures\planets', 'planets', 2, 1);
+
 ?>
