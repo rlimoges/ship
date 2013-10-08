@@ -70,16 +70,17 @@ body .centerPanel {
   margin: auto;
 }
 body .centerPanel .targets {
+  opacity: 1;
   width: 100%;
   background: none;
+  border-top: 3px outset white;
+  border-left: 3px outset white;
 }
 body .centerPanel .targets .targetList {
   display: none;
-  opacity: 0.8;
   margin: 0;
   padding: 0;
-  border-top: 2px outset white;
-  border-left: 2px outset white;
+  border: 0;
 }
 body .centerPanel .targets .targetList li {
   position: relative;
@@ -115,6 +116,19 @@ body .centerPanel .targets .targetList li .orbiters div {
 body .centerPanel .targets .target {
   padding: 0.25%;
   margin: 0.25%;
+  position: relative;
+}
+body .centerPanel .targets .target img {
+  position: absolute;
+  left: 2.5%;
+  top: 5%;
+  opacity: 1;
+  border-radius: 100%;
+  border-top: 1px outset white;
+  border-left: 1px outset white;
+  padding: 0;
+  width: 8%;
+  height: auto;
 }
 body .centerPanel .targets .distance,
 body .centerPanel .targets .type {

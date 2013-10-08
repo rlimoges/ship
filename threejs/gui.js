@@ -111,8 +111,7 @@ function guiInitTargetList() {
                 if (obj.mesh.material && obj.mesh.material.map && obj.mesh.material.map.image) {
                     img = obj.mesh.material.map.image;
                     src = img.src;
-                    imgHTML = "<img src='" + src + "' class='icon' alt='' />"
-
+                    imgHTML = "<img src='" + src + "' class='icon' alt='' />";
                 }
 
                 if (level == 1 && l == 0) {
@@ -190,15 +189,19 @@ function guiUpdateTargetDistances() {
 
 function guiUpdateTarget(target) {
     var distance = (target.getDistance() / 200).toFixed(2);
-    $target.html(target.name + "<div class='distance'>Distance: " + distance + " SU</div>");
+    var imgHTML = "";
+    if (target.mesh.material && target.mesh.material.map && target.mesh.material.map.image) {
+        img = target.mesh.material.map.image;
+        $targetMap.html(img);
+
+        src = img.src;
+        imgHTML = "<img src='" + src + "' class='icon' alt='' />";
+    }
+
+    $target.html(imgHTML + target.name + "<div class='distance'>Distance: " + distance + " SU</div>");
     $scanInfo.find("h2 span").html(target.name);
     $scanInfo.find("h3 span").html(target.type);
     $scanInfo.find("p.distanceFromSun span").html(distance);
-    if (target.mesh.material) {
-
-        $targetMap.html(target.mesh.material.map.image);
-
-    }
 
     if (target.orbiting) {
         $scanInfo.find("p.orbiting span").html(target.orbiting.name);

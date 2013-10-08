@@ -10,18 +10,17 @@
 <div class="panel scanInfo">
     <div class="content">
         <h2>Name: <span></span></h2>
-
         <h3>Type: <span></span></h3>
-
         <p class='orbiting'>Orbiting: <span></span></p>
-
         <p class='distanceFromSun'>Distance from sun: <span></span> SU</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <span class="targetMap"></span>
         <span class="btn ok">OK</span>
     </div>
 </div>
-
 <div id="menu">
     <div class="panel commandPanel">
         <div class="options">
