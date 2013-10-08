@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gui.js" afterPath="$PROJECT_DIR$/threejs/gui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/menu.php" afterPath="$PROJECT_DIR$/interface/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/styles.less" afterPath="$PROJECT_DIR$/less/styles.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gameObjects.js" afterPath="$PROJECT_DIR$/threejs/gameObjects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ship.iws" />
@@ -19,7 +16,7 @@
     <file path="/ship.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375482615092" ignored="false" />
     <file path="/engine.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379388066527" ignored="false" />
     <file path="/resources.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380501155639" ignored="false" />
-    <file path="/gameObjects.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379461629388" ignored="false" />
+    <file path="/gameObjects.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381276210686" ignored="false" />
     <file path="/ship.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1377991664657" ignored="false" />
     <file path="/menu.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381273326572" ignored="false" />
     <file path="/events.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378255158732" ignored="false" />
@@ -31,7 +28,7 @@
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381274220318" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381275069554" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380583293123" ignored="false" />
@@ -101,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="12" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.4907621">
+            <state line="85" column="12" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameObjects.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gameObjects.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="322" column="25" selection-start="10126" selection-end="10126" vertical-scroll-proportion="0.0">
+            <state line="92" column="49" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.2944573">
               <folding />
             </state>
           </provider>
@@ -182,7 +179,6 @@
         <option value="$PROJECT_DIR$/threejs/particles.js" />
         <option value="$PROJECT_DIR$/threejs/engine.js" />
         <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
-        <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
         <option value="$PROJECT_DIR$/galaxyBuilder/test.html" />
         <option value="$PROJECT_DIR$/galaxyBuilder/createTexture.php" />
         <option value="$PROJECT_DIR$/threejs/resources.js" />
@@ -193,6 +189,7 @@
         <option value="$PROJECT_DIR$/interface/menu.php" />
         <option value="$PROJECT_DIR$/threejs/gui.js" />
         <option value="$PROJECT_DIR$/less/styles.less" />
+        <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
       </list>
     </option>
   </component>
@@ -561,7 +558,11 @@
       <created>1381274223964</created>
       <updated>1381274223964</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="- gui, added planet icons in targetlist">
+      <created>1381275074175</created>
+      <updated>1381275074175</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -724,7 +725,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="50" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0" />
+        <state line="107" column="50" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/build.php">
@@ -744,13 +747,6 @@
     <entry file="file://$PROJECT_DIR$/galaxyBuilder/createTexture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="322" column="25" selection-start="10126" selection-end="10126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -792,7 +788,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="12" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.4907621">
+        <state line="85" column="12" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="49" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.2944573">
           <folding />
         </state>
       </provider>

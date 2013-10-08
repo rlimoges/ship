@@ -90,31 +90,20 @@ function gameObject(id, sceneObj, type) {
     };
 
     this.targetObj = function () {
-        if (this.targetable) {
+        if(this.targetable && ship.target != this) {
             ship.target = this;
             if (this == ship) {
                 guiUpdateTarget(this);
             }
-
-//            if(lastTarget){
-//                if(lastTarget.mesh.material.color){
-//                    lastTarget.mesh.material.color.setRGB(1,1,1);
-//                }
-//            }
-//            lastTarget = this;
-
             ship.lookAt(this.mesh.position);
             gameObjects['shields'].lookAt(this.mesh.position);
 
-//            if(this.mesh.material.color){
-//                this.mesh.material.color.setRGB(0.5,1,0.5);
-//            }
+            if ($(".targetList").hasClass('open')) {
+                toggleTargetList();
+            }
+            $(".btn.scan").hide(0);
+            controls.exitZoom();
         }
-        if ($(".targetList").hasClass('open')) {
-            toggleTargetList();
-        }
-        $(".btn.scan").hide(0);
-        controls.exitZoom()
     };
 
     this.lookAt = function (tp) {
