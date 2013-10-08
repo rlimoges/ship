@@ -107,18 +107,26 @@ function guiInitTargetList() {
                 }
 
                 classes += " lvl" + level;
+                imgHTML = "";
+                if (obj.mesh.material && obj.mesh.material.map && obj.mesh.material.map.image) {
+                    img = obj.mesh.material.map.image;
+                    src = img.src;
+                    imgHTML = "<img src='" + src + "' class='icon' alt='' />"
+
+                }
+
                 if (level == 1 && l == 0) {
-                    html += "<li class='" + classes + "' data-target='" + objID + "' data-distance=''><div class='namePlate'>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div><div class='orbiters'></div></li>";
+                    html += "<li class='" + classes + "' data-target='" + objID + "' data-distance=''>" + imgHTML + "<div class='namePlate'>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div><div class='orbiters'></div></li>";
                 }
                 if (level == 2 && l == 1) {
                     if (obj.orbiting) {
-                        var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
+                        var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + imgHTML + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
                         $targetList.find("li[data-target*='" + obj.orbiting.id + "'] div.orbiters").append(html2);
                     }
                 }
                 if (level == 3 && l == 1) {
                     if (obj.orbiting.orbiting) {
-                        var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
+                        var html2 = "<div class='" + classes + "' data-target='" + objID + "' data-distance=''>" + imgHTML + obj.name + ": <span class='type'>(" + obj.type + ")</span> <span class='distance'></span></div>";
                         $targetList.find("li[data-target*='" + obj.orbiting.orbiting.id + "'] div.orbiters").append(html2);
                     }
                 }
@@ -186,9 +194,9 @@ function guiUpdateTarget(target) {
     $scanInfo.find("h2 span").html(target.name);
     $scanInfo.find("h3 span").html(target.type);
     $scanInfo.find("p.distanceFromSun span").html(distance);
-    if(target.mesh.material){
+    if (target.mesh.material) {
 
-            $targetMap.html(target.mesh.material.map.image);
+        $targetMap.html(target.mesh.material.map.image);
 
     }
 

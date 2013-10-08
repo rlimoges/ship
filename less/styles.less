@@ -39,7 +39,7 @@ body {
     bottom: @HUD_Offset;
   }
   .panel, #stats, .btn, .gauge, .target, .targetList li, .orbiters div, .targetMap img {
-    opacity: 0.4;
+    opacity: 0.7;
     border-top: 5px outset white;
     border-left: 5px outset white;
     border-right: 1px solid #333;
@@ -78,22 +78,43 @@ body {
         opacity: 0.8;
         margin: 0;
         padding: 0;
+        border-top: 2px outset white;
+        border-left: 2px outset white;
+
 
         li {
+          position:relative;
           opacity: 0.8;
           list-style: none;
           padding: 0 25px;
           background-color: #222222;
+          border-top: 2px outset white;
+          border-left: 2px outset white;
+
+
+          img {
+            position:absolute;
+            left:2%;
+            top:5%;
+            opacity: 1;
+            border-radius: 100%;
+            border-top: 1px outset white;
+            border-left: 1px outset white;
+            padding: 0;
+            width: 5%;
+            height: auto;
+          }
 
           .namePlate {
             margin: 2px 0;
           }
 
           .orbiters div {
+            position: relative;
             opacity: 1;
             padding: 0;
-            border-top: 3px outset white;
-            border-left: 3px outset white;
+            border-top: 2px outset white;
+            border-left: 2px outset white;
           }
         }
       }
@@ -119,13 +140,14 @@ body {
     &.scanInfo {
       display: none;
       width: 20%;
-      min-width: 200px;
       right: 10%;
       top: 20%;
       bottom: auto;
       .content {
         position: relative;
         padding: 1%;
+        text-align: left;
+        font-size: @small;
         h2 {
           margin: 0 0 5px 0;
           font-size: @large
@@ -134,19 +156,23 @@ body {
           margin: 0 0 5px 0;
           font-size: @medium
         }
-        text-align: left;
-        font-size: @small;
+
+        .btn.ok {
+          position: absolute;
+          bottom: 5%;
+          right: 5%;
+        }
       }
       .targetMap img {
         position:absolute;
-        right:2%;
+        right:2.5%;
         top:2.5%;
         opacity: 1;
         border-radius: 100%;
-        border-top: 3px outset white;
-        border-left: 3px outset white;
+        border-top: 2px outset white;
+        border-left: 2px outset white;
         padding: 0;
-        width: 15%;
+        width: 30%;
         height: auto;
       }
     }
