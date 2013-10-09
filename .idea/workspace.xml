@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gameObjects.js" afterPath="$PROJECT_DIR$/threejs/gameObjects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/loadTextures.php" afterPath="$PROJECT_DIR$/threejs/loadTextures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ship.iws" />
@@ -23,12 +23,12 @@
     <file path="/a.dummy" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381125278952" ignored="false" />
     <file path="/particleSystems.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379461070875" ignored="false" />
     <file path="/particles.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379463606938" ignored="false" />
-    <file path="/loadTextures.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381124676920" ignored="false" />
+    <file path="/loadTextures.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381278760069" ignored="false" />
     <file path="/zone.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379115686748" ignored="false" />
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381275069554" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381276305860" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380583293123" ignored="false" />
@@ -107,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loadTextures.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="loadTextures.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="51" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0">
+            <state line="26" column="55" selection-start="1038" selection-end="1039" vertical-scroll-proportion="0.5344619">
               <folding />
             </state>
           </provider>
@@ -125,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameObjects.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gameObjects.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="49" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.2944573">
+            <state line="92" column="49" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,11 +185,11 @@
         <option value="$PROJECT_DIR$/threejs/zone.js" />
         <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
         <option value="$PROJECT_DIR$/galaxyBuilder/createPlasma.php" />
-        <option value="$PROJECT_DIR$/threejs/loadTextures.php" />
         <option value="$PROJECT_DIR$/interface/menu.php" />
         <option value="$PROJECT_DIR$/threejs/gui.js" />
         <option value="$PROJECT_DIR$/less/styles.less" />
         <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
+        <option value="$PROJECT_DIR$/threejs/loadTextures.php" />
       </list>
     </option>
   </component>
@@ -562,7 +562,11 @@
       <created>1381275074175</created>
       <updated>1381275074175</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="- fixed damn targetlist clickthrough bug. Yay!">
+      <created>1381276310358</created>
+      <updated>1381276310358</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -652,7 +656,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- gui, added planet icons in targetlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed damn targetlist clickthrough bug. Yay!" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -666,8 +670,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="test" />
-    <MESSAGE value="tweaked backgrounds" />
     <MESSAGE value="thrusters" />
     <MESSAGE value="Gui optimisation" />
     <MESSAGE value="windows" />
@@ -691,6 +693,8 @@
     <MESSAGE value="- texture repeating on auto-loaded textures" />
     <MESSAGE value="- gui, added planet to scaninfo" />
     <MESSAGE value="- gui, added planet icons in targetlist" />
+    <MESSAGE value="- fixed damn targetlist clickthrough bug. Yay" />
+    <MESSAGE value="- fixed damn targetlist clickthrough bug. Yay!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -751,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="51" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/zone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="450" column="61" selection-start="20474" selection-end="20474" vertical-scroll-proportion="0.0">
@@ -795,7 +792,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="49" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.2944573">
+        <state line="92" column="49" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/loadTextures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="55" selection-start="1038" selection-end="1039" vertical-scroll-proportion="0.5344619">
           <folding />
         </state>
       </provider>
