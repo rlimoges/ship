@@ -108,15 +108,11 @@ function Particle(emitter) {
 Particle.prototype.update = function (dt) {
     this.position.add(this.velocity.clone().multiplyScalar(dt));
     this.velocity.add(this.acceleration.clone().multiplyScalar(dt));
-
     // convert from degrees to radians: 0.01745329251 = Math.PI/180
     this.angle += this.angleVelocity * 0.01745329251 * dt;
     this.angleVelocity += this.angleAcceleration * 0.01745329251 * dt;
 
     this.age += dt;
-
-    // if the tween for a given attribute is nonempty,
-    //  then use it to update the attribute's value
 
     if (this.emitter.sizeTween.times.length > 0)
         this.size = this.emitter.sizeTween.lerp(this.age);
@@ -136,7 +132,7 @@ Particle.prototype.update = function (dt) {
 // PARTICLE ENGINE CLASS //
 ///////////////////////////
 
-var Type = Object.freeze({ "CUBE": 1, "SPHERE": 2 });
+var Type = Object.freeze({ "CUBE": 1, "SPHERE": 2, "FOLLOW": 3 });
 
 function ParticleEngine() {
     /////////////////////////
@@ -281,7 +277,9 @@ ParticleEngine.prototype.randomVector3 = function (base, spread) {
 
 ParticleEngine.prototype.createParticle = function () {
     var particle = new Particle(this);
-
+    if (this.positionStyle == Type.FOLLOW) {
+        particle.position = ship.mesh.position;
+    }
     if (this.positionStyle == Type.CUBE)
         particle.position = this.randomVector3(this.positionBase, this.positionSpread);
     if (this.positionStyle == Type.SPHERE) {

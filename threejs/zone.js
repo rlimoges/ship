@@ -376,7 +376,7 @@ function zone(id) {
     this.addRndObj = function (type) {
         switch (type) {
             case "sky":
-                var mats = new Array('neb1', 'neb2', 'stars', 'teal', 'stary1', 'stary1', 'neb1');
+                var mats = new Array('neb1', 'neb2', 'stars', 'stary1', 'stary1', 'neb1');
                 var matIndex = mats[Math.floor(Math.random() * mats.length)]
                 var material = materials["sky-" + matIndex].clone();
                 material.color = gameObjects['sun'].color;

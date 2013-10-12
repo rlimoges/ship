@@ -90,7 +90,7 @@ function gameObject(id, sceneObj, type) {
     };
 
     this.targetObj = function () {
-        if(this.targetable && ship.target != this) {
+        if (this.targetable && ship.target != this) {
             ship.target = this;
             if (this == ship) {
                 guiUpdateTarget(this);
@@ -209,8 +209,8 @@ function gameObject(id, sceneObj, type) {
 
     this.updateEmitters = function () {
         if (this.hasEmitters) {
-            for (var system in this.emitters) {
-                var emitter = this.emitters[system];
+            for (var emitterIndex in this.emitters) {
+                var emitter = this.emitters[emitterIndex];
                 if (emitter.positionOffset || this.moveable) {
                     emitter.positionBase = this.getEmitterPosition(emitter);
                 }
@@ -219,7 +219,9 @@ function gameObject(id, sceneObj, type) {
                     if (emitter.type == "thruster" && this.thrustersOn) {
                         emitter.update(delta);
                     }
-                    //if(emitter.type == "laser" && this.weaponsOn){ emitter.update(delta); }
+                    if (emitter.type == "laser" && this.weaponsOn) {
+                        emitter.update(delta);
+                    }
                     if (emitter.type == "headlight" && this.weaponsOn) {
                         emitter.update(delta);
                     }

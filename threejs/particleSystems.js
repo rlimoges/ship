@@ -147,11 +147,11 @@ pSystems = {
     },
 
     thrusters: {
-        positionStyle: Type.SPHERE,
+        positionStyle: Type.FOLLOW,
         positionBase: new THREE.Vector3(0, 0, 0),
         positionRadius: 0,
 
-        velocityStyle: Type.CUBE,
+        velocityStyle: Type.FOLLOW,
         velocityScalar: 0.25,
 
         particleTexture: textures['particle-smoke'],
@@ -161,7 +161,7 @@ pSystems = {
         colorTween: new Tween([0, 0.4], [ new THREE.Vector3(0.02, 1, 0.5), new THREE.Vector3(0.05, 1, 0.25) ]),
         blendStyle: THREE.AdditiveBlending,
 
-        particlesPerSecond: 5,
+        particlesPerSecond: 2,
         particleDeathAge: 3,
         emitterDeathAge: 999999
     },
