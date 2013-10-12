@@ -152,7 +152,7 @@ pSystems = {
         positionRadius: 0,
 
         velocityStyle: Type.FOLLOW,
-        velocityScalar: 0.25,
+        velocityScalar: 0.15,
 
         particleTexture: textures['particle-smoke'],
 
@@ -161,8 +161,8 @@ pSystems = {
         colorTween: new Tween([0, 0.4], [ new THREE.Vector3(0.02, 1, 0.5), new THREE.Vector3(0.05, 1, 0.25) ]),
         blendStyle: THREE.AdditiveBlending,
 
-        particlesPerSecond: 2,
-        particleDeathAge: 3,
+        particlesPerSecond: 3,
+        particleDeathAge: 1,
         emitterDeathAge: 999999
     },
 

@@ -22,7 +22,6 @@ function gameObject(id, sceneObj, type) {
     this.mesh = sceneObj;
     this.size = 1;
     this.type = type;
-    //this.mesh.updateMatrixWorld(true);
     this.mesh._gameObject = id;
     this.name = id;
     this.targetable = false;
@@ -118,7 +117,7 @@ function gameObject(id, sceneObj, type) {
                 if (this.target.getDistance() > this.target.orbital && this.thrustersOn) {
                     this.lastPosition = this.mesh.position;
                     var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 500);
-                    gameObjects['ship'].setPosition(np.x, np.y, np.z);
+                    ship.setPosition(np.x, np.y, np.z);
                 }
                 this.lookAt(this.target.mesh.position);
                 if (this == ship) {
@@ -155,7 +154,7 @@ function gameObject(id, sceneObj, type) {
         );
     };
 
-    this.addEmitter = function (type, positionOffset, anchorPoint) {
+    this.addEmitter = function (type, anchorPoint) {
         this.hasEmitters = true;
 
         var emitter = new ParticleEngine();
@@ -190,11 +189,6 @@ function gameObject(id, sceneObj, type) {
         if (anchorPoint) {
             emitter.anchorPoint = anchorPoint;
         }
-        if (positionOffset) {
-            emitter.positionOffset = positionOffset;
-            emitter.positionBase = this.getEmitterPosition(emitter);
-        }
-
         emitter.initialize();
         this.emitters.push(emitter);
     };
@@ -211,9 +205,6 @@ function gameObject(id, sceneObj, type) {
         if (this.hasEmitters) {
             for (var emitterIndex in this.emitters) {
                 var emitter = this.emitters[emitterIndex];
-                if (emitter.positionOffset || this.moveable) {
-                    emitter.positionBase = this.getEmitterPosition(emitter);
-                }
 
                 if (emitter.anchorPoint) {
                     if (emitter.type == "thruster" && this.thrustersOn) {
@@ -235,16 +226,10 @@ function gameObject(id, sceneObj, type) {
     this.getEmitterPosition = function (emitter) {
         if (emitter.anchorPoint) {
             var objMesh = this.mesh.children[emitter.anchorPoint];
-            objMesh.geometry.computeBoundingBox();
-
-            var boundingBox = objMesh.geometry.boundingBox;
-            var position = new THREE.Vector3();
-            position.subVectors(boundingBox.max, boundingBox.min);
-            position.multiplyScalar(0.5);
-            position.add(boundingBox.min);
+            var position = objMesh.geometry.vertices[0].clone();
             position.applyMatrix4(objMesh.matrixWorld);
         } else {
-            position = this.mesh.position;
+            var position = this.getPosition();
         }
 
         return position;
@@ -300,9 +285,9 @@ function gameObject(id, sceneObj, type) {
             case "thrusters":
                 this.thrustersOn = state;
                 if (this.thrustersOn) {
-                    this.addEmitter('thruster', new THREE.Vector3(-2.9, 0.4, -2), 1);
-                    this.addEmitter('thruster', new THREE.Vector3(0, 0.4, -2.7), 2);
-                    this.addEmitter('thruster', new THREE.Vector3(2.9, 0.4, -2), 3);
+                    this.addEmitter('thruster', 1);
+                    this.addEmitter('thruster', 2);
+                    this.addEmitter('thruster', 3);
                 } else {
                     this.removeEmitter('thruster');
                 }
@@ -311,13 +296,13 @@ function gameObject(id, sceneObj, type) {
             case "weapons":
                 this.weaponsOn = state;
                 if (this.weaponsOn) {
-                    this.addEmitter('laser', new THREE.Vector3(0, 1, 3.5), 4);
-                    this.addEmitter('laser', new THREE.Vector3(-2.2, 0.5, 1.7), 5);
-                    this.addEmitter('laser', new THREE.Vector3(2.2, 0.5, 1.7), 6);
+                    this.addEmitter('laser', 4);
+                    this.addEmitter('laser', 5);
+                    this.addEmitter('laser', 6);
 
-                    this.addEmitter('headlight', new THREE.Vector3(0, 1, 3.4), 4);
-                    this.addEmitter('headlight', new THREE.Vector3(-2.2, 0.5, 1.7), 5);
-                    this.addEmitter('headlight', new THREE.Vector3(2.2, 0.5, 1.7), 6);
+                    this.addEmitter('headlight', 4);
+                    this.addEmitter('headlight', 5);
+                    this.addEmitter('headlight', 6);
                 } else {
                     this.removeEmitter('laser');
                     this.removeEmitter('headlight');

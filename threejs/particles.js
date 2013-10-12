@@ -278,7 +278,7 @@ ParticleEngine.prototype.randomVector3 = function (base, spread) {
 ParticleEngine.prototype.createParticle = function () {
     var particle = new Particle(this);
     if (this.positionStyle == Type.FOLLOW) {
-        particle.position = ship.mesh.position;
+        particle.position = ship.getEmitterPosition(particle.emitter);
     }
     if (this.positionStyle == Type.CUBE)
         particle.position = this.randomVector3(this.positionBase, this.positionSpread);

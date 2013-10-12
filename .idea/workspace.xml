@@ -4,12 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/less/styles.less" line="313" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="">
+    <list default="true" id="c89ee3d9-fec5-4ae7-9526-38eefa65077e" name="Default" comment="- trying to fix follower particles">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/gameObjects.js" afterPath="$PROJECT_DIR$/threejs/gameObjects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particleSystems.js" afterPath="$PROJECT_DIR$/threejs/particleSystems.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/particles.js" afterPath="$PROJECT_DIR$/threejs/particles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threejs/zone.js" afterPath="$PROJECT_DIR$/threejs/zone.js" />
     </list>
     <ignored path="ship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,19 +21,19 @@
     <file path="/ship.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1375482615092" ignored="false" />
     <file path="/engine.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379388066527" ignored="false" />
     <file path="/resources.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381595029112" ignored="false" />
-    <file path="/gameObjects.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381593669964" ignored="false" />
+    <file path="/gameObjects.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381598900689" ignored="false" />
     <file path="/ship.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1377991664657" ignored="false" />
     <file path="/menu.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381273326572" ignored="false" />
     <file path="/events.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378255158732" ignored="false" />
     <file path="/a.dummy" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381367818456" ignored="false" />
     <file path="/particleSystems.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381592396035" ignored="false" />
-    <file path="/particles.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381595208653" ignored="false" />
+    <file path="/particles.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381596270275" ignored="false" />
     <file path="/loadTextures.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381278760069" ignored="false" />
     <file path="/zone.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379115686748" ignored="false" />
     <file path="/zone.php.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378780225756" ignored="false" />
     <file path="/system.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1378790271557" ignored="false" />
     <file path="/zone.js" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380167000954" ignored="false" />
-    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381592349422" ignored="false" />
+    <file path="/Dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1381598970792" ignored="false" />
     <file path="/dummy.txt" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1379371367924" ignored="false" />
     <file path="/createTexture.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380168727085" ignored="false" />
     <file path="/build.php" changelist="c89ee3d9-fec5-4ae7-9526-38eefa65077e" time="1380583293123" ignored="false" />
@@ -60,10 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="particles.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="particles.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threejs/particles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.4157045">
+            <state line="280" column="51" selection-start="9836" selection-end="9854" vertical-scroll-proportion="-10.52">
               <folding />
             </state>
           </provider>
@@ -78,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameObjects.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gameObjects.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.04">
+            <state line="219" column="42" selection-start="6716" selection-end="6716" vertical-scroll-proportion="0.5288684">
               <folding />
             </state>
           </provider>
@@ -156,11 +155,11 @@
         <option value="$PROJECT_DIR$/galaxyBuilder/build.php" />
         <option value="$PROJECT_DIR$/galaxyBuilder/buildGalaxy.php" />
         <option value="$PROJECT_DIR$/threejs/engine.js" />
-        <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
         <option value="$PROJECT_DIR$/threejs/resources.js" />
         <option value="$PROJECT_DIR$/threejs/zone.js" />
-        <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
         <option value="$PROJECT_DIR$/threejs/particles.js" />
+        <option value="$PROJECT_DIR$/threejs/particleSystems.js" />
+        <option value="$PROJECT_DIR$/threejs/gameObjects.js" />
       </list>
     </option>
   </component>
@@ -573,7 +572,11 @@
       <created>1381592356483</created>
       <updated>1381592356483</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="- trying to fix follower particles">
+      <created>1381595348325</created>
+      <updated>1381595348325</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -604,7 +607,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.157754" sideWeight="0.6756152" order="3" side_tool="false" content_ui="tabs" x="1333" y="212" width="467" height="907" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.157754" sideWeight="0.6756152" order="3" side_tool="false" content_ui="tabs" x="1333" y="212" width="467" height="907" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14117648" sideWeight="0.6752809" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14385027" sideWeight="0.42668137" order="1" side_tool="true" content_ui="tabs" />
@@ -663,7 +666,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- galaxy builder progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="- trying to fix follower particles" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -677,7 +680,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Gui optimisation" />
     <MESSAGE value="windows" />
     <MESSAGE value="optimized GUI" />
     <MESSAGE value="code reformating" />
@@ -702,6 +704,7 @@
     <MESSAGE value="- fixed damn targetlist clickthrough bug. Yay" />
     <MESSAGE value="- fixed damn targetlist clickthrough bug. Yay!" />
     <MESSAGE value="- galaxy builder progress" />
+    <MESSAGE value="- trying to fix follower particles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="29" selection-start="4924" selection-end="4924" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threejs/zone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="378" column="62" selection-start="17029" selection-end="17029" vertical-scroll-proportion="0.0">
@@ -803,16 +799,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
+    <entry file="file://$PROJECT_DIR$/threejs/particleSystems.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.04">
+        <state line="163" column="29" selection-start="4924" selection-end="4924" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threejs/particles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.4157045">
+        <state line="280" column="51" selection-start="9836" selection-end="9854" vertical-scroll-proportion="-10.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threejs/gameObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="42" selection-start="6716" selection-end="6716" vertical-scroll-proportion="0.5288684">
           <folding />
         </state>
       </provider>
