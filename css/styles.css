@@ -5,7 +5,7 @@ body {
   overflow: hidden;
 }
 body a {
-  color: #ff0000;
+  text-decoration: none;
 }
 body #stats {
   position: absolute;
@@ -21,6 +21,7 @@ body #stats #fps #fpsText {
 body #stats #fps #fpsGraph {
   display: none;
 }
+body #builderMenu,
 body #menu {
   font-size: 16px;
   position: absolute;
@@ -274,4 +275,23 @@ body .panel .gauge.fuel {
 body .panel .gauge.cargo {
   background-color: yellow;
   border-color: yellow;
+}
+#builderMenu.panel {
+  position: absolute;
+  display: table-cell;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+  bottom: 5%;
+  right: 5%;
+  border-top: 0.25% outset white;
+  border-left: 0.25% outset white;
+  vertical-align: middle;
+}
+#builderMenu.panel:hover {
+  cursor: default;
+  background-color: #000000;
+}
+#builderMenu.panel a {
+  display: block;
 }

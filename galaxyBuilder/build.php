@@ -60,17 +60,8 @@ if (isset($_GET['step'])) {
 
 <div class="infos">
     <?php
-
-    $systems = array(
-        "Vargas", "Debulon", "Jarvan", "Atlayis", "Porthos", "Zergon", "Verulon", "Vuela", "Zargoth", "Panthar", "Protos", "Zebulon", "Targas", "Batlak", "GorBos"
-    );
-
-    $name = $systems[rand(0, count($systems) - 1)];
-    //print $name;
-
     if ($step <= 9) {
         $name = 'planet' . $step;
-
         $types = array('hot', 'mclass', 'gasGiant', 'icy');
         $r = rand(0, count($types) - 1);
         $type = $types[$r];
