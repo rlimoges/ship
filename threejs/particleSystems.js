@@ -148,8 +148,6 @@ pSystems = {
 
     thrusters: {
         positionStyle: Type.FOLLOW,
-        positionBase: new THREE.Vector3(0, 0, 0),
-        positionRadius: 0,
 
         velocityStyle: Type.FOLLOW,
         velocityScalar: 0.15,
@@ -157,19 +155,17 @@ pSystems = {
         particleTexture: textures['particle-smoke'],
 
         sizeTween: new Tween([0, 1], [5, 12]),
-        opacityTween: new Tween([0, 3], [.9, 0]),
+        opacityTween: new Tween([0, 0.1], [0.75, 0]),
         colorTween: new Tween([0, 0.4], [ new THREE.Vector3(0.02, 1, 0.5), new THREE.Vector3(0.05, 1, 0.25) ]),
         blendStyle: THREE.AdditiveBlending,
 
-        particlesPerSecond: 3,
-        particleDeathAge: 1,
+        particlesPerSecond: 30,
+        particleDeathAge: 5,
         emitterDeathAge: 999999
     },
 
     lasers: {
-        positionStyle: Type.SPHERE,
-        positionBase: new THREE.Vector3(0, 0, 0),
-        positionRadius: 0,
+        positionStyle: Type.FOLLOW,
 
         velocityStyle: Type.CUBE,
         velocitySpread: new THREE.Vector3(0, 0, 0),
@@ -188,9 +184,7 @@ pSystems = {
     },
 
     headlights: {
-        positionStyle: Type.SPHERE,
-        positionBase: new THREE.Vector3(0, 0, 0),
-        positionRadius: 0,
+        positionStyle: Type.FOLLOW,
 
         velocityStyle: Type.CUBE,
         velocitySpread: new THREE.Vector3(0, 0, 0),

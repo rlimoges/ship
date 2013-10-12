@@ -189,7 +189,7 @@ THREE.OrbitControls = function (object, domElement) {
             this.center = ship.mesh.position;
             this.object.lookAt(ship.mesh.position);
 
-            if (ship.target && ship.target.getDistance() < 2000) {
+            if (ship.target && ship.target.getDistance() < 5000) {
                 $(".btn.scan").show(1000);
             }
         }
@@ -200,7 +200,7 @@ THREE.OrbitControls = function (object, domElement) {
             this.object.lookAt(ship.target.mesh.position);
 
             if (scanState) {
-                if (ship.target && ship.target.getDistance() > 2200) {
+                if (ship.target && ship.target.getDistance() > 7000) {
                     this.exitZoom();
                 }
             } else {

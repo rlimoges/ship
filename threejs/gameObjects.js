@@ -38,7 +38,7 @@ function gameObject(id, sceneObj, type) {
     this.orbiting = false;
     this.orbitRadius;
     this.followers = new Array();
-    this.speed = 10;
+    this.speed = 5;
     this.orbiters = 0; // num of objects orbiting this one
     this.lookingAt = null;
 
@@ -116,7 +116,13 @@ function gameObject(id, sceneObj, type) {
             if (this.target.mesh) {
                 if (this.target.getDistance() > this.target.orbital && this.thrustersOn) {
                     this.lastPosition = this.mesh.position;
-                    var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 500);
+                    var np = this.getMidPoint(this.getPosition(), this.target.getPosition(), 250);
+
+                    var i =0;
+                    while(ship.mesh.position.distanceTo(np) > 6){
+                        np = this.getMidPoint(this.getPosition(), this.target.getPosition(), i * 250);
+                        i++;
+                    }
                     ship.setPosition(np.x, np.y, np.z);
                 }
                 this.lookAt(this.target.mesh.position);
@@ -189,6 +195,7 @@ function gameObject(id, sceneObj, type) {
         if (anchorPoint) {
             emitter.anchorPoint = anchorPoint;
         }
+
         emitter.initialize();
         this.emitters.push(emitter);
     };
@@ -205,6 +212,10 @@ function gameObject(id, sceneObj, type) {
         if (this.hasEmitters) {
             for (var emitterIndex in this.emitters) {
                 var emitter = this.emitters[emitterIndex];
+
+                if(this.moveable){
+                    emitter.positionBase = this.getEmitterPosition(emitter);
+                }
 
                 if (emitter.anchorPoint) {
                     if (emitter.type == "thruster" && this.thrustersOn) {
@@ -229,26 +240,10 @@ function gameObject(id, sceneObj, type) {
             var position = objMesh.geometry.vertices[0].clone();
             position.applyMatrix4(objMesh.matrixWorld);
         } else {
-            var position = this.getPosition();
+            var position = this.mesh.position;
         }
 
         return position;
-    };
-
-    this.getEmitterVelocity = function (emitter) {
-        var eposition = this.getEmitterPosition(emitter);
-//
-//        if(this.target && this.firing && (emitter.type=="laser" || emitter.type=="headlight")){
-//            var velocity = eposition.multiply(this.target.mesh.position);
-//        } else {
-//
-//            var velocity = eposition.multiplyScalar(emitter.velocityScalar);
-//        }
-
-        //velocity = this.getMidPoint(eposition, this.lastPosition);
-        var velocity = this.getMidPoint(eposition, this.mesh.position, 1);
-        velocity = new THREE.Vector3(0, 0, 0);
-        return velocity;
     };
 
     this.powerSystems = function () {
