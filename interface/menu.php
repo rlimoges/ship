@@ -17,6 +17,8 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <span class="targetMap"></span>
         <span class="btn ok">OK</span>
     </div>

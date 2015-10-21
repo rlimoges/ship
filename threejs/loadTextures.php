@@ -1,6 +1,6 @@
 <?php
 //$path = 'c:\wampSLT\data\htdocs\ship';
-$path = 'd:\xampp\htdocs\ship';
+$path = 'c:\xampp\htdocs\ship';
 
 function importDir($path, $n, $x, $y)
 {
